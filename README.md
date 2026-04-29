@@ -1,9 +1,8 @@
-# Academic Research Skills for Claude Code
+# Habilidades de Investigación Académica para Claude Code
 
-[![Version](https://img.shields.io/badge/version-v3.6.5-blue)](https://github.com/Imbad0202/academic-research-skills/releases/tag/v3.6.5)
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey)](https://creativecommons.org/licenses/by-nc/4.0/)
-[![Sponsor](https://img.shields.io/badge/sponsor-Buy%20Me%20a%20Coffee-orange?logo=buy-me-a-coffee)](https://buymeacoffee.com/crucify020v)
-
+[![Versión](https://img.shields.io/badge/version-v3.6.5-blue)](https://github.com/Imbad0202/academic-research-skills/releases/tag/v3.6.5)
+[![Licencia: CC BY-NC 4.0](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![Patrocinio](https://img.shields.io/badge/sponsor-Buy%20Me%20a%20Coffee-orange?logo=buy-me-a-coffee)](https://buymeacoffee.com/crucify020v)
 
 Una suite completa de habilidades de Claude Code para investigación académica, que cubre el pipeline completo desde la investigación hasta la publicación.
 
@@ -13,81 +12,81 @@ Una suite completa de habilidades de Claude Code para investigación académica,
 
 ### ¿Por qué humano-en-el-ciclo y no automatización completa?
 
-Lu et al. (2026, *Nature* 651:914-919) built **The AI Scientist** — the first fully autonomous AI research system to publish a paper through blind peer review at a top-tier ML venue (ICLR 2025 workshop, score 6.33/10 vs workshop average 4.87). Their Limitations section enumerates the failure modes that any fully-autonomous AI research pipeline inherits: implementation bugs, hallucinated results, shortcut reliance, bug-as-insight reframing, methodology fabrication, frame-lock, citation hallucinations.
+Lu et al. (2026, *Nature* 651:914-919) construyeron **The AI Scientist** — el primer sistema de investigación de IA totalmente autónomo en publicar un artículo mediante revisión por pares ciega en una sede de ML de primer nivel (taller ICLR 2025, puntuación 6.33/10 frente a la media del taller 4.87). Su sección de Limitaciones enumera los modos de fallo que cualquier pipeline de investigación de IA totalmente autónomo hereda: errores de implementación, resultados alucinados, dependencia de atajos, reformulación de errores como hallazgos, fabricación de metodología, bloqueo de marco y alucinaciones de citas.
 
-ARS se construye sobre la premisa de que **un investigador humano potenciado por IA evita estos modos de falla mejor que cualquiera de los dos por separado**. Stage 2.5 and Stage 4.5 integrity gates run a 7-mode blocking checklist (see [`academic-pipeline/references/ai_research_failure_modes.md`](academic-pipeline/references/ai_research_failure_modes.md)); the reviewer offers an opt-in calibration mode that measures its own FNR/FPR against a user-supplied gold set.
+ARS se construye sobre la premisa de que **un investigador humano potenciado por IA evita estos modos de fallo mejor que cualquiera de los dos por separado**. Las puertas de integridad de las Etapas 2.5 y 4.5 ejecutan una lista de verificación de bloqueo de 7 modos (ver [`pipeline-academico/referencias/modos_fallo_investigacion_ia.md`](pipeline-academico/referencias/modos_fallo_investigacion_ia.md)); el revisor ofrece un modo de calibración opcional que mide sus propios FNR/FPR frente a un conjunto de referencia proporcionado por el usuario.
 
-v3.3 was inspired by [**PaperOrchestra**](https://arxiv.org/abs/2604.05018) (Song, Song, Pfister & Yoon, 2026, Google): Semantic Scholar API verification, anti-leakage protocol, VLM figure verification, and score trajectory tracking.
+La v3.3 se inspiró en [**PaperOrchestra**](https://arxiv.org/abs/2604.05018) (Song, Song, Pfister & Yoon, 2026, Google): verificación de la API de Semantic Scholar, protocolo anti-filtraciones, verificación de figuras VLM y seguimiento de la trayectoria de puntuación.
 
 ---
 
-## Arquitectura y pipeline
+## Arquitectura y Pipeline
 
-**👉 [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)** — vista completa del pipeline: diagrama de flujo, matriz etapa por etapa, flujo de acceso a datos, grafo de dependencias de habilidades, compuertas de calidad y lista de modos.
+**👉 [docs/ARQUITECTURA.md](docs/ARQUITECTURA.md)** — vista completa del pipeline: diagrama de flujo, matriz etapa por etapa, flujo de acceso a datos, grafo de dependencias de habilidades, compuertas de calidad y lista de modos.
 
 El documento de arquitectura reemplaza la extensa descripción del pipeline que solía estar aquí. Todo sobre *qué se ejecuta en qué etapa* ahora vive en un solo lugar.
 
-## Configuración e instalación
+## Configuración e Instalación
 
-**👉 [docs/SETUP.md](docs/SETUP.md)** — instala Claude Code, configura claves API, Pandoc/tectonic opcional para DOCX/PDF, verificación multi-modelo (`ARS_CROSS_MODEL`), y cuatro métodos de instalación incluyendo importación de Proyecto claude.ai.
+**👉 [docs/CONFIGURACION.md](docs/CONFIGURACION.md)** — instala Claude Code, configura claves API, Pandoc/tectonic opcional para DOCX/PDF, verificación multi-modelo (`ARS_CROSS_MODEL`) y cuatro métodos de instalación, incluyendo la importación de Proyectos de claude.ai.
 
-## Rendimiento y costo
+## Rendimiento y Coste
 
-**👉 [docs/PERFORMANCE.md](docs/PERFORMANCE.md)** — presupuestos de tokens por modo, estimación del pipeline completo (~$4–6 para un artículo de 15k palabras), y configuraciones recomendadas de Claude Code (Omitir Permisos; Equipo de Agentes opcional).
+**👉 [docs/RENDIMIENTO.md](docs/RENDIMIENTO.md)** — presupuestos de tokens por modo, estimación del pipeline completo (~$4–6 para un artículo de 15k palabras) y configuraciones recomendadas de Claude Code (Omitir Permisos; Equipo de Agentes opcional).
 
-## Guías y artículos
+## Guías y Artículos
 
-- [Academic Writing Shouldn't Be a Solo Act](https://open.substack.com/pub/edwardwu223235/p/academic-writing-shouldnt-be-a-solo?r=4dczl&utm_medium=ios) — guía completa del pipeline (Inglés)
-
----
-
-## Características principales
-
-- **Deep Research** — 13-agent research team with Socratic guided mode, PRISMA systematic review, intent detection, dialogue health monitoring, optional cross-model DA, Semantic Scholar API verification.
-- **Academic Paper** — 12-agent paper writing with Style Calibration, Writing Quality Check, LaTeX hardening, visualization, revision coaching, citation conversion, anti-leakage protocol, and VLM figure verification.
-- **Academic Paper Reviewer** — 7-agent multi-perspective peer review with 0–100 quality rubrics (EIC + 3 dynamic reviewers + Devil's Advocate), concession threshold protocol, attack intensity preservation, optional cross-model DA critique / calibration, R&R traceability matrix, read-only constraint.
-- **Academic Pipeline** — 10-stage pipeline orchestrator with adaptive checkpoints, claim verification, Material Passport, optional `repro_lock`, optional cross-model integrity verification, mid-conversation reinforcement, and score trajectory tracking.
-- **Data Access Level Metadata** (v3.3.2+) — every skill declares `data_access_level` (`raw` / `redacted` / `verified_only`); enforced by `scripts/check_data_access_level.py`. Pattern adapted from Anthropic's automated-w2s-researcher (2026). See [`shared/ground_truth_isolation_pattern.md`](shared/ground_truth_isolation_pattern.md).
-- **Task Type Annotation** (v3.3.2+) — every skill declares `task_type` (`open-ended` or `outcome-gradable`). All current ARS skills are `open-ended`.
-- **Benchmark Report Schema** (v3.3.5+) — JSON Schema + lint for honest benchmark comparisons. See [`shared/benchmark_report_pattern.md`](shared/benchmark_report_pattern.md).
-- **Artifact Reproducibility Lockfile** (v3.3.5+) — optional `repro_lock` sub-block on Material Passport. **Configuration documentation, not replay guarantee** — LLM outputs are not byte-reproducible. See [`shared/artifact_reproducibility_pattern.md`](shared/artifact_reproducibility_pattern.md).
+- [La escritura académica no debería ser un acto en solitario](https://open.substack.com/pub/edwardwu223235/p/academic-writing-shouldnt-be-a-solo?r=4dczl&utm_medium=ios) — guía completa del pipeline (Inglés)
 
 ---
 
-## Ejemplos: salida real del pipeline
+## Características Principales
+
+- **Investigación Profunda** — Equipo de investigación de 13 agentes con modo guiado socrático, revisión sistemática PRISMA, detección de intención, monitoreo de salud del diálogo, DA multi-modelo opcional y verificación de la API de Semantic Scholar.
+- **Artículo Académico** — Escritura de artículos con 12 agentes, calibración de estilo, control de calidad de escritura, endurecimiento de LaTeX, visualización, coaching de revisión, conversión de citas, protocolo anti-filtraciones y verificación de figuras VLM.
+- **Revisor de Artículos Académicos** — Revisión por pares multi-perspectiva con 7 agentes y rúbricas de calidad 0–100 (Editor en Jefe + 3 revisores dinámicos + Abogado del Diablo), protocolo de umbral de concesión, preservación de la intensidad del ataque, crítica/calibración DA multi-modelo opcional, matriz de trazabilidad R&R y restricción de solo lectura.
+- **Pipeline Académico** — Orquestador de pipeline de 10 etapas con puntos de control adaptativos, verificación de afirmaciones, Pasaporte de Materiales, `repro_lock` opcional, verificación de integridad multi-modelo opcional, refuerzo a mitad de la conversación y seguimiento de la trayectoria de puntuación.
+- **Metadatos de Nivel de Acceso a Datos** (v3.3.2+) — cada habilidad declara su `nivel_acceso_datos` (`bruto` / `redactado` / `solo_verificado`); aplicado por `scripts/verificar_nivel_acceso_datos.py`. Patrón adaptado del investigador automatizado w2s de Anthropic (2026). Ver [`shared/patron_aislamiento_verdad_absoluta.md`](shared/patron_aislamiento_verdad_absoluta.md).
+- **Anotación de Tipo de Tarea** (v3.3.2+) — cada habilidad declara su `tipo_tarea` (`abierta` o `evaluable_por_resultado`). Todas las habilidades ARS actuales son `abierta`.
+- **Esquema de Informe de Benchmarking** (v3.3.5+) — Esquema JSON + linter para comparaciones honestas de benchmarks. Ver [`shared/patron_informe_benchmark.md`](shared/patron_informe_benchmark.md).
+- **Bloqueo de Reproducibilidad de Artefactos** (v3.3.5+) — bloque opcional `repro_lock` en el Pasaporte de Materiales. **Documentación de configuración, no garantía de repetición** — las salidas de LLM no son reproducibles bit a bit. Ver [`shared/patron_reproducibilidad_artefacto.md`](shared/patron_reproducibilidad_artefacto.md).
+
+---
+
+## Ejemplos: Salida Real del Pipeline
 
 Consulta los artefactos completos de una ejecución real del pipeline de 10 etapas — informes de revisión por pares, informes de verificación de integridad y el artículo final:
 
-**[Ver todos los artefactos del pipeline →](examples/showcase/)**
+**[Ver todos los artefactos del pipeline →](ejemplos/showcase/)**
 
-| Artifact | Description |
+| Artefacto | Descripción |
 |---|---|
-| [Final Paper (EN)](examples/showcase/full_paper_apa7.pdf) | APA 7.0 formatted, LaTeX-compiled |
-| [Integrity Report — Pre-Review](examples/showcase/integrity_report_stage2.5.pdf) | Stage 2.5: caught 15 fabricated refs + 3 statistical errors |
-| [Integrity Report — Final](examples/showcase/integrity_report_stage4.5.pdf) | Stage 4.5: zero regressions confirmed |
-| [Peer Review Round 1](examples/showcase/stage3_review_report.pdf) | EIC + 3 Reviewers + Devil's Advocate |
-| [Re-Review](examples/showcase/stage3prime_rereview_report.pdf) | Verification after revisions |
-| [Peer Review Round 2](examples/showcase/stage3_review_report_r2.pdf) | Follow-up review |
-| [Response to Reviewers](examples/showcase/response_to_reviewers_r2.pdf) | Point-by-point author response |
-| [Post-Publication Audit Report](examples/showcase/post_publication_audit_2026-03-09.pdf) | Independent full-reference audit: found 21/68 issues missed by 3 rounds of integrity checks |
+| [Artículo Final (EN)](ejemplos/showcase/articulo_completo_apa7.pdf) | Formateado en APA 7.0, compilado en LaTeX |
+| [Informe de Integridad — Pre-Revisión](ejemplos/showcase/informe_integridad_etapa2.5.pdf) | Etapa 2.5: detectó 15 referencias fabricadas + 3 errores estadísticos |
+| [Informe de Integridad — Final](ejemplos/showcase/informe_integridad_etapa4.5.pdf) | Etapa 4.5: cero regresiones confirmadas |
+| [Ronda de Revisión por Pares 1](ejemplos/showcase/informe_revision_etapa3.pdf) | EIC + 3 Revisores + Abogado del Diablo |
+| [Re-Revisión](ejemplos/showcase/informe_rerevision_etapa3prime.pdf) | Verificación tras las correcciones |
+| [Ronda de Revisión por Pares 2](ejemplos/showcase/informe_revision_etapa3_r2.pdf) | Seguimiento de la revisión |
+| [Respuesta a los Revisores](ejemplos/showcase/respuesta_a_revisores_r2.pdf) | Respuesta punto por punto del autor |
+| [Informe de Auditoría Post-Publicación](ejemplos/showcase/auditoria_post_publicacion_2026-03-09.pdf) | Auditoría de referencias completa independiente: encontró 21/68 problemas omitidos por 3 rondas de comprobaciones de integridad |
 
 ---
 
 ## Complemento: Agente de Experimentos
 
-If your research involves running experiments (code or human studies) before writing, the [Experiment Agent](https://github.com/Imbad0202/experiment-agent) skill fills the gap between ARS Stage 1 (RESEARCH) and Stage 2 (WRITE).
+Si tu investigación implica ejecutar experimentos (código o estudios con humanos) antes de escribir, la habilidad [Agente de Experimentos](https://github.com/Imbad0202/experiment-agent) llena el vacío entre la Etapa 1 de ARS (INVESTIGACIÓN) y la Etapa 2 (ESCRITURA).
 
 ```
-ARS Stage 1 RESEARCH  →  RQ Brief + Methodology Blueprint
+ARS Etapa 1 INVESTIGACIÓN  →  Informe PI + Plan de Metodología
         ↓
-  experiment-agent     →  run/manage experiments → validate results
+  experiment-agent          →  ejecutar/gestionar experimentos → validar resultados
         ↓
-ARS Stage 2 WRITE     →  write paper with verified experiment results
+ARS Etapa 2 ESCRITURA      →  escribir artículo con resultados verificados
 ```
 
-**What it does**: executes code experiments (Python, R, etc.) with real-time monitoring, manages human study protocols with IRB ethics checklist, interprets statistics with 11-type fallacy detection, and verifies reproducibility.
+**Qué hace**: ejecuta experimentos de código (Python, R, etc.) con monitoreo en tiempo real, gestiona protocolos de estudio humano con lista de ética IRB, interpreta estadísticas con detección de 11 tipos de falacias y verifica la reproducibilidad.
 
-**How to use together**: pause the ARS pipeline after Stage 1, run experiments in a separate experiment-agent session, then bring the results (with Material Passport) back to ARS Stage 2. ARS requires zero modification. See the [experiment-agent README](https://github.com/Imbad0202/experiment-agent) for setup instructions.
+**Cómo usarlos juntos**: pausa el pipeline de ARS tras la Etapa 1, ejecuta experimentos en una sesión separada del agente de experimentos y luego trae los resultados (con su Pasaporte de Materiales) de vuelta a la Etapa 2 de ARS. ARS no requiere modificación. Consulta el [README del agente de experimentos](https://github.com/Imbad0202/experiment-agent) para instrucciones de configuración.
 
 ---
 
@@ -96,20 +95,20 @@ ARS Stage 2 WRITE     →  write paper with verified experiment results
 ### Inicio Rápido
 
 ```
-# Start a full research pipeline
-You: "I want to write a research paper on AI's impact on higher education QA"
+# Iniciar un pipeline de investigación completo
+Tú: "Quiero escribir un artículo de investigación sobre el impacto de la IA en el aseguramiento de la calidad en educación superior"
 
-# Start with Socratic guidance
-You: "Guide my research on AI in educational evaluation"
+# Iniciar con guía socrática
+Tú: "Guía mi investigación sobre la IA en la evaluación educativa"
 
-# Write a paper with guided planning
-You: "Guide me through writing a paper on demographic decline"
+# Escribir un artículo con planificación guiada
+Tú: "Guíame para escribir un artículo sobre el declive demográfico"
 
-# Review an existing paper
-You: "Review this paper" (then provide the paper)
+# Revisar un artículo existente
+Tú: "Revisa este artículo" (luego proporciona el artículo)
 
-# Check pipeline status
-You: "status"
+# Comprobar el estado del pipeline
+Tú: "estado"
 ```
 
 ### Habilidades Individuales
@@ -117,153 +116,153 @@ You: "status"
 #### Investigación Profunda (7 modos)
 
 ```
-"Research the impact of AI on higher education"       → full mode
-"Give me a quick brief on X"                          → quick mode
-"Do a systematic review on X with PRISMA"             → systematic-review mode
-"Guide my research on X"                              → socratic mode (guiado)
-"Fact-check these claims"                             → fact-check mode
-"Do a literature review on X"                         → lit-review mode
-"Review this paper's research quality"                → modo revisión
+"Investiga el impacto de la IA en la educación superior" → modo completo
+"Dame un resumen rápido sobre X"                        → modo rápido
+"Haz una revisión sistemática sobre X con PRISMA"      → modo revision-sistematica
+"Guía mi investigación sobre X"                        → modo socrático (guiado)
+"Verifica estas afirmaciones"                          → modo fact-check
+"Haz una revisión de literatura sobre X"               → modo lit-review
+"Revisa la calidad de investigación de este artículo"  → modo revisión
 ```
 
 #### Artículo Académico (10 modos)
 
 ```
-"Write a paper on X"                                  → full mode
-"Guide me through writing a paper"                    → plan mode (guiado)
-"Build a paper outline"                               → modo solo-esquema
-"I have a draft, here are reviewer comments"          → revision mode
-"Parse these reviewer comments into a roadmap"        → revision-coach mode
-"Write an abstract for this paper"                    → modo solo-resumen
-"Turn this into a literature review paper"            → lit-review mode
-"Convert to LaTeX" / "Convert citations to IEEE"      → format-convert mode
-"Check citations"                                     → citation-check mode
-"Generate an AI disclosure statement for NeurIPS"     → modo declaración
+"Escribe un artículo sobre X"                             → modo completo
+"Guíame para escribir un artículo"                        → modo plan (guiado)
+"Crea un esquema del artículo"                            → modo solo-esquema
+"Tengo un borrador, aquí están los comentarios de revisión" → modo corrección
+"Analiza estos comentarios de revisión en una hoja de ruta" → modo revision-coach
+"Escribe un resumen para este artículo"                   → modo solo-resumen
+"Convierte esto en un artículo de revisión de literatura" → modo lit-review
+"Convierte a LaTeX" / "Convierte las citas a IEEE"        → modo format-convert
+"Revisa las citas"                                        → modo citation-check
+"Genera una declaración de uso de IA para NeurIPS"        → modo declaración
 ```
 
-#### Revisor de Artículo Académico (6 modos)
+#### Revisor de Artículos Académicos (6 modos)
 
 ```
-"Review this paper"                                   → full mode (EIC + R1/R2/R3 + Devil's Advocate)
-"Quick assessment of this paper"                      → quick mode
-"Guide me to improve this paper"                      → guided mode
-"Check the methodology"                               → methodology-focus mode
-"Verify the revisions"                                → re-review mode
-"Calibrate this reviewer against my gold set"         → modo calibración
+"Revisa este artículo"                               → modo completo (EIC + R1/R2/R3 + Abogado del Diablo)
+"Evaluación rápida de este artículo"                 → modo rápido
+"Guíame para mejorar este artículo"                  → modo guiado
+"Revisa la metodología"                              → modo methodology-focus
+"Verifica las correcciones"                          → modo re-review
+"Calibra este revisor contra mi conjunto de referencia" → modo calibración
 ```
 
 #### Pipeline Académico (Orquestador)
 
 ```
-"I want to write a complete research paper"           → full pipeline from Stage 1
-"I already have a paper, review it"                   → mid-entry at Stage 2.5 (integrity first)
-"I received reviewer comments"                        → mid-entry at Stage 4
+"Quiero escribir un artículo de investigación completo" → pipeline completo desde la Etapa 1
+"Ya tengo un artículo, revísalo"                        → entrada intermedia en Etapa 2.5 (primero integridad)
+"He recibido comentarios de los revisores"              → entrada intermedia en Etapa 4
 ```
 
-> Pipeline ends with **Stage 6: Process Summary** — auto-generates a paper creation process record with 6-dimension Collaboration Quality Evaluation (1–100 scoring).
+> El pipeline termina con la **Etapa 6: Resumen del Proceso** — genera automáticamente un registro del proceso de creación del artículo con una Evaluación de Calidad de Colaboración de 6 dimensiones (puntuación 1–100).
 
 ### Idiomas Compatibles
 
 - **Español** — idioma por defecto
 - **Inglés** — compatible
 
-> **¿Usas otro idioma?** El modo Socrático (*deep-research*) y el modo Plan (*academic-paper*) usan **activación basada en intención** — detectan el significado de tu solicitud, no palabras clave específicas. Esto significa que funcionan en **cualquier idioma** sin modificación.
+> **¿Usas otro idioma?** El modo Socrático (*investigacion-profunda*) y el modo Plan (*articulo-academico*) usan **activación basada en intención** — detectan el significado de tu solicitud, no palabras clave específicas. Esto significa que funcionan en **cualquier idioma** sin modificación.
 
 ### Formatos de Cita Compatibles
 
-- APA 7.0 (default)
-- Chicago (Notes & Author-Date)
+- APA 7.0 (predeterminado)
+- Chicago (Notas y Autor-Fecha)
 - MLA
 - IEEE
 - Vancouver
 
 ### Estructuras de Artículo Compatibles
 
-- IMRaD (empirical research)
-- Thematic Literature Review
-- Theoretical Analysis
-- Case Study
-- Policy Brief
-- Conference Paper
+- IMRaD (investigación empírica)
+- Revisión de Literatura Temática
+- Análisis Teórico
+- Estudio de Caso
+- Informe de Política (Policy Brief)
+- Artículo de Conferencia
 
 ---
 
 ## Detalles de las Habilidades
 
-Las responsabilidades por agente y los artefactos por etapa ahora están en [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). Los números de versión están anclados aquí para que los metadatos de versiones permanezcan en un solo lugar.
+Las responsabilidades por agente y los artefactos por etapa están ahora en [`docs/ARQUITECTURA.md`](docs/ARQUITECTURA.md). Los números de versión están anclados aquí para que los metadatos de versiones permanezcan en un solo lugar.
 
 ### Investigación Profunda (v2.8)
 
-13-agent research team. Modes: full, quick, review, lit-review, fact-check, socratic, systematic-review. Full agent roster and artifacts: see ARCHITECTURE.md §3.
+Equipo de investigación de 13 agentes. Modos: completo, rápido, revisión, lit-review, fact-check, socrático, revision-sistematica. Lista completa de agentes y artefactos: ver ARQUITECTURA.md §3.
 
 ### Artículo Académico (v3.0)
 
-12-agent paper writing pipeline. Modes: full, plan, outline-only, revision, revision-coach, abstract-only, lit-review, format-convert, citation-check, disclosure. Output: MD + DOCX (vía Pandoc cuando esté disponible) + LaTeX (APA 7.0 `apa7` class / IEEE / Chicago) → PDF via tectonic. Full agent roster and per-phase responsibilities: see ARCHITECTURE.md §3.
+Pipeline de escritura de artículos de 12 agentes. Modos: completo, plan, solo-esquema, corrección, revision-coach, solo-resumen, lit-review, format-convert, citation-check, declaración. Salida: MD + DOCX (vía Pandoc cuando esté disponible) + LaTeX (clase APA 7.0 `apa7` / IEEE / Chicago) → PDF vía tectonic. Responsabilidades por fase y lista de agentes: ver ARQUITECTURA.md §3.
 
-### Revisor de Artículo Académico (v1.8)
+### Revisor de Artículos Académicos (v1.8)
 
-7-agent multi-perspective review with **0-100 quality rubrics**. Modes: full, re-review, quick, methodology-focus, guided, calibration. **Decision mapping:** ≥80 Accept, 65-79 Minor Revision, 50-64 Major Revision, <50 Reject. First-round review team vs. narrow re-review team boundary: see ARCHITECTURE.md §3 Stage 3 / Stage 3'.
+Revisión multi-perspectiva de 7 agentes con **rúbricas de calidad 0-100**. Modos: completo, re-review, rápido, methodology-focus, guiado, calibración. **Mapeo de decisiones:** ≥80 Aceptar, 65-79 Corrección Menor, 50-64 Corrección Mayor, <50 Rechazar. Límites del equipo de revisión: ver ARQUITECTURA.md §3 Etapa 3 / Etapa 3'.
 
 ### Pipeline Académico (v3.6)
 
-10-stage orchestrator with integrity verification, two-stage review, Socratic coaching, and collaboration evaluation. Pipeline guarantees: every stage requires user confirmation checkpoint; integrity verification (Stage 2.5 + 4.5) cannot be skipped; R&R Traceability Matrix (Schema 11) independently verifies author revision claims. v3.4 added the Compliance Agent (PRISMA-trAIce + RAISE) at Stage 2.5 / 4.5. v3.5 adds the **Collaboration Depth Observer** (`collaboration_depth_agent`, advisory only — never blocks) at every FULL/SLIM checkpoint and at pipeline completion. MANDATORY integrity gates (2.5 / 4.5) explicitly skip the observer so compliance checks are not diluted. Based on Wang & Zhang (2026), IJETHE 23:11. Stage-by-stage matrix with agents, artifacts, and gates: see ARCHITECTURE.md §3.
+Orquestador de 10 etapas con verificación de integridad, revisión en dos etapas, coaching socrático y evaluación de colaboración. Garantías del pipeline: cada etapa requiere un punto de control de confirmación del usuario; la verificación de integridad (Etapa 2.5 + 4.5) no puede omitirse; la Matriz de Trazabilidad R&R (Esquema 11) verifica independientemente las afirmaciones de corrección del autor. La v3.4 añadió el Agente de Cumplimiento (PRISMA-trAIce + RAISE) en las Etapas 2.5 / 4.5. La v3.5 añade el **Observador de Profundidad de Colaboración** (`agente_profundidad_colaboracion`, solo consultivo — nunca bloquea) en cada punto de control COMPLETO/REDUCIDO y al finalizar el pipeline. Matriz etapa por etapa con agentes, artefactos y compuertas: ver ARQUITECTURA.md §3.
 
 ---
 
-## v3.0 Optimizations: What We Discovered About AI's Structural Limits
+## Optimizaciones v3.0: Lo que Descubrimos sobre los Límites Estructurales de la IA
 
-### What happened
+### Qué pasó
 
-While using ARS to write a reflection article about AI in higher education, I ran into three structural problems that no amount of prompt engineering could fix:
+Mientras usábamos ARS para escribir un artículo de reflexión sobre la IA en la educación superior, nos encontramos con tres problemas estructurales que ninguna cantidad de ingeniería de prompts pudo solucionar:
 
-1. **Frame-lock**: I asked the AI to run a devil's advocate debate against its own thesis. It did — four rounds, each more refined than the last. But every round stayed inside the frame I'd set. The DA attacked arguments, never premises. It never asked "are we even discussing the right question?" This is the same pattern that caused the 31% citation error rate in v2.7's stress test: the verifying AI and the generating AI share the same cognitive frame.
+1. **Bloqueo de marco**: Le pedimos a la IA que realizara un debate de abogado del diablo contra su propia tesis. Lo hizo — cuatro rondas, cada una más refinada que la anterior. Pero cada ronda se quedó dentro del marco que habíamos establecido. El DA atacaba los argumentos, nunca las premisas. Nunca preguntó "¿estamos siquiera discutiendo la pregunta correcta?". Este es el mismo patrón que causó la tasa de error de citas del 31% en la prueba de estrés de la v2.7: la IA que verifica y la IA que genera comparten el mismo marco cognitivo.
 
-2. **Sycophancy under pushback**: Every time I challenged the DA's attacks, it conceded too quickly. It retracted findings faster than it launched them. The model's training rewards conversational harmony — so "the user pushed back" was treated as evidence that the attack was wrong, when often it just meant the user was persistent.
+2. **Sicotancia ante el rechazo**: Cada vez que desafiábamos los ataques del DA, este cedía demasiado rápido. Se retractaba de los hallazgos más rápido de lo que los lanzaba. El entrenamiento del modelo premia la armonía conversacional — así que "el usuario rechazó la idea" se trataba como evidencia de que el ataque estaba equivocado, cuando a menudo solo significaba que el usuario era persistente.
 
-3. **Intent misdetection**: The Socratic Mentor kept trying to converge and produce deliverables ("Want me to write this up?") when I was still exploring. It couldn't distinguish "the user wants a deep philosophical discussion" from "the user wants an RQ brief." Both look like engagement, but they need opposite AI behaviors.
+3. **Error de detección de intención**: El Mentor Socrático seguía intentando converger y producir entregables ("¿Quieres que escriba esto?") cuando aún estábamos explorando. No podía distinguir entre "el usuario quiere una discusión filosófica profunda" y "el usuario quiere un informe de PI". Ambos parecen compromiso, pero necesitan comportamientos de IA opuestos.
 
-### What we changed (v3.0)
+### Qué cambiamos (v3.0)
 
-**Devil's Advocate — Concession Threshold Protocol** (`deep-research` + `academic-paper-reviewer`)
-- DA must now score every rebuttal on a 1-5 scale before responding
-- Concession only allowed at score ≥4 (rebuttal directly addresses core attack with evidence)
-- Score ≤3: hold position and restate the original attack
-- Anti-sycophancy rules: no consecutive concessions, concession rate tracking, frame-lock detection after each checkpoint
+**Abogado del Diablo — Protocolo de Umbral de Concesión** (`investigacion-profunda` + `revisor-articulo-academico`)
+- El DA debe ahora puntuar cada refutación en una escala del 1 al 5 antes de responder.
+- La concesión solo se permite con una puntuación ≥4 (la refutación aborda directamente el ataque central con evidencia).
+- Puntuación ≤3: mantener la posición y reafirmar el ataque original.
+- Reglas anti-sicotancia: no se permiten concesiones consecutivas, seguimiento de la tasa de concesión, detección de bloqueo de marco tras cada punto de control.
 
-**Socratic Mentor — Intent Detection Layer** (`deep-research`)
-- Classifies user intent as exploratory vs. goal-oriented at dialogue start and every 3 turns
-- Exploratory mode: disables auto-convergence, raises max rounds to 60, prohibits "want me to summarize?" prompts
-- Goal-oriented mode: standard convergence behavior
-- Anti-premature-closure rules: in exploratory mode, the user decides when to stop
+**Mentor Socrático — Capa de Detección de Intención** (`investigacion-profunda`)
+- Clasifica la intención del usuario como exploratoria frente a orientada a objetivos al inicio del diálogo y cada 3 turnos.
+- Modo exploratorio: desactiva la autoconvergencia, eleva el máximo de rondas a 60, prohíbe avisos de "¿quieres que resuma?".
+- Modo orientado a objetivos: comportamiento de convergencia estándar.
+- Reglas anti-cierre-prematuro: en modo exploratorio, el usuario decide cuándo parar.
 
-**Socratic Mentor — Dialogue Health Indicator** (`deep-research`)
-- Silent self-assessment every 5 turns on three dimensions: persistent agreement, conflict avoidance, premature convergence
-- Auto-injects challenging questions when agreement pattern detected
-- Invisible to user (to prevent gaming), but log available for post-session review
+**Mentor Socrático — Indicador de Salud del Diálogo** (`investigacion-profunda`)
+- Autoevaluación silenciosa cada 5 turnos en tres dimensiones: acuerdo persistente, evitación de conflictos, convergencia prematura.
+- Inyecta automáticamente preguntas desafiantes cuando se detecta un patrón de acuerdo.
+- Invisible para el usuario (para evitar el "juego"), pero el registro está disponible para la revisión post-sesión.
 
-### Why this matters
+### Por qué esto importa
 
-These optimizations don't solve AI's structural limits — they make the limits visible and manageable. The DA will still eventually concede if pushed hard enough. The Socratic Mentor will still have some convergence bias. But now there are explicit checkpoints that slow down the sycophancy, force the DA to justify concessions, and prevent the Mentor from wrapping up before the user is ready.
+Estas optimizaciones no resuelven los límites estructurales de la IA — hacen que los límites sean visibles y manejables. El DA eventualmente seguirá cediendo si se le presiona lo suficiente. El Mentor Socrático seguirá teniendo cierto sesgo de convergencia. Pero ahora hay puntos de control explícitos que frenan la sicotancia, fuerzan al DA a justificar las concesiones y evitan que el Mentor cierre el tema antes de que el usuario esté listo.
 
-The deeper lesson: AI literacy isn't about learning to use AI as a tool, following ethics rules, or fearing AI risks. It's about engaging AI deeply enough to discover its structural limits yourself — and your own thinking limits in the process.
+La lección más profunda: la alfabetización en IA no se trata de aprender a usar la IA como herramienta, seguir reglas éticas o temer los riesgos de la IA. Se trata de interactuar con la IA con la profundidad suficiente para descubrir sus límites estructurales por ti mismo — y tus propios límites de pensamiento en el proceso.
 
 ---
 
 ## Licencia
 
-This work is licensed under [CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+Este trabajo está bajo la licencia [CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
 **Eres libre de:**
-- Compartir — copiar y redistribuir el material
-- Adaptar — remezclar, transformar y construir sobre el material
+- Compartir — copiar y redistribuir el material.
+- Adaptar — remezclar, transformar y construir sobre el material.
 
 **Bajo los siguientes términos:**
-- **Atribución** — Debes dar el crédito apropiado
-- **No Comercial** — No puedes usar el material con fines comerciales
+- **Atribución** — Debes dar el crédito apropiado.
+- **No Comercial** — No puedes usar el material con fines comerciales.
 
 **Formato de atribución:**
 ```
-Based on Academic Research Skills by Cheng-I Wu
+Basado en Academic Research Skills por Cheng-I Wu
 https://github.com/Imbad0202/academic-research-skills
 ```
 
@@ -271,248 +270,68 @@ https://github.com/Imbad0202/academic-research-skills
 
 ## Colaboradores
 
-**Cheng-I Wu** — Author and maintainer
+**Cheng-I Wu** — Autor y mantenedor.
 
-**[aspi6246](https://github.com/aspi6246)** — Contributor. The v3.1 optimization was inspired by patterns from [Claude-Code-Skills-for-Academics](https://github.com/aspi6246/Claude-Code-Skills-for-Academics): read-only constraint pattern, anti-pattern codification as first-class design, cognitive framework approach (teaching "how to think" not just procedures), and lean skill size philosophy.
+**[aspi6246](https://github.com/aspi6246)** — Colaborador. La optimización v3.1 se inspiró en patrones de [Claude-Code-Skills-for-Academics](https://github.com/aspi6246/Claude-Code-Skills-for-Academics).
 
-**[mchesbro1](https://github.com/mchesbro1)** — Contributor. Originally proposed and drafted the IS Basket of 8 journals for `academic-paper-reviewer/references/top_journals_by_field.md` ([Issue #5](https://github.com/Imbad0202/academic-research-skills/issues/5)).
+**[mchesbro1](https://github.com/mchesbro1)** — Colaborador. Propuso y redactó originalmente el "Basket of 8" de revistas de IS.
 
-**[cloudenochcsis](https://github.com/cloudenochcsis)** — Contributor. Extended the IS section from the *Basket of 8* to the full *Senior Scholars' Basket of 11* — adding *Decision Support Systems*, *Information & Management*, and *Information and Organization* ([Issue #7](https://github.com/Imbad0202/academic-research-skills/issues/7), [PR #8](https://github.com/Imbad0202/academic-research-skills/pull/8)). Sourced from the [AIS Senior Scholars' List of Premier Journals](https://aisnet.org/page/SeniorScholarListofPremierJournals).
+**[cloudenochcsis](https://github.com/cloudenochcsis)** — Colaborador. Extendió la sección de IS al "Senior Scholars' Basket of 11".
 
 ---
 
 ## Registro de Cambios
 
-### v3.6.5 (2026-04-27) — Material Passport `literature_corpus[]` Consumer Integration
+### v3.6.5 (2026-04-27) — Integración del Consumidor `literature_corpus[]` en el Pasaporte de Materiales
 
-- **Two Phase 1 literature consumers** wired: `deep-research/agents/bibliography_agent.md` and `academic-paper/agents/literature_strategist_agent.md`. Both follow the same five-step **corpus-first, search-fills-gap** flow when the passport carries a non-empty `literature_corpus[]` and the same four Iron Rules (Same criteria / No silent skip / No corpus mutation / Graceful fallback on parse failure).
-- **PRE-SCREENED reproducibility block** in Search Strategy reports: enumerates included / excluded / skipped corpus entries, with F3 zero-hit note and F4a–F4f provenance reporting that compose around partial declaration of `obtained_via` / `obtained_at`. `final_included = pre_screened_included[] ∪ external_included[]` stays neutral — no provenance tags on bibliography entries or literature matrix rows.
-- **Consumer protocol reference** at `academic-pipeline/references/literature_corpus_consumers.md` with the canonical PRE-SCREENED template, BAD/GOOD examples, four Iron Rules, and per-consumer reading instructions.
-- **CI lint** `scripts/check_corpus_consumer_protocol.py` enforcing nine protocol invariants with manifest-driven consumer list (`scripts/corpus_consumer_manifest.json`).
-- **Schema 9 caveat retired**: `shared/handoff_schemas.md` retired the v3.6.4 "Consumer-side integration deferred to v3.6.5+" caveat; replaced with backpointer to the consumer protocol.
-- Presence-based, no schema change, no new env flag. Parse failures fall back to external-DB-only flow with a `[CORPUS PARSE FAILURE]` surface. `citation_compliance_agent` corpus integration deferred to v3.6.6+.
-- No breaking changes. Existing user adapters work without modification.
+- **Dos consumidores de literatura de la Fase 1** conectados: `investigacion-profunda/agentes/agente_bibliografia.md` y `articulo-academico/agentes/agente_estratega_literatura.md`. Ambos siguen el mismo flujo de cinco pasos **primero el corpus, la búsqueda llena el vacío** cuando el pasaporte lleva un `literature_corpus[]` no vacío y las mismas cuatro Reglas de Hierro.
+- **Bloque de reproducibilidad PRE-SCREENED** en los informes de Estrategia de Búsqueda: enumera las entradas del corpus incluidas / excluidas / omitidas.
+- **Referencia del protocolo del consumidor** en `pipeline-academico/referencias/consumidores_corpus_literatura.md`.
+- **Lint de CI** `scripts/verificar_protocolo_consumidor_corpus.py` aplicando nueve invariantes del protocolo.
 
-### v3.6.4 (2026-04-25) — Material Passport `literature_corpus[]` Input Port
+### v3.6.4 (2026-04-25) — Puerto de Entrada `literature_corpus[]` en el Pasaporte de Materiales
 
-- **`literature_corpus[]` field** added to Schema 9 as an optional input port for user-owned literature. Each entry conforms to `shared/contracts/passport/literature_corpus_entry.schema.json` (CSL-JSON authors, year, title, source_pointer + private optional `abstract` / `user_notes`).
-- **Language-neutral adapter contract** at `academic-pipeline/references/adapters/overview.md`: any program (any language) reading a user corpus source can produce conformant `passport.yaml` + `rejection_log.yaml`. Fail-soft entry-level errors, fail-loud adapter-level errors, deterministic ordering.
-- **Three reference Python adapters** under `scripts/adapters/`: `folder_scan.py` (filesystem of PDFs), `zotero.py` (Better BibTeX JSON export), `obsidian.py` (vault frontmatter). Starting points only; users are expected to write their own adapters for non-reference sources.
-- **Rejection log contract** at `shared/contracts/passport/rejection_log.schema.json` with closed enum of categorical reason values; always emitted (empty when no rejections).
-- **CI gates**: `scripts/check_literature_corpus_schema.py` validates schemas + adapter examples; `scripts/sync_adapter_docs.py --check` prevents schema→docs drift; new `pytest.yml` workflow runs `scripts/adapters/tests/` on path-filtered triggers.
-- **Input-port-only at v3.6.4**: v3.6.4 shipped the schema and adapter contract without consumer integration. `bibliography_agent` and `literature_strategist_agent` were wired in v3.6.5.
-- No breaking changes.
+- **Campo `literature_corpus[]`** añadido al Esquema 9 como puerto de entrada opcional para literatura del usuario.
+- **Contrato de adaptador neutral al idioma** en `pipeline-academico/referencias/adaptadores/resumen.md`.
+- **Tres adaptadores de Python de referencia** bajo `scripts/adaptadores/`: `escaneo_carpetas.py`, `zotero.py`, `obsidian.py`.
+- **Contrato de registro de rechazos** en `shared/contracts/passport/rejection_log.schema.json`.
 
-### v3.6.3 (2026-04-23) — Opt-in Passport Reset Boundary
+### v3.6.3 (2026-04-23) — Límite de Reinicio del Pasaporte Opcional
 
-- **Opt-in passport reset boundary** (`ARS_PASSPORT_RESET=1`). Promotes every FULL checkpoint to a context-reset boundary. New `resume_from_passport=<hash>` mode lets users resume in a fresh Claude Code session from the Material Passport ledger alone. `systematic-review` mode with the flag ON makes reset mandatory at every FULL checkpoint; other modes treat reset as the flag-gated default. Flag OFF preserves pre-v3.6.3 behavior byte-for-byte.
-- Schema 9 gains an append-only `reset_boundary[]` ledger with two entry kinds (`kind: boundary` + `kind: resume`). Hash uses JSON Canonical Form + SHA-256 with canonical placeholder for self-reference safety. Optional `pending_decision` handles MANDATORY branch choices.
-- New `scripts/check_passport_reset_contract.py` CI lint: every mention of the flag must co-locate a pointer to the authoritative protocol doc.
-- Protocol doc: `academic-pipeline/references/passport_as_reset_boundary.md`.
-- `docs/PERFORMANCE.md` updated with long-running-session guidance.
-- No breaking changes. Flag default is OFF.
+- **Límite de reinicio del pasaporte opcional** (`ARS_PASSPORT_RESET=1`). Convierte cada punto de control COMPLETO en un límite de reinicio de contexto.
+- El Esquema 9 gana un libro mayor `reset_boundary[]` de solo anexión. El hash usa JSON Canonical Form + SHA-256.
+- Nuevo lint de CI `scripts/verificar_contrato_reinicio_pasaporte.py`.
+- Documento del protocolo: `pipeline-academico/referencias/pasaporte_como_limite_reinicio.md`.
 
-### v3.6.2 (2026-04-23) — Reviewer Sprint Contract Hard Gate
+### v3.5.0 (2026-04-21) — Observador de Profundidad de Colaboración
 
-v3.6.2 introduces Schema 13 sprint contracts and a hard-gate orchestration that forces reviewers to pre-commit their scoring plan before reading the paper. Reviewer-only first test case; writer/evaluator deferred to v3.6.4. See CHANGELOG.
+- **Nuevo agente**: `agente_profundidad_colaboracion` en `pipeline-academico`. Invocado en cada punto de control COMPLETO/REDUCIDO y al finalizar el pipeline; puntúa la colaboración usuario-IA contra una rúbrica de 4 dimensiones. **Solo consultivo — nunca bloquea la progresión.**
+- **Nueva rúbrica**: [`shared/rubrica_profundidad_colaboracion.md`](shared/rubrica_profundidad_colaboracion.md) v1.0. Basado en Wang & Zhang (2026).
+- `pipeline-academico` versión de HABILIDAD: `3.3.0 → 3.4.0`. Versión de la suite subida a `3.5.0`.
 
-- **Schema 13 sprint contract** with `panel_size`, `acceptance_dimensions`, `failure_conditions` (with `severity` precedence + panel-relative `cross_reviewer_quantifier`), `measurement_procedure`, optional `override_ladder`, bounded `agent_amendments`. Validator: `scripts/check_sprint_contract.py`.
-- **Two-call hard gate.** Reviewers run paper-content-blind Phase 1 + paper-visible Phase 2; Phase 1 output is wrapped in `<phase1_output>...</phase1_output>` data delimiter to narrow the self-injection surface.
-- **Synthesizer three-step mechanical protocol.** Build cross-reviewer matrix → evaluate each `failure_condition` with panel-relative quantifier + recognised expression vocabulary → resolve precedence by `severity`. Forbidden-ops list explicit in `editorial_synthesizer_agent`.
-- **Two reviewer templates ship** (`shared/contracts/reviewer/full.json` panel 5; `shared/contracts/reviewer/methodology_focus.json` panel 2). `reviewer_re_review`, `reviewer_calibration`, `reviewer_guided` are reserved in the schema enum but ship without contract templates in v3.6.2; they retain pre-v3.6.2 behaviour. `reviewer_quick` is excluded from the enum entirely.
-- `academic-paper-reviewer` SKILL version: `1.8.1 → 1.9.0`. `academic-pipeline` SKILL version: `3.5.1 → 3.6.2` (suite-version invariant). Suite version bumped to `3.6.2`.
-- See spec [`docs/design/2026-04-23-ars-v3.6.2-sprint-contract-design.md`](docs/design/2026-04-23-ars-v3.6.2-sprint-contract-design.md) and protocol [`academic-paper-reviewer/references/sprint_contract_protocol.md`](academic-paper-reviewer/references/sprint_contract_protocol.md).
+### v3.3.2 (2026-04-15) — Niveles de Acceso a Datos + Metadatos de Tipo de Tarea
 
-### v3.5.1 (2026-04-22) — Opt-in Socratic Reading-Check Probe
+- Añadido `metadata.nivel_acceso_datos` a todos los archivos `HABILIDAD.md` con vocabulario obligatorio: `bruto`, `redactado`, `solo_verificado`.
+- Añadido `metadata.tipo_tarea` a todos los archivos `HABILIDAD.md` con vocabulario obligatorio: `abierta`, `evaluable_por_resultado`.
 
-v3.5.1 adds an opt-in honesty probe to the Socratic Mentor (`ARS_SOCRATIC_READING_PROBE=1`). Default off. See CHANGELOG.
+### v3.0 (2026-04-03) — Anti-Sicotancia + Detección de Intención + Salud del Diálogo
 
-- **Opt-in reading-check probe**: when `ARS_SOCRATIC_READING_PROBE=1` is set, the Socratic Mentor fires a one-time honesty probe during goal-oriented sessions where the user has cited a specific paper. Decline is logged without penalty. Outcome flows into the Research Plan Summary and Stage 6 AI Self-Reflection Report. No new agent, no schema change.
-- `deep-research` SKILL version: `2.9.0 → 2.9.1`. `academic-pipeline` SKILL version: `3.5.0 → 3.5.1`. Suite version bumped to `3.5.1`.
-
-### v3.5.0 (2026-04-21) — Collaboration Depth Observer
-
-- **New agent**: `collaboration_depth_agent` in `academic-pipeline` (Agent Team grows from 3 to 4). Invoked at every FULL/SLIM checkpoint and at pipeline completion; scores user-AI collaboration against a 4-dimension rubric. **Advisory only — never blocks progression.** MANDATORY checkpoints (Stages 2.5 / 4.5 integrity gates) do NOT invoke the observer.
-- **New rubric**: [`shared/collaboration_depth_rubric.md`](shared/collaboration_depth_rubric.md) v1.0. Dimensions: Delegation Intensity, Cognitive Vigilance, Cognitive Reallocation, Zone Classification (Zone 1 / Zone 2 / Zone 3). Based on Wang, S., & Zhang, H. (2026). "Pedagogical partnerships with generative AI in higher education: how dual cognitive pathways paradoxically enable transformative learning." *International Journal of Educational Technology in Higher Education*, 23:11. DOI [10.1186/s41239-026-00585-x](https://doi.org/10.1186/s41239-026-00585-x).
-- **Cross-model divergence flagged, not averaged**: when `ARS_CROSS_MODEL` is set the observer runs on both models; dimension disagreement > 2 points is reported rather than silently smoothed. `ARS_CROSS_MODEL_SAMPLE_INTERVAL` escape hatch for cost trade-off.
-- **Short-stage guard**: stages with fewer than 5 user turns inject a static `insufficient_evidence` block instead of dispatching the full-model observer.
-- **Anti-sycophancy discipline**: scores ≥ 7 require specific dialogue-turn citations; Zone 3 triggers re-audit; no motivational framing.
-- `academic-pipeline` SKILL version: `3.3.0 → 3.4.0`. Suite version bumped to `3.5.0`. New lint `scripts/check_collaboration_depth_rubric.py` + 10 tests.
-
-### v3.4.0 (2026-04-20) — Compliance Agent + Schema 12
-
-- **Compliance Agent** (shared): single mode-aware agent running PRISMA-trAIce 17 items (SR mode only) + RAISE 4 principles + 8-role matrix. Hooks existing Stage 2.5 / 4.5 Integrity Gates; tier-based block (Mandatory → block, HR → warn, R/O → info). Non-SR entries run principles-only, warn-only.
-- **Schema 12 compliance_report** appended to Material Passport via `compliance_history[]` (append-only).
-- **3-round user-override ladder** auto-injects `disclosure_addendum` into manuscript. No detection evasion possible.
-- **Calibration with transparent reporting**, no hard FNR/FPR gate — self-consistent with `task_type: open-ended`.
-- **Upstream freshness CI** warns on PRISMA-trAIce drift (non-blocking).
-- **Long-running session docs**: Material Passport as cross-session resume mechanism.
-
-### v3.3.6 (2026-04-15) — README Streamlining + ARCHITECTURE doc
-
-- Added `docs/ARCHITECTURE.md` as the single source of truth for pipeline structure (flow, matrix, data-access, dependency graph, quality gates, modes). Merged into main via PR #18.
-- Added `docs/SETUP.md` (prerequisites, API keys, Pandoc/tectonic, cross-model verification, installation methods) and `docs/PERFORMANCE.md` (token budgets, recommended Claude Code settings). README links to both instead of inlining them.
-- Streamlined README: removed the ASCII pipeline diagram and 16-point key-feature list (superseded by ARCHITECTURE.md); Skill Details section now anchors version numbers and points readers to ARCHITECTURE.md §3 for per-agent rosters.
-- Note: no functional change to any skill. Pure documentation reorganization. Suite version bumped to `3.3.6`.
-
-### v3.3.5 (2026-04-15)
-- Added `benchmark_report.schema.json` + `repro_lock` optional block on Material Passport. Both ship with pattern docs, lints, and examples. First formal Python dev dep manifest (`requirements-dev.txt`).
-
-### v3.3.4 (2026-04-15) — README Changelog Sync Patch
-
-- Synced the embedded changelog sections in `README.md` and `README.zh-TW.md` so they include the missing `v3.3.3` and `v3.3.2` release summaries.
-- Extended `scripts/check_spec_consistency.py` so future README changelog drift fails CI.
-### v3.3.3 (2026-04-15) — Release Prep + Lint Hardening
-
-- Hardened SKILL frontmatter linting: missing closing `---` fences now fail cleanly instead of being parsed as valid YAML.
-- Frontmatter that parses as valid YAML but not as a mapping now reports a readable error instead of crashing.
-- Fixed the broken showcase link for the post-publication audit report in both READMEs.
-- Added README relative-link validation to the spec consistency check so dead links fail CI.
-- Aligned the DOCX output contract across the docs: direct `.docx` generation is Pandoc-dependent, with Markdown + conversion instructions as fallback.
-- Prepared the `v3.3.3` release: suite version bump, `academic-paper` -> v3.0.2, `academic-pipeline` -> v3.2.2.
-
-### v3.3.2 (2026-04-15) — Data Access Levels + Task Type Metadata
-
-- Added `metadata.data_access_level` to all top-level `SKILL.md` files with enforced vocabulary: `raw`, `redacted`, `verified_only`.
-- Added `metadata.task_type` to all top-level `SKILL.md` files with enforced vocabulary: `open-ended`, `outcome-gradable`.
-- Added lint scripts and unit tests for both metadata fields, wired into the GitHub Actions spec consistency workflow.
-- Added `shared/ground_truth_isolation_pattern.md` and linked the new vocabulary from `shared/handoff_schemas.md`.
-
-### v3.3.1 (2026-04-14) — Spec Consistency Patch
-
-- Synced README, `.claude/CLAUDE.md`, `MODE_REGISTRY.md`, and `SKILL.md` files to the current mode counts and published skill versions.
-- Corrected cross-model wording: integrity sample checks and independent DA critique are implemented today; sixth-reviewer peer review remains planned.
-- Clarified adaptive checkpoint semantics so SLIM checkpoints still wait for explicit user confirmation.
-- Reaffirmed that Stage 2.5 and Stage 4.5 integrity gates cannot be skipped.
-- Added a lightweight spec consistency check and GitHub Actions workflow to catch future drift.
-
-### v3.3 (2026-04-09) — PaperOrchestra-Inspired Enhancements
-
-Integrates techniques from [PaperOrchestra](https://arxiv.org/abs/2604.05018) (Song, Song, Pfister & Yoon, 2026, Google).
-
-- **Semantic Scholar API Verification** — Tier 0 programmatic reference existence check via S2 API. Levenshtein >= 0.70 title matching, DOI mismatch detection, bibliography deduplication via S2 IDs. Graceful degradation if API unavailable.
-- **Anti-Leakage Protocol** — Knowledge Isolation Directive prioritizes session materials over LLM parametric memory. Flags `[MATERIAL GAP]` for missing content instead of filling from memory. Reduces Mode 5/6 failure risk.
-- **VLM Figure Verification** (optional) — Closed-loop verification of rendered figures using vision-capable LLM. 10-point checklist, max 2 refinement iterations.
-- **Score Trajectory Protocol** — Per-dimension rubric score delta tracking across revision rounds (7 dimensions). Detects regressions (delta < -3) and triggers mandatory checkpoint.
-- **Stage 2 Parallelization** — Visualization and argument building can run in parallel after outline completion.
-- New versions: deep-research v2.8, academic-paper v3.0, academic-pipeline v3.2
-
-### v3.2 (2026-04-09) — Lu 2026 Nature Integration
-
-Integrates insights from Lu et al. (2026, *Nature* 651:914-919) — the first end-to-end autonomous AI research system to pass blind peer review.
-
-- **7-mode AI Research Failure Mode Checklist** — blocks pipeline at Stage 2.5/4.5 on suspected implementation bugs, hallucinated results, shortcut reliance, bug-as-insight, methodology fabrication, frame-lock. Extends existing 5-type citation hallucination taxonomy.
-- **Reviewer Calibration Mode** (academic-paper-reviewer v1.8) — opt-in FNR/FPR/balanced-accuracy measurement against user-supplied gold set. 5× ensembling, cross-model default-on, session-scoped confidence disclosure.
-- **Disclosure Mode** (academic-paper v2.9) — venue-specific AI-usage statement generator. v1 covers ICLR, NeurIPS, Nature, Science, ACL, EMNLP.
-- **Early-Stopping Criterion** (academic-pipeline v3.1) — convergence check + budget transparency at pipeline start.
-- **Fidelity-Originality Mode Spectrum** — classifies all modes across 3 skills per Lu 2026 Fig 1c.
-- New versions: academic-paper v2.9, academic-paper-reviewer v1.8, academic-pipeline v3.1
-
-### v3.1.1 (2026-04-09) — IS Senior Scholars' Basket of 11
-
-External contributions: [@mchesbro1](https://github.com/mchesbro1) originally proposed and drafted the IS Basket of 8 journals ([Issue #5](https://github.com/Imbad0202/academic-research-skills/issues/5)); [@cloudenochcsis](https://github.com/cloudenochcsis) extended it to the full Senior Scholars' Basket of 11 ([Issue #7](https://github.com/Imbad0202/academic-research-skills/issues/7), [PR #8](https://github.com/Imbad0202/academic-research-skills/pull/8)). Updated `academic-paper-reviewer/references/top_journals_by_field.md` Section 7, adding *Decision Support Systems*, *Information & Management*, and *Information and Organization*. Source: [AIS Senior Scholars' List of Premier Journals](https://aisnet.org/page/SeniorScholarListofPremierJournals).
-
-### v3.1 (2026-04-06) — Anti-Context-Rot + Cognitive Frameworks + Lean Size
-
-Inspired by patterns from [aspi6246/Claude-Code-Skills-for-Academics](https://github.com/aspi6246/Claude-Code-Skills-for-Academics).
-
-**Wave 1: Anti-Context-Rot Anchors**
-- 29 explicit Anti-Patterns across all 4 skills (7-8 per skill, tabular format with "Why It Fails" + "Correct Behavior")
-- 22 IRON RULE markers on critical rules that must not be violated even in long conversations
-- Read-only constraint on academic-paper-reviewer (reviewers cannot modify the manuscript)
-
-**Wave 2: Traceability + Cognitive Frameworks + Reinforcement**
-- R&R Traceability Matrix (Schema 11): adds "Author's Claim" and "Verified?" columns to re-review output, enabling independent verification of revision claims
-- 3 cognitive framework reference files teaching agents "how to think" not just "what to do":
-  - `argumentation_reasoning_framework.md` — Toulmin model, Bradford Hill causal reasoning, inference to best explanation, epistemic status classification
-  - `review_quality_thinking.md` — three lenses (internal validity, external validity, contribution), common reviewer traps, calibration questions
-  - `writing_judgment_framework.md` — clarity test, reader's journey, discipline-specific voice, revision decision matrix
-- Mid-conversation reinforcement protocol: stage-specific IRON RULE + Anti-Pattern reminders at every pipeline transition
-- Self-check questions at every FULL checkpoint (citation integrity, sycophantic concession, quality trajectory, scope discipline, completeness)
-
-**Wave 3: Lean Skill Size**
-- SKILL.md total size reduced from 142KB to 85KB (−40%) by extracting detailed protocols to `references/` files
-- ~15 new reference files created (re-review protocol, guided mode, systematic review, process summary, external review, etc.)
-- All IRON RULE markers preserved in SKILL.md; detailed content loaded on demand
-- New versions: deep-research v2.7, academic-paper v2.8, academic-paper-reviewer v1.7, academic-pipeline v3.0
-
-### v3.0 (2026-04-03) — Anti-Sycophancy + Intent Detection + Dialogue Health
-- **Devil's Advocate Concession Threshold** (deep-research + academic-paper-reviewer): DA must score rebuttals 1-5 before responding. Concession only at ≥4. No consecutive concessions. Concession rate tracking. Frame-lock detection after each checkpoint.
-- **Attack Intensity Preservation** (academic-paper-reviewer): DA does not soften under pushback. Rebuttal assessment protocol with explicit deflection detection. Anti-sycophancy rules prevent persistent pushback from being treated as valid evidence.
-- **Intent Detection Layer** (deep-research socratic): Classifies user intent as exploratory vs. goal-oriented. Exploratory mode disables auto-convergence, raises max rounds, prohibits premature closure. Re-assesses every 3 turns.
-- **Dialogue Health Indicator** (deep-research socratic): Silent self-check every 5 turns for persistent agreement, conflict avoidance, premature convergence. Auto-injects challenges when agreement pattern detected.
-- **Cross-Model Verification Protocol** (shared, optional): Use GPT-5.4 Pro or Gemini 3.1 Pro for integrity verification sample cross-checks and independent DA critique. Sixth-reviewer peer review remains planned, not yet implemented. Activated by setting `ARS_CROSS_MODEL` env var — without it, everything works as before. See `shared/cross_model_verification.md` for full setup guide, API patterns, and cost estimates.
-- **AI Self-Reflection Report** (academic-pipeline Stage 6): Post-pipeline self-assessment of AI behavioral patterns — DA concession rate, checkpoint skip rate, health alerts, sycophancy risk rating (LOW/MEDIUM/HIGH), frame-lock incidents, convergence pattern analysis. Includes irony caveat: "this self-reflection is itself produced by the same AI that may have been sycophantic."
-- Origin: Discovered through a 4-round dialectic experiment where the DA conceded too quickly, the Socratic Mentor tried to converge prematurely, and the entire debate stayed locked in a frame the human set.
-- Versions: deep-research v2.5, academic-paper-reviewer v1.5, academic-pipeline v2.8
-
-### v2.9 (2026-03-27) — Style Calibration + Writing Quality Check
-- **Style Calibration** (academic-paper intake Step 10, optional): Provide 3+ past papers and the pipeline learns your writing voice — sentence rhythm, vocabulary preferences, citation integration style. Applied as a soft guide during drafting; discipline conventions always take priority. Priority system: discipline norms (hard) > journal conventions (strong) > personal style (soft). See `shared/style_calibration_protocol.md`
-- **Writing Quality Check** (`academic-paper/references/writing_quality_check.md`): Writing quality checklist applied during draft self-review. 5 categories: AI high-frequency term warnings (25 terms), punctuation pattern control (em dash ≤3), throat-clearing opener detection, structural pattern warnings (Rule of Three, uniform paragraphs, synonym cycling), and burstiness checks (sentence length variation). These are good writing rules — not detection evasion
-- **Style Profile** carried through academic-pipeline Material Passport (Schema 10 in `shared/handoff_schemas.md`)
-- **deep-research** report compiler also consumes both features optionally
-- Versions: academic-paper v2.5, deep-research v2.4, academic-pipeline v2.7
-
-### v2.8 (2026-03-22) — SCR Loop Phase 1: State-Challenge-Reflect
-- **Socratic Mentor Agent** (deep-research + academic-paper): SCR (State-Challenge-Reflect) protocol integration
-  - **Commitment Gates**: Collect user predictions before presenting evidence at each layer/chapter transition
-  - **Certainty-Triggered Contradiction**: Detect high-confidence language ("obviously", "clearly") and introduce counterpoints
-  - **Adaptive Intensity**: Track commitment accuracy, dynamically adjust challenge frequency
-  - **Self-Calibration Signal (S5)**: New convergence signal tracking user's self-calibration growth across dialogue
-  - **SCR Switch**: Users can say "skip the predictions" to disable or "turn predictions back on" to re-enable mid-dialogue; Socratic questioning continues normally
-- `deep-research/references/socratic_questioning_framework.md`: SCR Overlay Protocol mapping SCR phases to Socratic functions
-- Added `CHANGELOG.md`
-
-### v2.7 (2026-03-09) — Integrity Verification v2.0: Anti-Hallucination Overhaul
-- **integrity_verification_agent v2.0**: Anti-Hallucination Mandate (no AI memory verification), eliminated gray-zone classifications (VERIFIED/NOT_FOUND/MISMATCH only), mandatory WebSearch audit trail for every reference, Stage 4.5 fresh independent verification, Gray-Zone Prevention Rule
-- **Known Hallucination Patterns**: 5-type taxonomy (TF/PAC/IH/PH/SH) from GPTZero × NeurIPS 2025 study, 5 compound deception patterns, real-world case study, literature statistics
-- **Post-publication audit**: Full WebSearch verification of all 68 references found 21 issues (31% error rate) that passed 3 rounds of integrity checks — proving the necessity of external verification
-- **Paper corrections**: Removed 4 fabricated references, fixed 6 author errors, corrected 7 metadata errors, fixed 2 format issues
-
-### v2.6.2 (2026-03-09) — Intent-Based Mode Activation
-- **deep-research**: Socratic mode now uses **intent-based activation** instead of keyword matching. Works in any language — detects meaning (e.g., "user wants guided thinking") rather than matching specific strings.
-- **academic-paper**: Plan mode now uses **intent-based activation**. Detects intent signals like "user is uncertain how to start" or "user wants step-by-step guidance" in any language.
-- Both modes now have a **default rule**: when intent is ambiguous, prefer `socratic`/`plan` over `full` — safer to guide first.
-- Two-layer architecture: Layer 1 (skill activation) uses bilingual keywords for matching confidence; Layer 2 (mode routing) uses language-agnostic intent signals.
-
-### v2.6.1 (2026-03-09) — Trigger Keywords
-- **deep-research**: Added trigger keywords for general activation and Socratic mode.
-- **academic-paper**: Added trigger keywords and Plan Mode trigger section.
-- Both mode selection guides now include examples and misselection scenarios.
-
-### v2.6 / v2.4 / v1.4 (2026-03-08) — 15+ Improvements
-- **deep-research v2.3**: New systematic-review / PRISMA mode (7th); 3 new agents (risk_of_bias, meta_analysis, monitoring); PRISMA protocol/report templates; Socratic convergence criteria (4 signals + auto-end); Quick Mode Selection Guide
-- **academic-paper v2.4**: 2 new agents (visualization, revision_coach); revision tracking template with 4 status types; citation format conversion (APA↔Chicago↔MLA↔IEEE↔Vancouver); statistical visualization standards; Socratic convergence criteria; revision recovery example; **LaTeX output hardening** — mandatory `apa7` document class, text justification fix (`ragged2e` + `etoolbox`), table column width formula, abstract centering, standardized font stack (Times New Roman + Courier New), PDF via tectonic only
-- **academic-paper-reviewer v1.4**: Quality rubrics with 0-100 scoring and behavioral indicators; decision mapping (≥80 Accept, 65-79 Minor, 50-64 Major, <50 Reject); Quick Mode Selection Guide
-- **academic-pipeline v2.6**: Adaptive checkpoint system (FULL/SLIM/MANDATORY); Phase E Claim Verification in integrity checks; Material Passport for mid-entry provenance; cross-skill mode advisor (14 scenarios); team collaboration protocol; enhanced handoff schemas (9 schemas); integrity failure recovery example
-
-### v2.4 / v1.3 (2026-03-08)
-- **academic-pipeline v2.4**: New Stage 6 PROCESS SUMMARY — auto-generates structured paper creation process record (MD → LaTeX → PDF); mandatory final chapter: **Collaboration Quality Evaluation** with 6 dimensions scored 1–100 (Direction Setting, Intellectual Contribution, Quality Gatekeeping, Iteration Discipline, Delegation Efficiency, Meta-Learning), honest feedback, and improvement recommendations; pipeline expanded from 9 to 10 stages
-
-### v2.3 / v1.3 (2026-03-08)
-- **academic-pipeline v2.3**: Stage 5 FINALIZE now prompts for formatting style (APA 7.0 / Chicago / IEEE); PDF must compile from LaTeX via `tectonic` (no HTML-to-PDF); APA 7.0 uses `apa7` document class (`man` mode); font stack: Times New Roman + Courier New
-
-### v2.2 / v1.3 (2025-03-05)
-- **Cross-Agent Quality Alignment**: unified definitions (peer-reviewed, currency rule, CRITICAL severity, source tier) across all agents
-- **deep-research v2.2**: synthesis anti-patterns, Socratic auto-end conditions, DOI+WebSearch verification, enhanced ethics integrity check, mode transition matrix
-- **academic-paper v2.2**: 4-level argument scoring, plagiarism screening, 2 new failure paths (F11 Desk-Reject Recovery, F12 Conference-to-Journal), Plan→Full mode conversion
-- **academic-paper-reviewer v1.3**: DA vs R3 role boundaries, CRITICAL finding criteria, consensus classification (4/3/SPLIT/DA-CRITICAL), confidence score weighting, Asian & Regional Journals reference
-- **academic-pipeline v2.2**: checkpoint confirmation semantics, mode switching matrix, failure fallback matrix, state ownership protocol, material version control
-
-### v2.0.1 (2026-03)
-- **Simplify 4 SKILL.md** (-371 lines, -16.5%): remove cross-skill duplication, inline templates → file references, redundant routing tables, duplicate mode selection sections
-- Fix revision loop cap contradiction between academic-paper and academic-pipeline
+- **Umbral de Concesión del Abogado del Diablo** (investigacion-profunda + revisor-articulo-academico): El DA debe puntuar las refutaciones 1-5 antes de responder.
+- **Preservación de la Intensidad del Ataque** (revisor-articulo-academico): El DA no se ablanda ante el rechazo.
+- **Capa de Detección de Intención** (investigacion-profunda socrático): Clasifica la intención del usuario como exploratoria frente a orientada a objetivos.
+- **Indicador de Salud del Diálogo** (investigacion-profunda socrático): Autoverificación silenciosa cada 5 turnos.
 
 ### v2.0 (2026-02)
-- **academic-pipeline v2.0**: 5→9 stages, mandatory integrity verification, two-stage review, Socratic revision coaching, reproducibility guarantees
-- **academic-paper-reviewer v1.1**: +Devil's Advocate Reviewer (7th agent), +re-review mode (verification), +post-review Socratic coaching
-- New agent: `integrity_verification_agent` — 100% reference/data verification with audit trail
-- New agent: `devils_advocate_reviewer_agent` — 8-dimension thesis challenger
-- Output order: MD → DOCX via Pandoc when available (else instructions) → ask LaTeX → confirm → PDF
+
+- **pipeline-academico v2.0**: de 5 a 9 etapas, verificación de integridad obligatoria, revisión en dos etapas, coaching de revisión socrático.
+- **revisor-articulo-academico v1.1**: +Abogado del Diablo (7º agente), +modo re-review, +coaching socrático post-revisión.
+- Nuevo agente: `agente_verificacion_integridad` — verificación 100% de referencias/datos con rastro de auditoría.
+- Nuevo agente: `agente_revisor_abogado_diablo` — desafiador de tesis de 8 dimensiones.
 
 ### v1.0 (2026-02)
-- Initial release
-- deep-research v2.0 (10 agents, 6 modes including socratic)
-- academic-paper v2.0 (10 agents, 8 modes including plan)
-- academic-paper-reviewer v1.0 (6 agents, 4 modes including guided)
-- academic-pipeline v1.0 (orchestrator)
+
+- Lanzamiento inicial.
+- investigacion-profunda v2.0 (10 agentes, 6 modos incluyendo socrático).
+- articulo-academico v2.0 (10 agentes, 8 modos incluyendo plan).
+- revisor-articulo-academico v1.0 (6 agentes, 4 modos incluyendo guiado).
+- pipeline-academico v1.0 (orquestador).

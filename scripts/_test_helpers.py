@@ -33,7 +33,7 @@ def run_script(
 
 
 def run_skill_linter(script_path: Path, root: Path) -> subprocess.CompletedProcess[str]:
-    """Invoke a SKILL.md linter (--path arg + PYTHONPATH=scripts/)."""
+    """Invoke a HABILIDAD.md linter (--path arg + PYTHONPATH=scripts/)."""
     return run_script(
         script_path,
         "--path",

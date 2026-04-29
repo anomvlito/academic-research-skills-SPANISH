@@ -1,17 +1,17 @@
 {
-  "$schema_note": "Manifest of supported literature_corpus[] consumer agents. v3.6.5 release state: bibliography_agent (deep-research) + literature_strategist_agent (academic-paper).",
+  "$schema_note": "Manifest of supported literature_corpus[] consumer agents. v3.6.5 release state: agente_bibliografia (investigacion-profunda) + agente_estratega_literatura (articulo-academico).",
   "supported_consumers": [
     {
-      "agent_path": "deep-research/agents/bibliography_agent.md",
-      "agent_basename": "bibliography_agent",
-      "skill": "deep-research",
+      "agent_path": "investigacion-profunda/agentes/agente_bibliografia.md",
+      "agent_basename": "agente_bibliografia",
+      "skill": "investigacion-profunda",
       "since_version": "v3.6.5",
       "phase": "Phase 1"
     },
     {
-      "agent_path": "academic-paper/agents/literature_strategist_agent.md",
-      "agent_basename": "literature_strategist_agent",
-      "skill": "academic-paper",
+      "agent_path": "articulo-academico/agentes/agente_estratega_literatura.md",
+      "agent_basename": "agente_estratega_literatura",
+      "skill": "articulo-academico",
       "since_version": "v3.6.5",
       "phase": "Phase 1"
     }

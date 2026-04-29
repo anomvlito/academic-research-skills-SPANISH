@@ -80,7 +80,7 @@
                   "what_triggers_warn"
                 ]
               },
-              "$comment": "Codex P2-2: the four canonical Phase-1 fields are fixed by sprint_contract_protocol.md §4. minItems:4 + uniqueItems:true + enum-constrained items rejects empty lists, partial lists, and typoed entries (e.g. what_trigger_block) at CI time instead of letting them fail at runtime as Phase-1 lint."
+              "$comment": "Codex P2-2: the four canonical Phase-1 fields are fixed by sprint_contract_protocolo.md §4. minItems:4 + uniqueItems:true + enum-constrained items rejects empty lists, partial lists, and typoed entries (e.g. what_trigger_block) at CI time instead of letting them fail at runtime as Phase-1 lint."
             }
           }
         },

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/Imbad0202/academic-research-skills/shared/contracts/passport/reset_ledger_entry.schema.json",
   "title": "Passport Reset Ledger Entry",
-  "description": "One append-only ledger entry in reset_boundary[]. Two kinds: 'boundary' (recorded at a FULL checkpoint when ARS_PASSPORT_RESET=1) and 'resume' (recorded when resume_from_passport consumes a boundary entry). See academic-pipeline/references/passport_as_reset_boundary.md.",
+  "description": "One append-only ledger entry in reset_boundary[]. Two kinds: 'boundary' (recorded at a FULL checkpoint when ARS_PASSPORT_RESET=1) and 'resume' (recorded when resume_desde_pasaporte consumes a boundary entry). See pipeline-academico/referencias/passport_as_reset_boundary.md.",
   "oneOf": [
     { "$ref": "#/$defs/boundary" },
     { "$ref": "#/$defs/resume" }
@@ -66,7 +66,7 @@
         },
         "observer_snapshot_ref": {
           "type": "string",
-          "description": "Optional path or ID of the collaboration_depth_agent observer output for this checkpoint. Audit-only."
+          "description": "Optional path or ID of the agente_profundidad_colaboracion observer output for this checkpoint. Audit-only."
         },
         "pending_decision": {
           "type": "object",
@@ -103,7 +103,7 @@
                   }
                 }
               },
-              "description": "Enumerated decision branches. Each option carries its own routing: on resume, the orchestrator looks up chosen_branch in options[].value, then uses that entry's next_stage and next_mode to determine actual routing. The boundary entry's next field is advisory (best-guess default) and is superseded by the matched option's next_stage at resume time. CLI stage=/mode= overrides from resume_from_passport still win over option routing."
+              "description": "Enumerated decision branches. Each option carries its own routing: on resume, the orchestrator looks up chosen_branch in options[].value, then uses that entry's next_stage and next_mode to determine actual routing. The boundary entry's next field is advisory (best-guess default) and is superseded by the matched option's next_stage at resume time. CLI etapa=/mode= overrides from resume_desde_pasaporte still win over option routing."
             }
           },
           "description": "Set when the boundary co-occurs with a MANDATORY user decision (Stage 3 rejection, Stage 5 finalization, etc.). When present, resume must re-prompt the user. Each option carries its own next_stage/next_mode routing; the boundary entry's 'next' field is advisory only and is overridden by the matched option's next_stage at resume time."
@@ -122,7 +122,7 @@
       "properties": {
         "kind": {
           "const": "resume",
-          "description": "Discriminator. 'resume' = resume_from_passport consumed a prior boundary entry."
+          "description": "Discriminator. 'resume' = resume_desde_pasaporte consumed a prior boundary entry."
         },
         "consumes_hash": {
           "type": "string",

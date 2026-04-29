@@ -1,27 +1,22 @@
-# ARS Sprint Contracts
+# Contratos de Sprint de ARS
 
-Sprint contract templates for ARS v3.6.2+ reviewer hard-gate orchestration.
+Plantillas de contratos de sprint para la orquestación de la compuerta de revisores en ARS v3.6.2+.
 
-Schema: `shared/sprint_contract.schema.json` (Schema 13).
-Validator: `scripts/check_sprint_contract.py`.
-Spec: `docs/design/2026-04-23-ars-v3.6.2-sprint-contract-design.md`.
-Protocol: `academic-paper-reviewer/references/sprint_contract_protocol.md`.
+Esquema: `shared/sprint_contract.schema.json` (Esquema 13).
+Validador: `scripts/verificar_contrato_sprint.py`.
+Protocolo: `revisor-articulo-academico/referencias/protocolo_contrato_sprint.md`.
 
-## Shipped templates (v3.6.2)
+## Plantillas incluidas (v3.6.2)
 
-- `reviewer/full.json` — panel 5, 5 dimensions, 4 failure conditions
-- `reviewer/methodology_focus.json` — panel 2, 2 dimensions, 3 failure conditions
+- `revisor/completo.json` — panel 5, 5 dimensiones, 4 condiciones de fallo.
+- `revisor/foco_metodologia.json` — panel 2, 2 dimensiones, 3 condiciones de fallo.
 
-## Reserved reviewer modes without shipped templates
+## Modos de revisor reservados sin plantillas incluidas
 
-`reviewer_re_review`, `reviewer_calibration`, `reviewer_guided` are in the schema enum
-but ship without templates in v3.6.2. Those modes continue to operate in their existing
-form (no contract, no hard-gate) until a follow-up patch release adds their templates.
+Los modos `re-review`, `calibracion` y `guiado` están en el enum del esquema pero se distribuyen sin plantillas en v3.6.2. Estos modos continúan operando en su forma existente (sin contrato, sin compuerta rígida) hasta que una actualización posterior añada sus plantillas.
 
-## How to add a new template
+## Cómo añadir una nueva plantilla
 
-1. Add the file under `shared/contracts/<domain>/<mode>.json`.
-2. Run `python scripts/check_sprint_contract.py <path> --ars-version vX.Y.Z`; expect
-   zero errors and zero soft warnings.
-3. If `expression` strings use new phrasing, update `sprint_contract_protocol.md`
-   and the synthesizer prompt's recognised-pattern list in the same PR.
+1. Añade el archivo bajo `shared/contracts/<dominio>/<modo>.json`.
+2. Ejecuta `python scripts/verificar_contrato_sprint.py <ruta> --ars-version vX.Y.Z`.
+3. Si las cadenas de `expresion` usan nuevas frases, actualiza el protocolo del contrato de sprint y el prompt del sintetizador.
