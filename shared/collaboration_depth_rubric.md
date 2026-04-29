@@ -74,7 +74,7 @@ The rubric is **descriptive, not prescriptive**. It does not gate user progressi
 **What to score for**: when the user hands work to the agent, what does the user do with the freed capacity? Is it invested in reframing research questions, questioning assumptions, constructing original arguments, making judgment calls — or is it idle?
 
 **High-reallocation signals**:
-- After AI completes a subtask, user revisits higher-level framing (e.g., "looking at your draft, I now think the RQ should be X not Y")
+- After AI completes a subtask, user revisits higher-level framing (e.g., "looking at your draft, I now think the RQ debe ser X not Y")
 - User produces original synthesis not present in AI output
 - User introduces counter-arguments, frameworks, or perspectives the AI did not raise
 - User makes judgment calls that require context only the human has (stakeholder intent, institutional history, personal aesthetic)
@@ -100,7 +100,7 @@ The rubric is **descriptive, not prescriptive**. It does not gate user progressi
 | **Zone 2 — Shallow / Scattered** | Low–Mid | Low | Low–Mid | "Half-measures worse than no AI at all." Coordination overhead without meaningful cognitive savings. Empirically the worst outcome zone. |
 | **Zone 3 — Deep Partnership** | High | High | High | Committed strategic delegation **with** critical evaluation **and** reinvested higher-order reflection. The zone in which transformative learning empirically occurs. |
 
-**Scoring rule**: Zone 3 requires **all three** sub-dimensions to be high. Zone 2 is the default when at least one of Delegation Intensity or Cognitive Vigilance is low while AI is being used. Zone 1 is the default when AI is essentially unused in the dialogue window.
+**Scoring rule**: Zone 3 requires **all three** sub-dimensions to be high. Zone 2 is the default when al menos one of Delegation Intensity or Cognitive Vigilance is low while AI is being used. Zone 1 is the default when AI is essentially unused in the dialogue window.
 
 **Honest calibration** (anti-sycophancy): Zone 3 is empirically **rare**. Wang & Zhang's IPMA performance scores for CV (56.7) and HGP (54.2) — the two Zone 3 prerequisites — sit in the 55–60 range out of 100. A consumer agent should not default to Zone 3; if an aggregate score trends toward Zone 3, re-audit the dialogue for counter-evidence before finalizing.
 
@@ -130,11 +130,11 @@ Each of the first three dimensions is scored **0–10** (integer). Zone Classifi
 
 Any agent consuming this rubric **must** enforce:
 
-1. **Evidence requirement**: no dimension score ≥ 7 ("High") without at least one specific dialogue-turn citation from the scored session.
+1. **Evidence requirement**: no dimension score ≥ 7 ("High") without al menos one specific dialogue-turn citation from the scored session.
 2. **Forced counter-enumeration**: before finalizing scores, the agent lists ≥ 2 moments where the user could have gone deeper (even in high-scoring sessions).
 3. **Re-audit trigger**: if the aggregate Zone label comes out Zone 3, re-audit the dialogue for counter-evidence. Zone 3 is empirically rare; a fast Zone 3 call is usually wrong.
 4. **Descriptive language only**: no "great job!", no "needs improvement!". Report observed pattern + specific citable evidence.
-5. **Cross-model divergence flag**: if the consumer agent runs cross-model (e.g., via `ARS_CROSS_MODEL`), any dimension score disagreement > 2 points between models must be flagged in the output.
+5. **Cross-model divergence flag**: if the consumer agent runs cross-model (e.g., via `ARS_CROSS_MODEL`), any dimension score disagreement > 2 points between models debe ser flagged in the output.
 
 ## Explicitly out of scope
 
@@ -151,4 +151,4 @@ This rubric does **not**:
 
 `rubric_version` follows semver. Changes to dimension count, synthesis rule, or operationalisation language require a **minor** bump and a note in `CHANGELOG.md`. Example-refinement or phrasing changes are **patch** bumps.
 
-If a future paper supersedes or materially revises Wang & Zhang (2026)'s constructs, a **major** bump is required and the `paper_citation` field must be updated accordingly.
+If a future paper supersedes or materially revises Wang & Zhang (2026)'s constructs, a **major** bump es obligatorio and the `paper_citation` field debe ser updated accordingly.

@@ -33,7 +33,7 @@ guarantees anything it does not.
    of user-provided reference files, conditional branches, and dynamic prompt modifications
    are NOT reflected in the hash. This is a known imprecision.
 
-4. **`stochasticity_declaration` is required, not optional.** Omitting it makes the lock
+4. **`stochasticity_declaration` es obligatorio, not optional.** Omitting it makes the lock
    dishonest by implication. Every generated passport includes the declaration verbatim.
 
 If you want deterministic replay, you are reading the wrong pattern. This pattern gives
@@ -125,8 +125,8 @@ reproducible.
 - The integrity gate (Stage 2.5, Stage 4.5 in the academic pipeline) does NOT read
   `repro_lock`. The lock is for post-hoc reproducibility investigation, not runtime
   validation. Adding it does not change pipeline behavior.
-- `check_repro_lock.py` can be run standalone on any passport file. It is not wired into
-  the CI lint suite by default — it validates on-demand against specific passport files.
+- `check_repro_lock.py` puede ser run standalone on any passport file. It is not wired into
+  the CI lint suite por defecto — it validates on-demand against specific passport files.
 
 ## Red flags when reading a populated repro_lock
 
@@ -138,7 +138,7 @@ reproducible.
   the semantics are undefined.
 - Empty or stub hashes (`"sha256:"` prefix with no content, or a short placeholder string
   like `"sha256:abc123"`) — the generator was broken or the author filled in a placeholder.
-  Hashes should be 64-character hex strings for SHA-256.
+  Hashes debe ser 64-character hex strings for SHA-256.
 - `stochasticity_declaration` modified from the verbatim required string — the author is
   signalling they believe the lock is stronger than it is. Read the entire passport twice
   before trusting any claims about reproducibility.
@@ -149,7 +149,7 @@ At skill-load time, compute `skill_md_hash` over the SKILL.md content and
 `agents_bundle_hash` over the concatenated agent prompts (canonical ordering). Build the
 materials manifest by listing session files with their SHA-256 digests, sort by filename,
 then hash the JSON serialization. Write the block to the passport before handing off to
-downstream stages. The `stochasticity_declaration` must be included verbatim — do not
+downstream stages. The `stochasticity_declaration` debe ser included verbatim — do not
 paraphrase or abbreviate it.
 
 ## Honesty red line (restate)

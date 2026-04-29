@@ -1,6 +1,6 @@
 # IRB Decision Tree — Human Subjects Research Ethics Review Guide
 
-## Purpose
+## Propósito
 IRB (Institutional Review Board) ethics review decision tree and Taiwan process guide. Used by the ethics_review_agent to determine whether research involves human subjects, and by the research_architect_agent to plan IRB review during methodology design.
 
 ---
@@ -45,11 +45,11 @@ Does your research collect, use, or analyze data from humans?
 - [ ] Observation of public behavior (no identifiable information recorded)
 - [ ] Uses government public statistical data
 
-**Note**: Exempt review does not mean exempt from application — you must still submit to IRB to confirm exempt status.
+**Nota**: Exempt review does not mean exempt from application — you must still submit to IRB to confirm exempt status.
 
 ### 2.2 Expedited Review
 
-**Applicable Conditions** (all must be met):
+**Applicable Conditions** (all debe ser met):
 - [ ] Research risk is no greater than risks ordinarily encountered in daily life (minimal risk)
 - [ ] Does not involve vulnerable populations
 - [ ] Research methods are on the expedited review category list
@@ -213,7 +213,7 @@ Researcher Signature: __________ Date: __________
 | **Pseudonymization** | Replace with codes, retain a linkage table | Need to track during research process |
 | **Data generalization** | Convert precise values to ranges (e.g., age → age group) | Statistical analysis |
 | **Data masking** | Hide partial information (e.g., partially masked email) | Data display |
-| **k-anonymity** | Ensure each record is indistinguishable from at least k-1 other records | Dataset release |
+| **k-anonymity** | Ensure each record is indistinguishable from al menos k-1 other records | Dataset release |
 
 ### 6.2 Common Privacy Risks in Higher Education Research
 

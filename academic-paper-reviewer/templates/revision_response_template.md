@@ -4,7 +4,7 @@ This template helps authors systematically respond to all review comments. The f
 
 ---
 
-## Instructions
+## Instrucciones
 
 1. Every reviewer comment must receive a response; none may be skipped
 2. If you disagree with a comment, you must explain your reasoning (not simply "disagree")
@@ -13,7 +13,7 @@ This template helps authors systematically respond to all review comments. The f
 
 ---
 
-## Template
+## Plantilla
 
 ```markdown
 # Response to Reviewer Comments
@@ -69,7 +69,7 @@ This template helps authors systematically respond to all review comments. The f
 
 ---
 
-## Response to Reviewer 1 (Methodology)
+## Response to Reviewer 1 (Metodología)
 
 ### Strengths Acknowledged
 We thank Reviewer 1 for acknowledging the following aspects:
@@ -181,11 +181,11 @@ We thank Reviewer 1 for acknowledging the following aspects:
 
 | Page (Original) | Page (Revised) | Section | Change Description |
 |-----------------|---------------|---------|-------------------|
-| p.3 | p.3-4 | Introduction | Added research motivation paragraph |
-| p.7-8 | p.8-9 | Methodology | Supplemented sampling strategy description |
-| p.12 | p.13 | Results | Added Table 4 (effect sizes) |
-| — | p.16-17 | Discussion | Added limitations discussion subsection |
-| p.20-22 | p.23-25 | References | Added 8 new references |
+| p.3 | p.3-4 | Introducción | Added research motivation paragraph |
+| p.7-8 | p.8-9 | Metodología | Supplemented sampling strategy description |
+| p.12 | p.13 | Resultados | Added Table 4 (effect sizes) |
+| — | p.16-17 | Discusión | Added limitations discussion subsection |
+| p.20-22 | p.23-25 | Referencias | Added 8 new references |
 
 ### Word Count Change
 - **Original**: [X] words
@@ -230,9 +230,9 @@ We sincerely appreciate the reviewers' thoughtful and constructive feedback, whi
 **Author Response**: We appreciate the Reviewer's suggestion. Our reasons for choosing Method Y over Method X are as follows:
 1. Method Y performs better when handling [specific type of] data (Smith et al., 2023)
 2. In our research design, the assumptions of Method X (such as [assumption]) are not satisfied
-3. However, we have added a robustness check using Method X in the revised manuscript (Appendix B), and the results are consistent.
+3. However, we have added a robustness check using Method X in the revised manuscript (Apéndice B), and the results are consistent.
 
-**Changes Made**: Added Appendix B (pp.25-26), containing robustness check results using Method X. Added justification for choosing Method Y in the methodology section (p.9, para.3).
+**Changes Made**: Added Apéndice B (pp.25-26), containing robustness check results using Method X. Added justification for choosing Method Y in the methodology section (p.9, para.3).
 
 # Incorrect approach
 > Reviewer: Suggest using Method X instead of Method Y

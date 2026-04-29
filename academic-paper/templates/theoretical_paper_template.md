@@ -9,7 +9,7 @@ This template provides the skeleton for a paper that develops, critiques, or ext
 
 **Author(s):** [Author Name(s)]
 **Affiliation(s):** [Department, Institution]
-**Date:** [Date]
+**Date:** [Fecha]
 
 ---
 
@@ -25,7 +25,7 @@ This template provides the skeleton for a paper that develops, critiques, or ext
 
 ---
 
-## 1. Introduction
+## 1. Introducción
 
 ### 1.1 The Theoretical Problem
 [What theoretical issue or gap motivates this paper?]
@@ -99,7 +99,7 @@ This template provides the skeleton for a paper that develops, critiques, or ext
 
 ---
 
-## 6. Conclusion
+## 6. Conclusión
 
 ### 6.1 Summary of Contribution
 [1 paragraph restating the paper's key contribution.]
@@ -115,5 +115,5 @@ This template provides the skeleton for a paper that develops, critiques, or ext
 ## AI Disclosure
 [Standard AI disclosure statement.]
 
-## References
+## Referencias
 [Complete reference list.]

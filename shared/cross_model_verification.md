@@ -1,8 +1,8 @@
 # Cross-Model Verification Protocol (v3.0)
 
-## Overview
+## Descripción General
 
-This protocol enables optional cross-model verification for high-stakes AI judgments. When enabled, a second AI model independently reviews outputs from the primary model, reducing shared-bias blind spots.
+Este protocolo enables optional cross-model verification for high-stakes AI judgments. When enabled, a second AI model independently reviews outputs from the primary model, reducing shared-bias blind spots.
 
 **This is entirely optional.** All ARS skills work with Claude Opus 4.7 alone. Cross-model verification is an additional layer for users who want higher confidence in integrity checks, devil's advocate challenges, and review judgments.
 
@@ -31,7 +31,7 @@ Using two non-Anthropic models as primary+verifier is possible but not tested wi
 
 ### Prerequisites
 
-You need API keys from at least one additional provider. ARS itself runs inside Claude Code, so Claude is always available as the primary model.
+You need API keys from al menos one additional provider. ARS itself runs inside Claude Code, so Claude is always available as the primary model.
 
 ### Step 1: Get API Keys
 
@@ -187,7 +187,7 @@ curl -s https://api.openai.com/v1/chat/completions \
 ### Google Gemini (Gemini 3.1 Pro)
 
 ```bash
-# PROMPT must be set before calling. Use jq to JSON-escape it.
+# PROMPT debe ser set before calling. Use jq to JSON-escape it.
 curl -s "https://generativelanguage.googleapis.com/v1beta/models/${ARS_CROSS_MODEL}:generateContent?key=$GOOGLE_AI_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{

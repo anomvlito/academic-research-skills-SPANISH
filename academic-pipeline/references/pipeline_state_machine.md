@@ -1,6 +1,6 @@
 # Pipeline State Machine v2.0 — Complete Definition
 
-This document defines all legal states, transition conditions, transition actions, and exception handling for academic-pipeline v2.0.
+Este documento defines all legal states, transition conditions, transition actions, and exception handling for academic-pipeline v2.0.
 
 ---
 
@@ -21,7 +21,7 @@ This document defines all legal states, transition conditions, transition action
 | State | Description |
 |-------|------------|
 | `initializing` | Detecting entry point and materials |
-| `running` | Pipeline executing (at least one stage is in_progress) |
+| `running` | Pipeline executing (al menos one stage is in_progress) |
 | `awaiting_confirmation` | Stage complete, waiting for user to confirm checkpoint |
 | `paused` | User paused, can resume at any time |
 | `completed` | All required stages complete, final paper produced |
@@ -182,7 +182,7 @@ This document defines all legal states, transition conditions, transition action
 |------|----|--------|
 | Stage 1 | Stage 3 | Cannot skip Stage 2 and 2.5 (unless mid-entry + has paper) |
 | Stage 2 | Stage 3 | **Cannot skip Stage 2.5 (integrity check is mandatory)** |
-| Stage 4 | Stage 5 | Cannot skip RE-REVIEW (revision must be re-reviewed) |
+| Stage 4 | Stage 5 | Cannot skip RE-REVIEW (revision debe ser re-reviewed) |
 | Stage 3' | Stage 5 | **Cannot skip Stage 4.5 (final integrity check is mandatory)** |
 | Stage 4' | Stage 3' | Cannot return to RE-REVIEW (max 1 round of RE-REVISE) |
 | Stage 5 | Stage 3 | Cannot roll back (no review after FINALIZE) |
@@ -198,9 +198,9 @@ This document defines all legal states, transition conditions, transition action
 | Methodology Blueprint | Stage 1 | Stage 2 (Phase 0) | Recommended |
 | Bibliography | Stage 1 | Stage 2 (Phase 1) | Recommended |
 | Synthesis Report | Stage 1 | Stage 2 (Phase 3) | Recommended |
-| Paper Draft | Stage 2 | Stage 2.5 (input) | **Required** |
-| **Integrity Report (Pre)** | **Stage 2.5** | **Stage 3 (prerequisite)** | **Required** |
-| **Verified Paper Draft** | **Stage 2.5** | **Stage 3 (Phase 0)** | **Required** |
+| Paper Draft | Stage 2 | Stage 2.5 (input) | **Obligatorio** |
+| **Integrity Report (Pre)** | **Stage 2.5** | **Stage 3 (prerequisite)** | **Obligatorio** |
+| **Verified Paper Draft** | **Stage 2.5** | **Stage 3 (Phase 0)** | **Obligatorio** |
 | Review Reports (x5) | Stage 3 | Stage 4 (input) | Required |
 | Editorial Decision | Stage 3 | Stage 4 (input) | Required |
 | Revision Roadmap | Stage 3 | Stage 4 (input) | Required |
@@ -208,7 +208,7 @@ This document defines all legal states, transition conditions, transition action
 | Response to Reviewers | Stage 4 | Stage 3' (input) | Recommended |
 | **Re-Review Report** | **Stage 3'** | **Stage 4' (input)** | **Required (if Major)** |
 | **Re-Revised Draft** | **Stage 4'** | **Stage 4.5 (input)** | **Required (if executed)** |
-| **Integrity Report (Final)** | **Stage 4.5** | **Stage 5 (prerequisite)** | **Required** |
+| **Integrity Report (Final)** | **Stage 4.5** | **Stage 5 (prerequisite)** | **Obligatorio** |
 | Final Paper | Stage 5 | END (delivery) | Required |
 
 ---

@@ -25,7 +25,7 @@ This template provides the skeleton for a concise conference paper presenting re
 
 ---
 
-## 1. Introduction
+## 1. Introducción
 
 ### 1.1 Problem and Motivation
 [What problem does this research address? Why is it important?]
@@ -54,7 +54,7 @@ This template provides the skeleton for a concise conference paper presenting re
 
 ---
 
-## 3. Approach / Methodology
+## 3. Approach / Metodología
 
 ### 3.1 Research Design
 [What method was used and why?]
@@ -67,7 +67,7 @@ This template provides the skeleton for a concise conference paper presenting re
 
 ---
 
-## 4. Results
+## 4. Resultados
 
 ### 4.1 [Key Finding 1]
 [Present results with supporting evidence (tables, figures).]
@@ -80,7 +80,7 @@ This template provides the skeleton for a concise conference paper presenting re
 
 ---
 
-## 5. Discussion
+## 5. Discusión
 
 ### 5.1 Interpretation
 [What do the results mean? How do they relate to existing knowledge?]
@@ -90,7 +90,7 @@ This template provides the skeleton for a concise conference paper presenting re
 
 ---
 
-## 6. Conclusion and Future Work
+## 6. Conclusión and Future Work
 
 [Summary of contribution: 1-2 sentences.]
 [Practical implications: 1 sentence.]
@@ -101,8 +101,8 @@ This template provides the skeleton for a concise conference paper presenting re
 ## AI Disclosure
 [Standard AI disclosure statement.]
 
-## Acknowledgments
+## Agradecimientos
 [Funding sources, collaborators, reviewers.]
 
-## References
+## Referencias
 [Complete reference list. Conference papers typically have 15-25 references.]

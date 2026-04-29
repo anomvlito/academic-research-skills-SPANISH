@@ -6,7 +6,7 @@
 
 ---
 
-## Purpose
+## Propósito
 
 After the visualization_agent generates a figure, an optional verification loop uses a vision-capable LLM to check the rendered figure against the paper's data and APA 7.0 standards. This catches issues invisible in code review: truncated labels, overlapping text, incorrect data rendering, misleading scales.
 
@@ -17,8 +17,8 @@ Inspired by PaperOrchestra's Plotting Agent (Song et al., 2026), which uses a "V
 ## When to use
 
 - **Recommended**: When figures contain complex data (multi-panel, many categories, statistical plots)
-- **Optional**: For simple figures (single bar chart, basic line plot)
-- **Required**: When the pipeline is in `final-check` mode (Stage 4.5+)
+- **Opcional**: For simple figures (single bar chart, basic line plot)
+- **Obligatorio**: When the pipeline is in `final-check` mode (Stage 4.5+)
 - **Skip**: When no multimodal capability is available (graceful degradation)
 
 ---
@@ -28,7 +28,7 @@ Inspired by PaperOrchestra's Plotting Agent (Song et al., 2026), which uses a "V
 The VLM receives the rendered figure image and the source data, then checks:
 
 ### Data Accuracy
-1. Do the plotted values visually match the source data? (e.g., a bar labeled "45%" should be approximately 45% of the axis range)
+1. Do the plotted values visually match the source data? (e.g., a bar labeled "45%" debe ser approximately 45% of the axis range)
 2. Are all data series present? (no missing categories or groups)
 3. Do error bars / confidence intervals appear correct in scale?
 
@@ -65,7 +65,7 @@ Step 6: If all PASS or max iterations reached:
 
 ---
 
-## Output Addition to Figure Package
+## Salida Addition to Figure Package
 
 When VLM verification is run, the Figure Package (from visualization_agent) includes:
 
@@ -80,7 +80,7 @@ When VLM verification is run, the Figure Package (from visualization_agent) incl
 
 ---
 
-## References
+## Referencias
 
 - Song, Y. et al. (2026). PaperOrchestra. *arXiv:2604.05018*. — Section 4 Step 2 (Plotting Agent with VLM critic).
 - Zhu, D. et al. (2026). PaperBanana: Automating academic illustration for AI scientists. *arXiv:2601.23265*. — Closed-loop VLM refinement system.

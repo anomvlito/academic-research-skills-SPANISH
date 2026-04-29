@@ -1,6 +1,6 @@
-# Passport as Reset Boundary (v3.6.3)
+# Passport como Límite de Reinicio (v3.6.3)
 
-## Purpose
+## Propósito
 
 Defines how `pipeline_orchestrator_agent` converts FULL checkpoints into reset boundaries when `ARS_PASSPORT_RESET=1` is set. This is the authoritative protocol; any divergent behavior in agent prompts is a bug.
 
@@ -14,7 +14,7 @@ Defines how `pipeline_orchestrator_agent` converts FULL checkpoints into reset b
 
 MANDATORY checkpoints (integrity Stage 2.5 / 4.5, review decisions, Stage 5 finalization) are orthogonal: reset can co-occur with MANDATORY. SLIM checkpoints never trigger reset.
 
-## The reset boundary protocol
+## El protocolo de límite de reinicio
 
 When the orchestrator reaches a FULL checkpoint with the flag ON:
 
@@ -35,13 +35,13 @@ When the orchestrator reaches a FULL checkpoint with the flag ON:
      ```
      resume_from_passport=<hash>
      ```
-   - A one-line note that the next stage should be invoked in a fresh Claude Code session to realize the token-savings intent.
+   - A one-line note that the next stage debe ser invoked in a fresh Claude Code session to realize the token-savings intent.
 5. **Halt after emission.** The orchestrator stops after emitting the reset boundary and awaits resume in a fresh session.
 6. **In-session override (non-SR modes).** If the user pastes `continue` in the same session, the orchestrator acknowledges but treats the passport as the only input to the next stage. Working-memory content from prior turns is non-authoritative and must not be replayed.
 7. **Systematic-review hard stop.** In `systematic-review` mode, in-session continuation is refused outright. The orchestrator repeats the Resume Instruction and asks the user to start a fresh session.
 8. **Pending MANDATORY decision.** If the reset co-occurs with a MANDATORY checkpoint that requires a user decision with multiple valid branches (e.g., Stage 3 review outcome: `revise` / `restructure` / `abort`; Stage 5 finalization format choice), the orchestrator sets `pending_decision` on the ledger entry. Each option is an object with required fields `value` (branch identifier) and `next_stage` (stage to route to, or `null` to terminate), plus optional `next_mode` for downstream mode override. On resume, the orchestrator looks up the user's chosen `value` in `options[]` and uses that entry's `next_stage`/`next_mode` to determine actual routing. The boundary entry's `next` field is populated as a best-guess default only; it is advisory and is superseded by the matched option's `next_stage` at resume time. `next` must NOT be used to auto-advance when `pending_decision` is present. `next` MAY be `null` when all branches of `pending_decision` terminate or when no sensible default exists.
 
-## `resume_from_passport` mode contract
+## Contrato del modo `resume_from_passport`
 
 Invocation shape (prompt-layer, user-pasted or auto-dispatched in a new session):
 
@@ -77,7 +77,7 @@ Material Passport ledger (`compliance_history[]` + new `reset_boundary` entries)
 
 A `boundary` entry with hash `H` is considered **awaiting resume** iff no `resume` entry exists later in the ledger with `consumes_hash == H`. Downstream readers (state machine, observers, external audit tools) compute this by a single pass over `reset_boundary[]` — no out-of-band state required.
 
-## Concurrency model
+## Modelo de concurrencia
 
 Resume consumption is a three-step read-modify-write on the passport ledger:
 
@@ -87,7 +87,7 @@ Resume consumption is a three-step read-modify-write on the passport ledger:
 
 Without coordination, two processes can complete step 2 in parallel before either reaches step 3, both observe "no prior resume", and both append. The append-only-ledger invariant survives, but the "one boundary, one resume" invariant breaks. To prevent this, every compliant orchestrator implementation MUST hold an exclusive advisory lock on the passport file for the entire read-check-append sequence.
 
-**POSIX requirement.** On POSIX systems the lock is an `fcntl` exclusive advisory lock (`fcntl.flock(fd, fcntl.LOCK_EX)` in Python, `flock(fd, LOCK_EX)` in C). Acquire before step 1, release after step 3. Do not release between steps under any circumstance. Releasing between steps 2 and 3 reopens the exact race this rule prevents.
+**POSIX requirement.** On POSIX systems the lock is an `fcntl` exclusive advisory lock (`fcntl.flock(fd, fcntl.LOCK_EX)` in Python, `flock(fd, LOCK_EX)` in C). Acquire before step 1, release after step 3. No release between steps under any circumstance. Releasing between steps 2 and 3 reopens the exact race this rule prevents.
 
 **Lock timeout.** Acquisition MUST use a bounded timeout not exceeding 60 seconds; 30 seconds is RECOMMENDED. The passport write is a few-KB append and fsync, so this bound is two orders of magnitude above any reasonable write latency. 60 s is the hard ceiling because a user waiting longer will assume the orchestrator hung; 30 s leaves slack for slow fsync on NFS or sandboxed filesystems. A timeout at this scale indicates a stuck or crashed peer rather than lock contention. Timeout is a hard error; the orchestrator surfaces it to the user with a "passport locked by another session" message and does NOT retry automatically.
 
@@ -95,7 +95,7 @@ Without coordination, two processes can complete step 2 in parallel before eithe
 
 **Observability.** The lock is advisory: external readers that don't honor the protocol can still read the passport. Only cooperating writers get safety. This is acceptable because the passport is intended to be consumed by one tool family (ARS-compatible orchestrators).
 
-## Iron rules
+## Reglas de Hierro
 
 1. Flag OFF is pre-v3.6.3 behavior, bit-for-bit.
 2. Ledger is append-only. No exception, no "clean up" operation.
@@ -112,7 +112,7 @@ Without coordination, two processes can complete step 2 in parallel before eithe
 - **Collaboration Depth Observer (v3.5.0):** fires on FULL/SLIM as before. Observer output is included in the checkpoint notification regardless of reset state. Observer state does NOT carry across resets; each fresh session observes only its own stage.
 - **Compliance agent (v3.4.0):** `compliance_history[]` remains append-only and is consumed from the passport on resume. No change to Schema 12.
 - **Sprint contract (v3.6.2):** reviewer sprint contracts load from the passport on resume (Phase 1 paper-content-blind stage remains valid across the reset boundary because the contract + paper metadata are carried in the passport).
-- **Socratic reading probe (v3.5.1):** reading probe fires at most once per session. Across a reset boundary, the probe counter resets — the next session may fire its own probe. This is by design: each session is its own Socratic unit.
+- **Socratic reading probe (v3.5.1):** reading probe fires como máximo once per session. Across a reset boundary, the probe counter resets — the next session may fire its own probe. This is by design: each session is its own Socratic unit.
 
 ## What this protocol does NOT do
 

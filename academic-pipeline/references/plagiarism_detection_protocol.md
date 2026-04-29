@@ -1,6 +1,6 @@
 # Plagiarism Detection Protocol — Phase D Originality Verification Protocol
 
-This document defines the complete execution protocol for `integrity_verification_agent`'s Phase D (originality verification), including paragraph-level comparison, self-plagiarism check, AI-generated text characteristic detection, severity grading, and tool limitation disclaimers.
+Este documento defines the complete execution protocol for `integrity_verification_agent`'s Phase D (originality verification), including paragraph-level comparison, self-plagiarism check, AI-generated text characteristic detection, severity grading, and tool limitation disclaimers.
 
 ---
 
@@ -8,7 +8,7 @@ This document defines the complete execution protocol for `integrity_verificatio
 
 Phase D's purpose is to perform originality screening on body text content before paper submission for review and after revision completion. Unlike Phases A-C which focus on "whether citations and data are correct," Phase D focuses on "whether the body text itself is originally written."
 
-**Core principle: Heuristic screening, not final determination.** This protocol uses WebSearch for publicly available literature comparison. Results are preliminary screening signals and do not equate to conclusions from professional plagiarism detection software.
+**Core principle: Heuristic screening, not final determination.** Este protocolo uses WebSearch for publicly available literature comparison. Results are preliminary screening signals and do not equate to conclusions from professional plagiarism detection software.
 
 ---
 
@@ -57,7 +57,7 @@ For each extracted characteristic sentence:
 - Priority check: Literature Review, Background, Discussion and other high-risk sections
 - Must cover: At least 1 paragraph sampled from each major chapter
 - Random supplement: Beyond priority paragraphs, randomly sample paragraphs to reach minimum sampling rate
-- Revised paragraphs: In Mode 2, all paragraphs newly added or substantially modified during revision must be checked 100%
+- Revised paragraphs: In Mode 2, all paragraphs newly added or substantially modified during revision debe ser checked 100%
 
 ---
 
@@ -96,13 +96,13 @@ Compare current paper with author's existing publications (focus on these areas)
 | Cites prior work but verbatim copies original text | **Self-plagiarism** | Even with citation, extensive verbatim copying is unacceptable |
 | Content highly similar to prior work without citing it | **Self-plagiarism** | Conceals relationship with prior work |
 | Uses prior work's data but re-analyzes | **Legitimate** | Secondary analysis is a legitimate research method — must clearly state this |
-| Methodology reuses prior work's standardized description | **Gray area** | Standardized experimental procedure descriptions allow high similarity, but citing prior work is recommended |
+| Methodology reuses prior work's standardized description | **Gray area** | Standardized experimental procedure descriptions allow high similarity, but citing prior work se recomienda |
 
 ---
 
 ## D3: AI-Generated Text Characteristic Detection
 
-**Important disclaimer: This section is a checklist, not a determination tool.** AI text detection technology is not yet mature, and any judgment based on text characteristics has a high false-positive risk. The following indicators are for reference only and should not serve as the basis for final determination.
+**Important disclaimer: Esta sección is a checklist, not a determination tool.** AI text detection technology is not yet mature, and any judgment based on text characteristics has a high false-positive risk. The following indicators are for reference only and should not serve as the basis for final determination.
 
 ### D3.1 Typical AI Writing Pattern Indicators
 
@@ -110,7 +110,7 @@ Compare current paper with author's existing publications (focus on these areas)
 |---|-----------|------------|-------------------|
 | 1 | Excessive smoothness | Abnormally uniform sentence fluency throughout, lacking natural writing rhythm variation | Compare whether writing style across chapters is overly consistent |
 | 2 | Lack of specificity | Arguments remain at conceptual level, lacking specific numbers, cases, or personal research experience | Check for "for example" followed by vague content |
-| 3 | Formulaic transitions | Heavy use of "Furthermore," "Moreover," "It is worth noting that" and similar transitions | Count the variety and frequency of transition phrases |
+| 3 | Formulaic transitions | Heavy use of "Además," "Moreover," "It is worth noting that" and similar transitions | Count the variety and frequency of transition phrases |
 | 4 | Excessive parallelism | Highly symmetric paragraph structures (e.g., every paragraph follows: claim -> evidence -> summary) | Observe whether paragraph structure mechanically repeats |
 | 5 | Hedging overload | Excessive use of "may," "could," "might," "it is possible that" to avoid definitive positions | Check whether author over-hedges even on their own research results |
 | 6 | Citation-argument gap | Literature is cited but the cited content is not organically integrated with the author's arguments | Remove citations — does the paragraph's argument still hold? |
@@ -149,22 +149,22 @@ If the paper triggers 2 or more AI writing indicators:
 
 ## Tool Limitation Disclaimer
 
-This protocol's originality verification has the following inherent limitations that users must be aware of:
+Este protocolo's originality verification has the following inherent limitations that users debe ser aware of:
 
 | # | Limitation | Description |
 |---|-----------|------------|
-| 1 | **Not professional plagiarism detection software** | This protocol uses WebSearch for heuristic comparison, not Turnitin, iThenticate, or other professional tools — cannot calculate precise text overlap rates |
+| 1 | **Not professional plagiarism detection software** | Este protocolo uses WebSearch for heuristic comparison, not Turnitin, iThenticate, or other professional tools — cannot calculate precise text overlap rates |
 | 2 | **Limited coverage** | Can only compare publicly searchable literature (open access, preprints, web pages) — cannot search full-text databases behind paywalls |
 | 3 | **Language limitation** | Cross-language plagiarism (e.g., plagiarism via translation) is difficult to detect |
 | 4 | **Sampling, not exhaustive** | Limited by efficiency, only 30%-50% of paragraphs are sampled — missed detection risk exists |
 | 5 | **Time sensitivity** | Search results change over time; newly published literature may not be in search scope |
 | 6 | **AI detection unreliable** | D3's AI writing indicators are heuristic alerts with high false-positive rates and should not serve as determination basis |
 
-**Recommendation**: This protocol's results serve as preliminary screening. It is recommended to use professional plagiarism detection tools (such as Turnitin / iThenticate) for complete duplicate checking before formal submission.
+**Recommendation**: Este protocolo's results serve as preliminary screening. It se recomienda to use professional plagiarism detection tools (such as Turnitin / iThenticate) for complete duplicate checking before formal submission.
 
 ---
 
-## Output Format Template
+## Salida Format Template
 
 ```markdown
 ## Phase D: Originality Verification Results
@@ -209,7 +209,7 @@ Indicators triggered: X / 6 ([Below threshold, not flagged / Threshold reached, 
 
 ### Tool Limitation Disclaimer
 
-> This originality verification uses WebSearch for heuristic comparison and is not professional plagiarism detection software (such as Turnitin / iThenticate). Coverage is limited to publicly searchable literature, with a sampling rate of [Z]%, and there is a risk of missed detection. These results serve as preliminary screening; it is recommended to use professional plagiarism detection tools for complete duplicate checking before formal submission.
+> This originality verification uses WebSearch for heuristic comparison and is not professional plagiarism detection software (such as Turnitin / iThenticate). Coverage is limited to publicly searchable literature, with a sampling rate of [Z]%, and there is a risk of missed detection. These results serve as preliminary screening; it se recomienda to use professional plagiarism detection tools for complete duplicate checking before formal submission.
 ```
 
 ---

@@ -1,6 +1,6 @@
 # Interdisciplinary Bridges — Cross-Discipline Connection Patterns
 
-## Purpose
+## Propósito
 Reference for identifying connections across academic disciplines. Used by the synthesis_agent and research_architect_agent to enrich analysis with cross-disciplinary perspectives.
 
 ## Why Interdisciplinary Bridges Matter
@@ -140,7 +140,7 @@ The same real-world problem, redefined from different disciplinary perspectives,
 | Economics | Insufficient expected returns on educational investment | Human capital, opportunity cost, expected income | Cost-benefit analysis, regression analysis | Scholarships, tuition reduction, improving graduate employment rates |
 | Sociology | Reproduction of structural social inequality | Social capital, cultural capital, class reproduction | Qualitative interviews, statistical analysis | Social support networks, first-generation college student programs |
 | Psychology | Insufficient self-efficacy and sense of belonging | Self-efficacy, sense of belonging, growth mindset | Scale administration, experimental design | Psychological counseling, growth mindset interventions, peer support |
-| Data Science | High-risk students can be predicted from historical data | Predictive models, early warning indicators | Machine learning, survival analysis | Early warning systems, automated intervention notifications |
+| Data Science | High-risk students puede ser predicted from historical data | Predictive models, early warning indicators | Machine learning, survival analysis | Early warning systems, automated intervention notifications |
 
 **Interdisciplinary Integration Perspective**: The most effective dropout prevention does not approach the problem from a single discipline; rather, it combines financial support (economics) + learning support (education) + psychological counseling (psychology) + early warning systems (data science) + social support networks (sociology).
 
@@ -191,7 +191,7 @@ The same real-world problem, redefined from different disciplinary perspectives,
 - What kind of answers would they give?
 - How do their answers complement or contradict those from my own discipline?
 
-**Step 5: Find at least one method or concept you can borrow**
+**Step 5: Find al menos one method or concept you can borrow**
 - You don't need to go deep into every discipline — finding one valuable borrowing is enough
 - When borrowing, "translate" it: explain in your own discipline's language why you're borrowing this concept/method
 - Describe what adaptations you made (see Pattern 5 Methodological Transfer)

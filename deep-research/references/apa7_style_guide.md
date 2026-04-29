@@ -1,6 +1,6 @@
 # APA 7th Edition — Quick Reference Guide
 
-## Purpose
+## Propósito
 Quick reference for APA 7.0 formatting used by the report_compiler_agent and editor_in_chief_agent.
 
 ## Document Formatting
@@ -48,7 +48,7 @@ Quick reference for APA 7.0 formatting used by the report_compiler_agent and edi
 - Required for direct quotes: p. X or pp. X–Y
 - Encouraged for paraphrases from long works
 
-## Reference List
+## Referencia List
 
 ### General Rules
 - Heading: "References" (Level 1 heading)

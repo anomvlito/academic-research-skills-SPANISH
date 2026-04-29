@@ -74,7 +74,7 @@ This also extends the existing 5-type citation hallucination taxonomy (in `acade
 - Does the paper's "ablation studies" section actually ablate the claimed mechanism, or does it ablate incidental hyperparameters?
 - Is the baseline strong enough that beating it requires the proposed mechanism, not just more compute?
 
-**Who catches it**: `devils_advocate_reviewer_agent` at Stage 3 is the natural home for this check, but it must be flagged at 2.5 so the user knows to prepare the ablation before Stage 3 arrives. Flag-only at 2.5, not block-only.
+**Who catches it**: `devils_advocate_reviewer_agent` at Stage 3 is the natural home for this check, but it debe ser flagged at 2.5 so the user knows to prepare the ablation before Stage 3 arrives. Flag-only at 2.5, not block-only.
 
 ---
 
@@ -112,7 +112,7 @@ This also extends the existing 5-type citation hallucination taxonomy (in `acade
 
 **What it is**: A wrong commitment made in early stages (research question framing, methodology choice, hyperparameter direction) that subsequent stages cannot back out of because they are structurally downstream of the commitment. The paper ends up well-executed but is answering the wrong question or using a fundamentally unsuitable method.
 
-**Lu 2026 example**: Figure 3a traces The AI Scientist's agentic tree search and shows that most failed papers failed at Stage 2 (hyperparameter tuning) — the agent committed to a direction early and could not recover. This is the same frame-lock pattern ARS's anti-sycophancy protocol targets for dialogue, but here it applies to pipeline decisions.
+**Lu 2026 example**: Figure 3a traces The AI Scientist's agentic tree search and shows thcomo máximo failed papers failed at Stage 2 (hyperparameter tuning) — the agent committed to a direction early and could not recover. This is the same frame-lock pattern ARS's anti-sycophancy protocol targets for dialogue, but here it applies to pipeline decisions.
 
 **Detection questions at Stage 2.5**:
 - If the user could go back to Stage 1 knowing what they know now, would they change the research question or methodology?
@@ -142,7 +142,7 @@ Run all 7 modes. For each mode, produce one of three outcomes:
 
 ### At Stage 4.5 FINAL INTEGRITY
 
-Re-run all 7 modes. Additional rule: any mode that was SUSPECTED at 2.5 must be resolved by 4.5 (CLEAR or user-Overridden-with-reasoning). If the same mode is still SUSPECTED at 4.5, the pipeline re-blocks and refuses to proceed to Finalize until the issue is addressed — no amount of revision loops can skip this.
+Re-run all 7 modes. Additional rule: any mode that was SUSPECTED at 2.5 debe ser resolved by 4.5 (CLEAR or user-Overridden-with-reasoning). If the same mode is still SUSPECTED at 4.5, the pipeline re-blocks and refuses to proceed to Finalize until the issue is addressed — no amount of revision loops can skip this.
 
 ### At Stage 6 PROCESS SUMMARY (AI Self-Reflection Report)
 
@@ -176,7 +176,7 @@ Gap coverage provided by this checklist: **Modes 1, 3, 5, 6, and the pipeline-le
 
 ---
 
-## References
+## Referencias
 
 - Lu, C. et al. (2026). Towards end-to-end automation of AI research. *Nature* 651, 914-919. [doi:10.1038/s41586-026-10265-5](https://doi.org/10.1038/s41586-026-10265-5) — Limitations section, Figure 2, Supplementary Information A.2.9.
 - ARS `academic-paper-reviewer/references/` — existing 5-type citation hallucination taxonomy (Mode 2).

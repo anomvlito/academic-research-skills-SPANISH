@@ -28,7 +28,7 @@ A lightweight orchestrator that manages the complete academic pipeline from rese
 5. **Reproducible** — Standardized workflow producing consistent quality assurance each time
 6. **Process documentation** — After pipeline completion, automatically generates a "Paper Creation Process Record" PDF documenting the human-AI collaboration history
 
-## Quick Start
+## Inicio Rápido
 
 **Full workflow (from scratch):**
 ```
@@ -53,7 +53,7 @@ I received reviewer comments, help me revise
 resume_from_passport=<hash> [stage=<n>] [mode=<m>]
 ```
 --> Loads the Material Passport (Schema 9), locates the `kind: boundary` entry matching `<hash>`, and confirms it has no later `kind: resume` entry consuming it. If `pending_decision` is set, the decision prompt fires first to capture the user's branch choice for the audit ledger; the prompt is never skipped, even when the user supplies `stage=`. After the prompt (or immediately if no `pending_decision`), the next stage is determined by: (a) `stage=<n>` CLI override if provided, else (b) the matched option's `next_stage`, else (c) the `next` field recorded in the boundary entry. CLI `stage=`/`mode=` overrides win over option routing.
-- **Gate (emit)**: `ARS_PASSPORT_RESET=1` must be set in the emitting session. Without the flag, no `kind: boundary` entries are written and there is nothing to resume from.
+- **Gate (emit)**: `ARS_PASSPORT_RESET=1` debe ser set in the emitting session. Without the flag, no `kind: boundary` entries are written and there is nothing to resume from.
 - **Gate (resume)**: No flag required. Any session can invoke `resume_from_passport=<hash>` against a passport that carries a valid boundary entry matching the hash.
 - **Intent**: Invoke in a *fresh* Claude Code session. Resuming within the same session that emitted the boundary provides no token savings and may drop still-live in-session context.
 - **Stage**: Any. Resumes at whatever stage the routing rules above determine.
@@ -88,7 +88,7 @@ resume_from_passport=<hash> [stage=<n>] [mode=<m>]
 
 - If the user only needs a single function (just search materials, just check citations), no pipeline is needed — directly trigger the corresponding skill
 - If the user is already using a specific mode of a skill, respect that entry point; the pipeline is opt-in
-- The pipeline is optional, not mandatory
+- The pipeline es opcional, not mandatory
 
 ---
 
@@ -104,15 +104,15 @@ resume_from_passport=<hash> [stage=<n>] [mode=<m>]
 | **3'** | **RE-REVIEW** | **`academic-paper-reviewer`** | **re-review** | **Verification review report: revision response checklist + residual issues** |
 | **4'** | **RE-REVISE** | **`academic-paper`** | **revision** | **Second revised draft (if needed)** |
 | **4.5** | **FINAL INTEGRITY** | **`integrity_verification_agent`** | **final-check** | **Final verification report (must achieve 100% pass to proceed)** |
-| 5 | FINALIZE | `academic-paper` | format-convert | Final Paper (default MD; DOCX via Pandoc when available, otherwise conversion instructions; ask about LaTeX; confirm correctness; PDF) |
-| **6** | **PROCESS SUMMARY** | **orchestrator** | **auto** | **Paper creation process record MD + LaTeX to PDF (bilingual)** |
+| 5 | FINALIZE | `academic-paper` | format-convert | Final Paper (default MD; DOCX vía Pandoc cuando esté disponible, de lo contrario instrucciones de conversión; ask about LaTeX; confirm correctness; PDF) |
+| **6** | **PROCESS SUMMARY** | **orchestrator** | **auto** | **Paper creation process record MD + LaTeX to PDF** |
 
 **Parallelization opportunity (v3.3)**: Within Stage 2, the `academic-paper` skill's Phase 1 (literature_strategist_agent) and the `visualization_agent` can operate in parallel after Phase 2 (structure_architect_agent) completes the outline. Specifically:
-- Once the outline includes a visualization plan, `visualization_agent` can begin figure generation
+- Once the outline includes a visualization plan, `visualization_agent` puede sergin figure generation
 - Simultaneously, `argument_builder_agent` can build CER chains
 - `draft_writer_agent` waits for both to complete before beginning Phase 4
 
-This mirrors PaperOrchestra's parallel execution of Plot Generation (Step 2) and Literature Review (Step 3) after Outline (Step 1), which reduces overall pipeline latency. The parallelization is optional — sequential execution remains the default for simplicity.
+This mirrors PaperOrchestra's parallel execution of Plot Generation (Step 2) and Literature Review (Step 3) after Outline (Step 1), which reduces overall pipeline latency. The parallelization es opcional — sequential execution remains the default for simplicity.
 
 ---
 
@@ -127,7 +127,7 @@ This mirrors PaperOrchestra's parallel execution of Plot Generation (Step 2) and
 7. **Stage 4' RE-REVISE** -> user confirmation -> Stage 4.5 (no return to review)
 8. **Stage 4.5 FINAL INTEGRITY** -> PASS (zero issues) -> Stage 5 (FAIL -> fix and re-verify)
 9. **Stage 5 FINALIZE** -> MD -> DOCX via Pandoc when available (otherwise instructions) -> ask about LaTeX -> confirm -> PDF -> Stage 6
-10. **Stage 6 PROCESS SUMMARY** -> ask language version -> generate process record MD -> LaTeX -> PDF -> end
+10. **Stage 6 PROCESS SUMMARY** -> generate process record MD -> LaTeX -> PDF -> end
 
 See `references/pipeline_state_machine.md` for complete state transition definitions.
 
@@ -180,7 +180,7 @@ Ready to proceed to Stage [Y]? You can also:
 
 ### Checkpoint Rules
 
-1. ⚠️ **IRON RULE**: **Cannot auto-skip MANDATORY checkpoints**: Even if the previous stage result is perfect, explicit user input is required at MANDATORY checkpoints
+1. ⚠️ **IRON RULE**: **Cannot auto-skip MANDATORY checkpoints**: Even if the previous stage result is perfect, explicit user input es obligatorio at MANDATORY checkpoints
 2. **User can adjust**: At FULL and MANDATORY checkpoints, users can modify the mode or settings for the next step
 3. **Pause-friendly**: Users can pause at any checkpoint and resume later
 4. **SLIM mode**: If the user says "just continue" or "fully automatic," subsequent non-critical checkpoints switch to SLIM format (one-line status + explicit continue/pause prompt)
@@ -293,7 +293,7 @@ At every stage transition, the orchestrator MUST inject a brief core principles 
 🔄 Core Principles Reinforcement:
 1. [Most relevant IRON RULE for the next stage]
 2. [Most relevant Anti-Pattern to avoid in the next stage]
-3. Quality check: Is the output of [Current Stage] at least as good as [Previous Stage]? If not, PAUSE.
+3. Quality check: Is the output of [Current Stage] al menos as good as [Previous Stage]? If not, PAUSE.
 
 Checkpoint: [MANDATORY/ADVISORY] — [What user needs to confirm]
 ---
@@ -419,7 +419,7 @@ The `collaboration_depth_agent` observes the user's collaboration pattern with t
 
 ---
 
-## Anti-Patterns
+## Anti-Patrones
 
 Explicit prohibitions to prevent common failure modes:
 
@@ -469,7 +469,7 @@ Explicit prohibitions to prevent common failure modes:
 | Stage 4' | Issues remain after revision | Mark as Acknowledged Limitations; proceed to Stage 4.5 |
 | Stage 4.5 | Final verification FAIL | Fix and re-verify (max 3 rounds) |
 | Any | User leaves midway | Save pipeline state; can resume from breakpoint next time |
-| Any | Skill execution failure | Report error; suggest retry, pause, or mode switch. Do not skip mandatory integrity or failure-mode gates |
+| Any | Skill execution failure | Report error; suggest retry, pause, or mode switch. No skip mandatory integrity or failure-mode gates |
 
 ---
 
@@ -484,7 +484,7 @@ Explicit prohibitions to prevent common failure modes:
 
 ---
 
-## Reference Files
+## Referencia Files
 
 | Reference | Purpose |
 |-----------|---------|
@@ -515,7 +515,7 @@ Explicit prohibitions to prevent common failure modes:
 
 ---
 
-## Examples
+## Ejemplos
 
 | Example | Demonstrates |
 |---------|-------------|
@@ -524,7 +524,7 @@ Explicit prohibitions to prevent common failure modes:
 
 ---
 
-## Output Language
+## Salida Language
 
 Follows user language. Academic terminology retained in English.
 
@@ -559,8 +559,8 @@ Stage 5: academic-paper (format-convert mode)
   - Step 2: Produce MD, then generate DOCX via Pandoc when available (otherwise provide conversion instructions)
   - Step 3: Produce LaTeX (using corresponding document class, e.g., apa7 class for APA 7.0)
   - Step 4: After user confirms content is correct, tectonic compiles PDF (final version)
-  - Fonts: Times New Roman (English) + Source Han Serif TC VF (Chinese) + Courier New (monospace)
-  - ⚠️ IRON RULE: PDF must be compiled from LaTeX (HTML-to-PDF is prohibited)
+  - Fonts: Times New Roman (English) + Courier New (monospace)
+  - ⚠️ IRON RULE: PDF debe ser compiled from LaTeX (HTML-to-PDF is prohibited)
 ```
 
 ---
@@ -575,7 +575,7 @@ Stage 5: academic-paper (format-convert mode)
 
 ---
 
-## Version Info
+## Información de Versión
 
 | Item | Content |
 |------|---------|

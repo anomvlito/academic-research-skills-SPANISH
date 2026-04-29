@@ -1,6 +1,6 @@
 ---
 name: deep-research
-description: "Universal deep research agent team. 13-agent pipeline for rigorous academic research on any topic. 7 modes: full research, quick brief, paper review, lit-review, fact-check, Socratic guided research dialogue, and systematic review with optional meta-analysis. Covers research question formulation, Socratic mentoring, methodology design, systematic literature search, source verification, cross-source synthesis, risk of bias assessment, meta-analysis, APA 7.0 report compilation, editorial review, devil's advocate challenges, ethics review, and post-research literature monitoring. Triggers on: research, deep research, literature review, systematic review, meta-analysis, PRISMA, evidence synthesis, fact-check, guide my research, help me think through, 研究, 深度研究, 文獻回顧, 文獻探討, 系統性回顧, 後設分析, 事實查核, 引導我的研究, 幫我釐清, 幫我想想, 我不確定要研究什麼, 研究方向, 研究主題."
+description: "Universal deep research agent team. 13-agent pipeline for rigorous academic research on any topic. 7 modes: full research, quick brief, paper review, lit-review, fact-check, Socratic guided research dialogue, and systematic review with optional meta-analysis. Covers research question formulation, Socratic mentoring, methodology design, systematic literature search, source verification, cross-source synthesis, risk of bias assessment, meta-analysis, APA 7.0 report compilation, editorial review, devil's advocate challenges, ethics review, and post-research literature monitoring. Triggers on: research, deep research, literature review, systematic review, meta-analysis, PRISMA, evidence synthesis, fact-check, guide my research, help me think through."
 metadata:
   version: "2.9.2"
   last_updated: "2026-04-27"
@@ -20,7 +20,7 @@ Universal deep research tool — a domain-agnostic 13-agent team for rigorous ac
 - **Style Profile consumption** (optional) — If a Style Profile is available from academic-paper intake, the report compiler applies it as a soft guide for the Executive Summary and Synthesis sections. Discipline conventions and report objectivity take priority.
 - **Writing Quality Check** — The report compiler runs a writing quality checklist before finalizing: flags AI-typical overused terms, checks sentence/paragraph length variation, removes throat-clearing openers. See `academic-paper/references/writing_quality_check.md`.
 
-## Quick Start
+## Inicio Rápido
 
 **Minimal command:**
 ```
@@ -29,9 +29,8 @@ Research the impact of AI on higher education quality assurance
 
 **Socratic mode:**
 ```
-Guide my research on the impact of declining birth rates on private universities
-引導我的研究：少子化對私立大學的影響
-幫我釐清我的研究方向，我對高教品保有興趣但還不太確定
+You: "I have a vague idea about AI's impact on higher education quality assurance,
+      but I'm not sure how to frame the research question. Can you guide me?"
 ```
 
 **Execution:**
@@ -50,7 +49,7 @@ Guide my research on the impact of declining birth rates on private universities
 
 **English**: research, deep research, literature review, systematic review, meta-analysis, PRISMA, evidence synthesis, fact-check, methodology, APA report, academic analysis, policy analysis, guide my research, help me think through, monitor this topic, set up alerts
 
-**繁體中文**: 研究, 深度研究, 文獻回顧, 文獻探討, 系統性回顧, 後設分析, 證據綜整, 事實查核, 研究方法, 學術分析, 政策分析, 引導我的研究, 幫我釐清, 監測這個主題, 設定追蹤
+**Spanish**: investigación, investigación profunda, revisión de literatura, revisión sistemática, meta-análisis, PRISMA, síntesis de evidencia, verificación de hechos, metodología, informe APA, análisis académico, análisis de políticas, guía mi investigación, ayúdame a pensar, monitorear este tema, configurar alertas
 
 ### Socratic Mode Activation
 
@@ -66,7 +65,7 @@ Activate `socratic` mode when the user's **intent** matches any of the following
 **Default rule**: When intent is ambiguous between `socratic` and `full`, **prefer `socratic`** — it is safer to guide first than to produce an unwanted report. The user can always switch to `full` later.
 
 **Example triggers** (illustrative, not exhaustive):
-"guide my research", "help me think through", 「引導我的研究」「幫我釐清」, or equivalent in any language
+"guide my research", "help me think through", or equivalent in any language
 
 ### Does NOT Trigger
 
@@ -78,20 +77,19 @@ Activate `socratic` mode when the user's **intent** matches any of the following
 
 ### Quick Mode Selection Guide
 
-| Your Situation 你的狀況 | Recommended Mode | Spectrum |
+| Your Situation | Recommended Mode | Spectrum |
 |----------------|-----------------|----------|
-| Vague idea, need guidance / 有模糊想法，需要引導 | `socratic` | originality |
-| Clear RQ, need comprehensive research / 有明確 RQ，需要完整研究 | `full` | balanced |
-| Need a quick brief (30 min) / 需要快速摘要 | `quick` | fidelity |
-| Have a paper to evaluate before citing / 有論文需要評估 | `review` | balanced |
-| Need literature review for a topic / 需要文獻回顧 | `lit-review` | fidelity |
-| Need to verify specific claims / 需要查核特定事實 | `fact-check` | fidelity |
-| Need systematic review / meta-analysis / 系統性回顧或後設分析 | `systematic-review` | fidelity |
+| Vague idea, need guidance | `socratic` | originality |
+| Clear RQ, need comprehensive research | `full` | balanced |
+| Need a quick brief (30 min) | `quick` | fidelity |
+| Have a paper to evaluate before citing | `review` | balanced |
+| Need literature review for a topic | `lit-review` | fidelity |
+| Need to verify specific claims | `fact-check` | fidelity |
+| Need systematic review / meta-analysis | `systematic-review` | fidelity |
 
 **Spectrum** (v3.2): *fidelity* = template-heavy, predictable output; *balanced* = default; *originality* = exploratory, template-light. See `shared/mode_spectrum.md` for the full cross-skill spectrum table.
 
 Not sure? Start with `socratic` — it will help you figure out what you need.
-不確定？先用 `socratic` 模式——它會幫你釐清你需要什麼。
 
 ---
 
@@ -307,7 +305,6 @@ Key failure path summary:
 | Ethics BLOCKED | Serious ethical issue | STOP, list issues and remediation path |
 | Socratic non-convergence | > 10 rounds without convergence | Suggest switching to full mode |
 | User abandons mid-process | Explicitly states they don't want to continue | Save progress, provide re-entry path |
-| Only Chinese-language literature | English search returns empty | Switch to Chinese academic databases |
 
 ---
 
@@ -321,7 +318,7 @@ Optional post-research monitoring for new publications in the research area.
 
 ## Handoff Protocol: deep-research → academic-paper
 
-After research is complete, the following materials can be handed off to `academic-paper`:
+After research is complete, the following materials puede ser handed off to `academic-paper`:
 
 1. **Research Question Brief** (from research_question_agent)
 2. **Methodology Blueprint** (from research_architect_agent)
@@ -366,7 +363,7 @@ See `academic-pipeline/SKILL.md` for the complete workflow.
 
 ---
 
-## Reference Files
+## Referencia Files
 
 | Reference | Purpose | Used By |
 |-----------|---------|---------|
@@ -405,7 +402,7 @@ See `academic-pipeline/SKILL.md` for the complete workflow.
 
 ---
 
-## Examples
+## Ejemplos
 
 | Example | Demonstrates |
 |---------|-------------|
@@ -419,13 +416,13 @@ See `academic-pipeline/SKILL.md` for the complete workflow.
 
 ---
 
-## Output Language
+## Salida Language
 
 Follows the user's language. Academic terminology kept in English. Socratic mode uses natural conversational style.
 
 ---
 
-## Anti-Patterns
+## Anti-Patrones
 
 Explicit prohibitions to prevent common failure modes:
 
@@ -433,7 +430,7 @@ Explicit prohibitions to prevent common failure modes:
 |---|-------------|-------------|-----------------|
 | 1 | **Confirmation bias in source selection** | Only finding sources that support the hypothesis | Devil's Advocate checkpoint must include counter-evidence search |
 | 2 | **Cherry-picking evidence** | Citing one supportive study while ignoring three contradicting ones | Report the full evidence landscape including conflicting findings |
-| 3 | **Vibe citing** | Mixing elements from 2-3 real papers into a fabricated reference | Every reference must be verified independently; mashup fabrication is the hardest to detect |
+| 3 | **Vibe citing** | Mixing elements from 2-3 real papers into a fabricated reference | Every reference debe ser verified independently; mashup fabrication is the hardest to detect |
 | 4 | **⚠️ IRON RULE: Treating "difficult to verify" as acceptable** | Marking a reference as "uncertain" instead of FAIL | Gray zone = FAIL. If you cannot confirm it exists, it does not go in the report |
 | 5 | **Skipping phases** | Jumping to synthesis before completing source verification | Complete each phase fully; Phase N output is Phase N+1 input |
 | 6 | **Shallow Socratic mode** | Giving answers disguised as questions ("Wouldn't you say X is true?") | Ask genuine questions that expose assumptions; never lead to predetermined conclusions |
@@ -446,7 +443,7 @@ Explicit prohibitions to prevent common failure modes:
 3. **Contradiction disclosure** — if sources disagree, report both sides with evidence quality comparison
 4. **Limitation transparency** — every report must have an explicit limitations section
 5. **AI disclosure** — all reports include a statement that AI-assisted research tools were used
-6. **Reproducibility** — search strategies, inclusion criteria, and analytical methods must be documented for replication
+6. **Reproducibility** — search strategies, inclusion criteria, and analytical methods debe ser documented for replication
 7. **Socratic integrity** — in socratic mode, never give direct answers; always guide through questions
 
 ## Cross-Agent Quality Alignment
@@ -459,7 +456,7 @@ Unified definitions across all agents. ⚠️ IRON RULE: **CRITICAL severity** =
 
 ## Integration with Other Skills
 
-This skill is domain-agnostic but can be combined with domain-specific skills:
+This skill is domain-agnostic but puede ser combined with domain-specific skills:
 
 ```
 deep-research + tw-hei-intelligence     -> Evidence-based HEI policy research
@@ -472,7 +469,7 @@ deep-research (systematic-review) + academic-paper -> PRISMA systematic review p
 
 ---
 
-## Version Info
+## Información de Versión
 
 | Item | Content |
 |------|---------|

@@ -8,7 +8,7 @@ This example demonstrates how `academic-paper-reviewer` configures reviewer role
 
 > **Title**: Using Machine Learning to Predict University Closure Risk in Taiwan: An Institutional Research Data Approach
 >
-> **Abstract**: This study develops a machine learning-based university closure risk prediction system. Using publicly available Ministry of Education data (2010-2023, covering 152 higher education institutions) as the training set, 47 feature variables were included (enrollment rate, financial indicators, faculty structure, industry-academia collaboration, etc.), comparing the predictive performance of four classification models: Random Forest, XGBoost, Logistic Regression, and SVM. The study used 12 institutions that had ceased operations or been designated for special guidance after 2018 as positive cases, employing SMOTE to address class imbalance. Results show XGBoost performed best (AUC = 0.94, F1 = 0.87), with the top five most important features being: freshman enrollment rate, current liability ratio, full-time faculty turnover rate, graduate program enrollment achievement rate, and industry-academia collaboration revenue share. This study provides an empirical basis for early warning tools for education authorities.
+> **Abstract**: This study develops a machine learning-based university closure risk prediction system. Using publicly available Ministry of Education data (2010-2023, covering 152 higher education institutions) as the training set, 47 feature variables were included (enrollment rate, financial indicators, faculty structure, industry-academia collaboration, etc.), comparing the predictive performance of four classification models: Random Forest, XGBoost, Logistic Regression, and SVM. The study used 12 institutions that had ceased operations or been designated for special guidance after 2018 as positive cases, employing SMOTE to address class imbalance. Resultados show XGBoost performed best (AUC = 0.94, F1 = 0.87), with the top five most important features being: freshman enrollment rate, current liability ratio, full-time faculty turnover rate, graduate program enrollment achievement rate, and industry-academia collaboration revenue share. This study provides an empirical basis for early warning tools for education authorities.
 >
 > **Keywords**: machine learning, university closure, risk prediction, institutional research, Taiwan higher education
 >
@@ -16,7 +16,7 @@ This example demonstrates how `academic-paper-reviewer` configures reviewer role
 
 ---
 
-## Phase 0: Field Analysis & Persona Configuration
+## Fase 0: Field Analysis & Persona Configuration
 
 ### Field Analysis Report
 
@@ -32,7 +32,7 @@ This example demonstrates how `academic-paper-reviewer` configures reviewer role
 | Primary Discipline | Higher Education Management + Data Science (dual primary) |
 | Secondary Disciplines | Education Policy, Financial Management, Institutional Research (IR) |
 | Research Paradigm | Quantitative — Predictive modeling |
-| Methodology Type | Statistical Modeling / Machine Learning (Classification) |
+| Metodología Type | Statistical Modeling / Machine Learning (Classification) |
 | Target Journal Tier | Q2-Q3 — Cross-disciplinary papers may not be "specialized" enough in either field |
 | Paper Maturity | Pre-submission — Complete structure, analysis completed |
 
@@ -60,7 +60,7 @@ This example demonstrates how `academic-paper-reviewer` configures reviewer role
 
 ### Reviewer Configuration Card #2
 
-**Role**: Peer Reviewer 1 (Methodology — ML Technical Expert)
+**Role**: Peer Reviewer 1 (Metodología — ML Technical Expert)
 **Identity Description**: Statistical learning / machine learning methodology researcher, specializing in classification models, class imbalance handling, and model evaluation, with multiple methodology articles in social science ML applications.
 **Review Focus**:
   1. Class imbalance handling (12 positive vs 140 negative) — Is SMOTE the best strategy
@@ -97,7 +97,7 @@ This example demonstrates how `academic-paper-reviewer` configures reviewer role
 
 ---
 
-## Phase 1: Parallel Multi-Perspective Review (Summary Version)
+## Fase 1: Parallel Multi-Perspective Review (Summary Version)
 
 ### EIC Review Report (Summary)
 
@@ -111,13 +111,13 @@ This example demonstrates how `academic-paper-reviewer` configures reviewer role
 3. Policy implications of the top five important features are insightful
 
 **Key Weaknesses**:
-1. Imbalance between technical and educational insight — Discussion almost exclusively discusses model performance, lacking dialogue with educational theory
+1. Imbalance between technical and educational insight — Discusión almost exclusively discusses model performance, lacking dialogue with educational theory
 2. Model stability with 12 positive cases is concerning
 3. Lacks external model validation (e.g., using data from other countries/regions)
 
 ---
 
-### Methodology Review Report — R1 (Summary)
+### Metodología Review Report — R1 (Summary)
 
 **Recommendation**: Major Revision | **Confidence**: 5/5
 
@@ -186,7 +186,7 @@ This example demonstrates how `academic-paper-reviewer` configures reviewer role
 
 ---
 
-## Phase 2: Editorial Synthesis & Decision (Summary Version)
+## Fase 2: Editorial Synthesis & Decision (Summary Version)
 
 ### Decision: **Major Revision**
 
@@ -241,7 +241,7 @@ This example demonstrates how `academic-paper-reviewer` configures reviewer role
 ### 1. Challenges of Cross-Disciplinary Reviewer Configuration
 
 This paper involves ML technology + higher education management + public policy across three fields. The `field_analyst_agent`'s configuration strategy was:
-- **R1 (Methodology)**: ML technical expert — because technical rigor is the foundation for this type of paper
+- **R1 (Metodología)**: ML technical expert — because technical rigor is the foundation for this type of paper
 - **R2 (Domain)**: Institutional research expert — because domain knowledge of the data is crucial
 - **R3 (Cross-disciplinary)**: AI ethics/public policy — because this is the aspect most likely to be overlooked by the authors
 

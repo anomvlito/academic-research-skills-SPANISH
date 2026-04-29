@@ -1,6 +1,6 @@
 # Statistical Reporting Standards — Statistical Reporting Standards & APA 7.0 Format Quick Reference
 
-This document defines the complete review standards for statistical reporting in quantitative research. `methodology_reviewer_agent` uses this document as the primary reference in Step 4a (Statistical Reporting Adequacy).
+Este documento defines the complete review standards for statistical reporting in quantitative research. `methodology_reviewer_agent` uses this document as the primary reference in Step 4a (Statistical Reporting Adequacy).
 
 ---
 
@@ -14,7 +14,7 @@ All quantitative research papers **must** report the following items. Check each
 |------|----------|----------------|
 | Mean (*M*) | Must be reported for all continuous variables | Only overall reported, not by group |
 | Standard deviation (*SD*) | Must appear paired with the mean | Standard error (*SE*) used incorrectly in place of SD |
-| Sample size (*N* / *n*) | Both total and group sample sizes must be reported | Sample attrition during analysis unexplained |
+| Sample size (*N* / *n*) | Both total and group sample sizes debe ser reported | Sample attrition during analysis unexplained |
 | Range | Report Min-Max or interquartile range | Completely absent, unable to judge distribution characteristics |
 | Categorical variable distribution | Report frequency (*f*) and percentage (%) | Only percentage reported, missing raw frequency |
 
@@ -22,7 +22,7 @@ All quantitative research papers **must** report the following items. Check each
 
 | Item | Standard | Common Omission |
 |------|----------|----------------|
-| Reporting obligation | **All statistical tests must be accompanied by effect sizes** — APA 7.0 mandatory requirement | Only *p*-value reported, no effect size |
+| Reporting obligation | **All statistical tests debe ser accompanied by effect sizes** — APA 7.0 mandatory requirement | Only *p*-value reported, no effect size |
 | Select appropriate metric | Choose effect size metric corresponding to the analysis method (see Section 2) | Inappropriate effect size metric used |
 | Interpretation | Must provide Cohen's conventional benchmarks or field-specific benchmarks | Numbers reported but magnitude not interpreted |
 
@@ -141,7 +141,7 @@ All quantitative research papers **must** report the following items. Check each
 | Check Item | Standard |
 |-----------|----------|
 | Sample size | Typically >= 200; or 5-10 times the number of estimated parameters |
-| Model fit indices | **Must report multiple indices simultaneously** (at least 4) |
+| Model fit indices | **Must report multiple indices simultaneously** (al menos 4) |
 | CFI / TLI | >= .95 (good); >= .90 (acceptable) |
 | RMSEA | <= .06 (good); <= .08 (acceptable); must report 90% CI |
 | SRMR | <= .08 |
@@ -300,14 +300,14 @@ The following patterns during review should raise red flags, requiring further i
 |----------|-------------|----------|
 | Assumption testing completely absent | Skipping normality/homogeneity/linearity tests | MEDIUM |
 | Violations not addressed | Violations reported but original analysis still used | HIGH |
-| CLT as excuse | "Because *N* > 30, normality can be ignored" without actual testing | LOW |
+| CLT as excuse | "Because *N* > 30, normality puede ser ignored" without actual testing | LOW |
 | Excessive VIF | VIF > 10 but no action taken | HIGH |
 
 ### 4.7 Other Red Flags
 
 | Red Flag | Description | Severity |
 |----------|-------------|----------|
-| *p* = .000 | Raw statistical software output, should be *p* < .001 | LOW |
+| *p* = .000 | Raw statistical software output, debe ser *p* < .001 | LOW |
 | df inconsistent with *N* | *N* derived from degrees of freedom doesn't match reported *N* | HIGH |
 | Inconsistent table numbers | Text narrative contradicts table values | HIGH |
 | Statistical software not stated | Not reporting SPSS / R / Stata / Mplus and version | LOW |
@@ -317,7 +317,7 @@ The following patterns during review should raise red flags, requiring further i
 
 ## 5. Common Statistical Methods in Higher Education Research
 
-Higher education research papers frequently involve the following topics and corresponding analysis methods. This table can be referenced during review to judge whether method selection is appropriate.
+Higher education research papers frequently involve the following topics and corresponding analysis methods. This table puede ser referenced during review to judge whether method selection is appropriate.
 
 ### 5.1 Recommended Methods by Research Question Type
 

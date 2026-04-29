@@ -1,6 +1,6 @@
 ---
 name: academic-paper
-description: "12-agent academic paper writing pipeline. 10 modes (full/plan/outline/revision/revision-coach/abstract/lit-review/format-convert/citation-check/disclosure). 6 paper types, 5 citation formats, bilingual abstracts, LaTeX/DOCX-via-Pandoc/PDF output. Style Calibration + Writing Quality Check + Anti-Patterns with IRON RULE markers. Triggers: write paper, academic paper, guide my paper, parse reviews, AI disclosure, 寫論文, 學術論文, 引導我寫論文, 審查意見."
+description: "12-agent academic paper writing pipeline. 10 modes (full/plan/outline/revision/revision-coach/abstract/lit-review/format-convert/citation-check/disclosure). 6 paper types, 5 citation formats, salida LaTeX/DOCX-vía-Pandoc/PDF. Style Calibration + Writing Quality Check + Anti-Patterns with IRON RULE markers. Triggers: write paper, academic paper, guide my paper, parse reviews, AI disclosure."
 metadata:
   version: "3.1.1"
   last_updated: "2026-04-27"
@@ -21,7 +21,7 @@ A general-purpose academic paper writing tool — 12-agent pipeline covering all
 - **Style Calibration** (intake Step 10, optional) — Provide 3+ past papers and the pipeline learns your writing voice (sentence rhythm, vocabulary preferences, citation integration style). Applied as a soft guide during drafting; discipline conventions always take priority. See `shared/style_calibration_protocol.md`.
 - **Writing Quality Check** (`references/writing_quality_check.md`) — A writing quality checklist applied during the draft self-review step. Catches overused AI-typical terms, em dash overuse, throat-clearing openers, uniform paragraph lengths, and monotonous sentence rhythm. These are good writing rules, not detection evasion.
 
-## Quick Start
+## Inicio Rápido
 
 **Minimal command:**
 ```
@@ -38,7 +38,7 @@ Write a paper on the impact of declining birth rates on private university manag
 3. Architecture design — paper structure, outline, word count allocation
 4. Argumentation construction — claim-evidence chains, logical flow
 5. Full-text drafting — section-by-section draft, register adjustment
-6. Citation compliance + bilingual abstract (parallel)
+6. Citation compliance (parallel)
 7. Peer review — five-dimension scoring, revision suggestions
 8. Output formatting — LaTeX/DOCX (via Pandoc)/PDF/Markdown
 
@@ -50,7 +50,7 @@ Write a paper on the impact of declining birth rates on private university manag
 
 **English**: write paper, academic paper, paper outline, write abstract, revise paper, literature review paper, check citations, convert to LaTeX, convert format, format paper, conference paper, journal article, thesis chapter, research paper, guide my paper, help me plan my paper, step by step paper, draft manuscript, write methodology, write discussion, parse reviews, revision roadmap, help me with my revision, I got reviewer comments, convert citations
 
-**繁體中文**: 寫論文, 學術論文, 論文大綱, 寫摘要, 修改論文, 文獻回顧論文, 檢查引用, 轉 LaTeX, 轉換格式, 研討會論文, 期刊文章, 學位論文, 研究論文, 引導我寫論文, 幫我規劃論文, 逐步寫論文, 寫方法論, 寫討論, 審查意見, 修訂路線圖, 幫我修改, 我收到審查意見, 轉換引用格式
+**Spanish**: escribir tesis, artículo académico, esquema de tesis, escribir resumen, revisar tesis, artículo de revisión de literatura, verificar citas, convertir a LaTeX, convertir formato, formatear tesis, artículo de conferencia, artículo de revista, capítulo de tesis, artículo de investigación, guía mi tesis, ayúdame a planear mi tesis, tesis paso a paso, borrador de manuscrito, escribir metodología, escribir discusión, analizar revisiones, hoja de ruta de revisión, ayúdame con mi revisión, recibí comentarios de revisores, convertir citas
 
 ### Plan Mode Activation
 
@@ -73,7 +73,7 @@ Activate `plan` mode when the user wants guidance, step-by-step planning, or exp
 | Primary output | Publishable paper draft | Research report |
 | Structure | Journal-ready (IMRaD, etc.) | APA 7.0 report |
 | Citation | Multi-format (APA/Chicago/MLA/IEEE/Vancouver) | APA 7.0 only |
-| Abstract | Bilingual (zh-TW + EN) | Single language |
+| Abstract | Single language | Single language |
 | Peer review | Simulated 5-dimension review | Editorial review |
 | Output format | LaTeX/DOCX (via Pandoc)/PDF/Markdown | Markdown only |
 | Revision loop | Max 2 rounds with targeted feedback | Max 2 rounds |
@@ -90,7 +90,7 @@ Activate `plan` mode when the user wants guidance, step-by-step planning, or exp
 | 4 | `argument_builder_agent` | Argument construction, claim-evidence chains, logical flow, counter-argument handling; Plan mode argument stress test | Phase 3 / Plan Step 3 |
 | 5 | `draft_writer_agent` | Section-by-section full draft writing, discipline register adjustment, word count tracking | Phase 4 |
 | 6 | `citation_compliance_agent` | Citation format verification, reference list completeness, DOI checking | Phase 5a |
-| 7 | `abstract_bilingual_agent` | Bilingual abstract (zh-TW + EN), 5-7 keywords each | Phase 5b |
+| 7 | `abstract_agent` | Abstract writing, 5-7 keywords | Phase 5b |
 | 8 | `peer_reviewer_agent` | Simulated double-blind review, five-dimension scoring, revision suggestions (max 2 rounds) | Phase 6 |
 | 9 | `formatter_agent` | Convert to LaTeX/DOCX (via Pandoc)/PDF/Markdown, journal formatting, cover letter, citation format conversion (APA 7 / Chicago / MLA / IEEE / Vancouver) | Phase 7 |
 | 10 | `socratic_mentor_agent` | Plan mode Socratic mentor: chapter-by-chapter guidance, convergence criteria (4 signals), question taxonomy (4 types), INSIGHT extraction | Plan Step 0-3 |
@@ -99,7 +99,7 @@ Activate `plan` mode when the user wants guidance, step-by-step planning, or exp
 
 ---
 
-## Output Formats
+## Salida Formats
 
 ### Text Formats
 LaTeX (.tex + .bib), DOCX (via Pandoc), PDF (via LaTeX or Pandoc), Markdown.
@@ -121,7 +121,7 @@ Phase 2: ARCHITECTURE  -> [structure_architect]        -> Paper Outline + Eviden
 Phase 3: ARGUMENTATION -> [argument_builder]           -> Argument Blueprint
 Phase 4: DRAFTING      -> [draft_writer]               -> Complete Draft
 Phase 5a: CITATIONS    -> [citation_compliance] ──┐    -> Citation Audit Report
-Phase 5b: ABSTRACT     -> [abstract_bilingual]   ─┘    -> Bilingual Abstract + Keywords  (parallel)
+Phase 5b: ABSTRACT     -> [abstract]               ─┘    -> Abstract + Keywords  (parallel)
 Phase 6: PEER REVIEW   -> [peer_reviewer]              -> Review Report (max 2 revision loops)
 Phase 7: FORMAT        -> [formatter]                  -> Final Output Package
 ```
@@ -149,7 +149,7 @@ See `references/mode_selection_guide.md` for details.
 | `full` | "Write a paper" | All 9 (+ 11 if quantitative) | Complete paper draft (with figures if applicable) |
 | `outline-only` | "Paper outline" | 1->2->3 | Detailed outline + evidence map |
 | `revision` | "Revise paper" | 8->5->6 | Revised draft with tracked changes (uses `templates/revision_tracking_template.md`) |
-| `abstract-only` | "Write abstract" | 1->7 | Bilingual abstract + keywords |
+| `abstract-only` | "Write abstract" | 1->7 | Abstract + keywords |
 | `lit-review` | "Literature review" | 1->2 | Annotated bibliography + synthesis |
 | `format-convert` | "Convert to LaTeX" / "Convert citations to [format]" | 9 only | Formatted document; includes citation format conversion (APA 7 / Chicago / MLA / IEEE / Vancouver) |
 | `citation-check` | "Check citations" | 6 only | Citation error report |
@@ -230,10 +230,10 @@ See `agents/intake_agent.md` for the complete field definitions of the Phase 0 c
 **Agent definitions**: `agents/{agent_name}.md` — one file per agent (12 total, matching Agent Team table above).
 
 **References** (19 files in `references/`):
-- Citation: `apa7_extended_guide`, `apa7_chinese_citation_guide`, `citation_format_switcher`
+- Citation: `apa7_extended_guide`, `citation_format_switcher`
 - Writing: `academic_writing_style`, `writing_quality_check`, `writing_judgment_framework`
 - Structure: `paper_structure_patterns` (6 types), `abstract_writing_guide`
-- Domain: `hei_domain_glossary` (bilingual), `journal_submission_guide`, `latex_template_reference`
+- Domain: `domain_glossary`, `journal_submission_guide`, `latex_template_reference`
 - Process: `failure_paths` (12 scenarios), `mode_selection_guide` (10 modes), `plan_mode_protocol`, `workflow_phase_details`
 - Ethics: `credit_authorship_guide` (CRediT 14 roles), `funding_statement_guide`, `statistical_visualization_standards`
 - Disclosure (v3.2): `disclosure_mode_protocol` (venue-specific AI-usage statement generation), `venue_disclosure_policies` (v1 database: ICLR, NeurIPS, Nature, Science, ACL, EMNLP)
@@ -241,11 +241,11 @@ See `agents/intake_agent.md` for the complete field definitions of the Phase 0 c
 
 **Templates** (11 files in `templates/`): `imrad`, `literature_review`, `case_study`, `theoretical_paper`, `policy_brief`, `conference_paper`, `latex_article_template.tex`, `bilingual_abstract`, `credit_statement`, `funding_statement`, `revision_tracking` (4 status types).
 
-**Examples** (5 files in `examples/`): `imrad_hei_example`, `literature_review_example`, `plan_mode_guided_writing`, `chinese_paper_example`, `revision_mode_example`.
+**Examples** (4 files in `examples/`): `imrad_hei_example`, `literature_review_example`, `plan_mode_guided_writing`, `revision_mode_example`.
 
 ---
 
-## Anti-Patterns
+## Anti-Patrones
 
 Explicit prohibitions to prevent common failure modes:
 
@@ -255,7 +255,7 @@ Explicit prohibitions to prevent common failure modes:
 | 2 | **Em dash abuse** | More than 2 em dashes per page signals AI writing | Use parentheses, commas, or restructure the sentence |
 | 3 | **Throat-clearing openers** | "In this section, we will discuss..." adds no information | Start with the claim or finding directly |
 | 4 | **Uniform paragraph lengths** | Every paragraph is 4-5 sentences = monotonous AI rhythm | Vary paragraph length naturally (2-8 sentences) |
-| 5 | **⚠️ IRON RULE: Fabricated citations** | Inventing plausible-sounding references that don't exist | Every citation must be verified via DOI or WebSearch; see `academic-pipeline/agents/integrity_verification_agent.md` |
+| 5 | **⚠️ IRON RULE: Fabricated citations** | Inventing plausible-sounding references that don't exist | Every citation debe ser verified via DOI or WebSearch; see `academic-pipeline/agents/integrity_verification_agent.md` |
 | 6 | **Sycophantic revision** | Accepting all reviewer feedback without critical evaluation | Use REVIEWER_DISAGREE status when reviewer is wrong; justify with evidence |
 | 7 | **Scope creep during revision** | Adding unrequested sections/analyses to "improve" the paper | Revision addresses reviewer concerns only; new content requires explicit user approval |
 | 8 | **Ignoring failure paths** | Continuing despite desk-reject signals or fatal methodology flaws | Check `references/failure_paths.md`; invoke F11 Desk-Reject Recovery when triggered |
@@ -271,15 +271,10 @@ Explicit prohibitions to prevent common failure modes:
 4. **Logical flow** — clear transitions between paragraphs and sections
 5. **Word count compliance** — within +/-10% of target
 
-### Bilingual Abstract Quality
-6. **Independent writing** — zh-TW and EN abstracts are independently composed, NOT mechanical translations
-7. **Structural alignment** — both abstracts cover the same key points in the same order
-8. **Keywords** — 5-7 per language, reflecting the paper's core concepts
-9. **Word count** — EN: 150-300 words; zh-TW: 300-500 characters
 
 ### Citation Quality
 10. **Format compliance** — 100% adherence to selected citation style
-11. ⚠️ IRON RULE: **DOI inclusion** — every source with a DOI must include it; every citation must be verified via DOI or WebSearch
+11. ⚠️ IRON RULE: **DOI inclusion** — every source with a DOI must include it; every citation debe ser verified via DOI or WebSearch
 12. **Currency** — flag sources older than 10 years (unless seminal works)
 13. **Self-citation ratio** — flag if >15%
 
@@ -296,9 +291,9 @@ Explicit prohibitions to prevent common failure modes:
 
 ---
 
-## Output Language
+## Salida Language
 
-Follows the user's language. Academic terminology is kept in English. Bilingual abstracts are always provided regardless of the main text language.
+Follows the user's language. Academic terminology is kept in English.
 
 ---
 
@@ -314,7 +309,7 @@ academic-paper + academic-paper-reviewer -> Peer review -> revision loop
 
 ---
 
-## Version Info
+## Información de Versión
 
 | Item | Content |
 |------|---------|

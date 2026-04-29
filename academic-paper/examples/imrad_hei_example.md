@@ -14,7 +14,7 @@ This example demonstrates a complete IMRaD paper structure in the higher educati
 
 ## Abstract
 
-Quality assurance (QA) in higher education increasingly relies on standardized evaluation frameworks, yet inter-evaluator variance remains a persistent challenge. This study examines the effects of AI-assisted tools on evaluation consistency and institutional self-assessment practices in Taiwanese higher education. Using a quasi-experimental design, this study compared evaluation outcomes across 24 institutional accreditation cases—12 using traditional methods and 12 using AI-augmented evaluation protocols during the 2024-2025 accreditation cycle. Results indicated that AI-augmented evaluations reduced inter-evaluator variance by 28% (Cohen's *d* = 0.74) and improved alignment between self-assessment reports and site visit findings (*r* = .82 vs. .63 for traditional). Institutions reported that AI tools enhanced their self-assessment processes by identifying data gaps earlier in the preparation cycle. However, evaluators expressed concerns about potential homogenization of qualitative judgment. These findings suggest that AI tools can meaningfully improve QA consistency while highlighting the need for balanced integration that preserves expert judgment in accreditation processes.
+Quality assurance (QA) in higher education increasingly relies on standardized evaluation frameworks, yet inter-evaluator variance remains a persistent challenge. This study examines the effects of AI-assisted tools on evaluation consistency and institutional self-assessment practices in Taiwanese higher education. Using a quasi-experimental design, this study compared evaluation outcomes across 24 institutional accreditation cases—12 using traditional methods and 12 using AI-augmented evaluation protocols during the 2024-2025 accreditation cycle. Resultados indicated that AI-augmented evaluations reduced inter-evaluator variance by 28% (Cohen's *d* = 0.74) and improved alignment between self-assessment reports and site visit findings (*r* = .82 vs. .63 for traditional). Institutions reported that AI tools enhanced their self-assessment processes by identifying data gaps earlier in the preparation cycle. However, evaluators expressed concerns about potential homogenization of qualitative judgment. These findings suggest that AI tools can meaningfully improve QA consistency while highlighting the need for balanced integration that preserves expert judgment in accreditation processes.
 
 **Keywords**: quality assurance, artificial intelligence, higher education accreditation, evaluation consistency, Taiwan
 
@@ -22,13 +22,13 @@ Quality assurance (QA) in higher education increasingly relies on standardized e
 
 ## Chinese Abstract
 
-Higher education quality assurance increasingly relies on standardized evaluation frameworks, yet the issue of inter-evaluator consistency has persisted. This study aims to investigate the effects of AI-assisted tools on evaluation consistency and institutional self-assessment practices in Taiwanese higher education. A quasi-experimental design was employed, comparing evaluation outcomes across 24 institutional accreditation cases during the 2024-2025 accreditation cycle — 12 using traditional methods and 12 using AI-augmented evaluation protocols. Results showed that AI-augmented evaluations reduced inter-evaluator variance by 28% (Cohen's *d* = 0.74) and improved the alignment between self-assessment reports and site visit findings (*r* = .82 vs. .63 for traditional methods). Evaluated institutions also reported that AI tools helped identify data gaps earlier during the preparation phase. However, evaluators expressed concerns about the potential homogenization of qualitative judgment. These findings suggest that AI tools can effectively improve quality assurance consistency, but integration must be balanced to preserve expert professional judgment in the accreditation process.
+Higher education quality assurance increasingly relies on standardized evaluation frameworks, yet the issue of inter-evaluator consistency has persisted. This study aims to investigate the effects of AI-assisted tools on evaluation consistency and institutional self-assessment practices in Taiwanese higher education. A quasi-experimental design was employed, comparing evaluation outcomes across 24 institutional accreditation cases during the 2024-2025 accreditation cycle — 12 using traditional methods and 12 using AI-augmented evaluation protocols. Resultados showed that AI-augmented evaluations reduced inter-evaluator variance by 28% (Cohen's *d* = 0.74) and improved the alignment between self-assessment reports and site visit findings (*r* = .82 vs. .63 for traditional methods). Evaluated institutions also reported that AI tools helped identify data gaps earlier during the preparation phase. However, evaluators expressed concerns about the potential homogenization of qualitative judgment. These findings suggest that AI tools can effectively improve quality assurance consistency, but integration must be balanced to preserve expert professional judgment in the accreditation process.
 
 **Keywords**: quality assurance, artificial intelligence, higher education accreditation, evaluation consistency, Taiwan
 
 ---
 
-## 1. Introduction
+## 1. Introducción
 
 ### 1.1 Context and Background
 
@@ -52,7 +52,7 @@ This study contributes to the growing literature on AI in higher education gover
 
 ---
 
-## 2. Literature Review
+## 2. Revisión de Literatura
 
 ### 2.1 Theoretical Framework
 
@@ -88,13 +88,13 @@ Successful technology integration in QA appears to follow a pattern of increment
 
 ---
 
-## 3. Methodology
+## 3. Metodología
 
 ### 3.1 Research Design
 
 A quasi-experimental design with matched comparison groups was employed. Institutional accreditation cases were matched on institution type (public/private), size (student enrollment), and prior accreditation outcomes.
 
-### 3.2 Sample
+### 3.2 Muestra
 
 Twenty-four institutional accreditation cases from the 2024-2025 cycle were included: 12 in the AI-augmented group (intervention) and 12 in the traditional group (comparison). Each case involved 4-6 evaluators, yielding evaluation data from 116 evaluators.
 
@@ -116,7 +116,7 @@ Quantitative data were analyzed using independent-samples *t*-tests, ICC(2,k) fo
 
 ---
 
-## 4. Results
+## 4. Resultados
 
 ### 4.1 Inter-Evaluator Consistency (RQ1)
 
@@ -174,7 +174,7 @@ Thematic analysis of 18 semi-structured interviews identified four emergent them
 
 ---
 
-## 5. Discussion
+## 5. Discusión
 
 ### 5.1 Summary
 
@@ -201,7 +201,7 @@ These findings suggest that QA agencies like HEEACT should consider phased integ
 
 ---
 
-## 6. Conclusion
+## 6. Conclusión
 
 AI-assisted QA tools can meaningfully improve evaluation consistency in higher education accreditation. However, successful integration requires careful design that preserves expert judgment and contextual sensitivity. Future research should examine longitudinal effects and cross-national transferability.
 
@@ -213,7 +213,7 @@ This paper was prepared with the assistance of AI-powered academic writing tools
 
 ---
 
-## References
+## Referencias
 
 *(This is an example — references are illustrative, not real citations)*
 

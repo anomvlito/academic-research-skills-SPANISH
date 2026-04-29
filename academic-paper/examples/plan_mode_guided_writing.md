@@ -6,7 +6,7 @@ This example demonstrates the complete Plan mode workflow, from Step 0 to Step 3
 
 ---
 
-## Step 0: Research Readiness Check
+## Paso 0: Research Readiness Check
 
 ### Round 1
 
@@ -45,7 +45,7 @@ Readiness level: Sufficient, can proceed directly to Thesis Crystallization
 
 ---
 
-## Step 1: Thesis Crystallization
+## Paso 1: Thesis Crystallization
 
 ### Round 1
 
@@ -103,14 +103,14 @@ Boundary conditions: Specific course type, specific university size, pandemic co
 
 ---
 
-## Step 2: Chapter-by-Chapter Negotiation
+## Paso 2: Chapter-by-Chapter Negotiation
 
-### Introduction (2 rounds)
+### Introducción (2 rounds)
 
 #### Round 1
 
 **Socratic Mentor**:
-Good, let's move into planning the Introduction. Before we start, you need to answer 5 core questions:
+Good, let's move into planning the Introducción. Before we start, you need to answer 5 core questions:
 
 1. **Problem urgency**: By the end of this chapter, what problem should the reader understand?
 2. **Research gap**: What gap does your research fill?
@@ -118,7 +118,7 @@ Good, let's move into planning the Introduction. Before we start, you need to an
 4. **Timeliness**: Why study this problem now?
 5. **Reading motivation**: Why should the reader keep reading?
 
-Start with question 1: After reading your Introduction, what problem urgency should the reader feel most strongly?
+Start with question 1: After reading your Introducción, what problem urgency should the reader feel most strongly?
 
 **User**:
 Taiwanese universities are massively promoting blended learning post-pandemic, but nobody has actually verified its impact on student academic performance. Everyone just assumes "technology advancement means it must be good," but this may overlook differences across student groups.
@@ -142,13 +142,13 @@ Good, let me summarize your 5 answers and see if anything needs to be supplement
 4. **Timeliness**: In the post-pandemic era, blended learning has shifted from "necessity" to "strategic choice," urgently requiring empirical guidance
 5. **Reading motivation**: If we continue promoting blindly, disadvantaged students (those with low self-regulated learning ability) may become invisible victims
 
-Your Introduction could open like this:
+Your Introducción could open like this:
 Start with Taiwan's higher education digital transformation policy trends → Introduce the rapid expansion of blended learning → Point out the weak empirical foundation → Specifically highlight that student differences are being ignored → Lead into your RQs
 
 Suggested structure: Hook (policy data, 1 paragraph) → Background (blended learning definition + trends, 2 paragraphs) → Gap (three gaps, 1 paragraph) → Purpose & RQ (1 paragraph)
 
 ```
-### Chapter Summary: Introduction
+### Chapter Summary: Introducción
 
 **Core purpose**: Establish the urgency and necessity of the research, lead into dual RQs
 **Core argument**: Taiwanese universities are massively promoting blended learning but lack local empirical evidence, particularly regarding the impact of student differences
@@ -161,17 +161,17 @@ Suggested structure: Hook (policy data, 1 paragraph) → Background (blended lea
 **User confirmation**: Yes
 
 [INSIGHT: introduction_summary]
-Introduction uses "policy ahead of evidence" as the core narrative, with three research gaps (localization, routinization, moderating variable) supporting the necessity of the RQs.
+Introducción uses "policy ahead of evidence" as the core narrative, with three research gaps (localization, routinization, moderating variable) supporting the necessity of the RQs.
 ```
 
 ---
 
-### Literature Review (3 rounds)
+### Revisión de Literatura (3 rounds)
 
 #### Round 1
 
 **Socratic Mentor**:
-Next is the Literature Review. 5 core questions:
+Next is the Revisión de Literatura. 5 core questions:
 
 1. Which theories/concepts will you review?
 2. What is the relationship between these literature sources?
@@ -233,7 +233,7 @@ Your research is at the intersection of "Blended Learning x Specific Groups (by 
 Yes, that's exactly the position.
 
 ```
-### Chapter Summary: Literature Review
+### Chapter Summary: Revisión de Literatura
 
 **Core purpose**: Establish the theoretical foundation for three concepts and identify the gap in integrative perspectives
 **Core argument**: Existing blended learning effectiveness research ignores individual learner differences, leading to contradictory conclusions
@@ -251,12 +251,12 @@ Literature review follows the narrative of "Definition → Controversy → Missi
 
 ---
 
-### Methodology (2 rounds)
+### Metodología (2 rounds)
 
 #### Round 1
 
 **Socratic Mentor**:
-Methodology's 5 core questions:
+Metodología's 5 core questions:
 
 1. What method do you use to answer the RQ?
 2. Why is this method more appropriate than alternatives?
@@ -282,11 +282,11 @@ For retrospective bias, I can discuss it in limitations. But the MSLQ asks about
 **Socratic Mentor**:
 PSM is the standard approach for addressing self-selection bias — this will enhance your methodological credibility. The retrospective bias explanation is also reasonable — MSLQ measures stable traits, not states.
 
-Your Methodology can include these sections:
+Your Metodología can include these sections:
 Research design overview (quasi-experimental + retrospective survey) → Participant description (n=1200, three academic years) → Variable definitions (IV: instructional mode; DV: semester grades; moderator: MSLQ scores) → Data analysis methods (descriptive statistics + PSM + hierarchical regression) → Research quality (PSM reduces selection bias + MSLQ reliability/validity) → Research ethics (anonymization) → Methodological limitations
 
 ```
-### Chapter Summary: Methodology
+### Chapter Summary: Metodología
 
 **Core purpose**: Describe the research design and analysis methods, address potential methodological critiques
 **Core argument**: Quasi-experimental design + PSM + hierarchical regression can effectively answer the moderating effect RQ
@@ -304,18 +304,18 @@ Quasi-experimental design + PSM + hierarchical regression, three academic years 
 
 ---
 
-### Results (2 rounds)
+### Resultados (2 rounds)
 
 #### Round 1
 
 **Socratic Mentor**:
-Results' 5 core questions:
+Resultados' 5 core questions:
 
 1. What is your most important finding? State it in one sentence.
 2. Were there any unexpected results?
 3. Were there any places where the data did not support your hypothesis?
 4. What is the clearest way to present the results?
-5. Which results are most worth discussing in depth in the Discussion?
+5. Which results are most worth discussing in depth in the Discusión?
 
 **User**:
 Most important finding: Blended learning had no significant effect on overall average grades (p = .23), but the interaction between self-regulated learning ability and instructional mode was significant (p < .01). The high self-regulated learning group performed significantly better in blended sections than in-person sections (d = 0.35), while the low self-regulated learning group performed significantly worse (d = -0.28).
@@ -337,14 +337,14 @@ An interaction plot, with instructional mode (in-person vs. blended) on the X-ax
 **Socratic Mentor**:
 The interaction plot is the standard approach for presenting moderating effects — good choice. In addition to the figure, I recommend pairing it with a descriptive statistics table (means and standard deviations for each group) and a hierarchical regression table.
 
-Remember the golden rule for Results: report only, don't interpret.
+Remember the golden rule for Resultados: report only, don't interpret.
 - First present the overall picture (descriptive statistics, PSM matching results)
 - Then report the main effect (impact of instructional mode on grades)
 - Finally report the interaction (moderating effect)
 - Use text to guide readers to the key points in figures and tables
 
 ```
-### Chapter Summary: Results
+### Chapter Summary: Resultados
 
 **Core purpose**: Present three levels of analysis results (overall → main effect → interaction)
 **Core argument**: The overall effect of blended learning is not significant, but the moderating effect of self-regulated learning ability is significant, showing a two-end polarization pattern
@@ -362,12 +362,12 @@ Core finding is the "threshold effect": blended learning significantly affects h
 
 ---
 
-### Discussion (2 rounds)
+### Discusión (2 rounds)
 
 #### Round 1
 
 **Socratic Mentor**:
-Discussion's 5 core questions:
+Discusión's 5 core questions:
 
 1. How does your result dialogue with existing literature?
 2. What is the theoretical significance of your findings?
@@ -385,7 +385,7 @@ This interpretation is very insightful. You're not overturning Means et al. — 
 
 "The findings of this study do not contradict Means et al. (2013), but rather provide a more nuanced interpretation. When overall averages mask subgroup differences, the conclusion that 'blended learning is superior to traditional instruction' may be a statistical artifact — genuinely better for some students, but worse for others."
 
-This is one of the most powerful paragraphs in your Discussion.
+This is one of the most powerful paragraphs in your Discusión.
 
 #### Round 2
 
@@ -400,11 +400,11 @@ Good, let me ask about limitations. What do you think are the 3 biggest limitati
 **Socratic Mentor**:
 All three limitations are honest. The third is particularly important — it directly affects whether your conclusions can be generalized to the post-pandemic era. When writing, I recommend not just listing limitations, but for each one explaining: (1) why it's a limitation, (2) what you did to mitigate it, and (3) how future research can overcome it.
 
-Your Discussion can be organized like this:
+Your Discusión can be organized like this:
 Summary of main findings (1 paragraph) → Dialogue with Means et al. (1 paragraph) → Theoretical significance of the threshold effect (1 paragraph) → The role of self-regulated learning ability (1 paragraph) → Practical recommendations (1 paragraph) → Limitations (1 paragraph) → Future research (1 paragraph)
 
 ```
-### Chapter Summary: Discussion
+### Chapter Summary: Discusión
 
 **Core purpose**: Interpret findings, dialogue with literature, propose practical recommendations
 **Core argument**: The overall null result may be a "statistical artifact" of positive and negative effects canceling out; self-regulated learning ability is an overlooked key moderating variable
@@ -417,17 +417,17 @@ Summary of main findings (1 paragraph) → Dialogue with Means et al. (1 paragra
 **User confirmation**: Yes
 
 [INSIGHT: discussion_summary]
-Discussion core narrative: "Deconstructing the statistical artifact of Means et al." + theoretical significance of the threshold effect + three-level practical recommendations (policy/instruction/support systems).
+Discusión core narrative: "Deconstructing the statistical artifact of Means et al." + theoretical significance of the threshold effect + three-level practical recommendations (policy/instruction/support systems).
 ```
 
 ---
 
-### Conclusion (1 round)
+### Conclusión (1 round)
 
 #### Round 1
 
 **Socratic Mentor**:
-Finally, the Conclusion — only 3 questions:
+Finally, the Conclusión — only 3 questions:
 
 1. What is your core contribution? (One sentence)
 2. What do you most want the reader to remember?
@@ -439,14 +439,14 @@ Finally, the Conclusion — only 3 questions:
 3. What this research changed: The question shifted from "should we promote blended learning" to "how do we promote it without harming disadvantaged students."
 
 **Socratic Mentor**:
-All three answers are concise and powerful. Your Conclusion can be structured like this:
+All three answers are concise and powerful. Your Conclusión can be structured like this:
 
 Answer the RQs (no significant overall difference, but significant moderating effect) → Core contribution (a perspective shift from "is it effective" to "for whom is it effective") → Call to action (universities should establish differentiated learning support mechanisms when promoting digital transformation)
 
 Be careful not to introduce new evidence or arguments. Make the ending impactful.
 
 ```
-### Chapter Summary: Conclusion
+### Chapter Summary: Conclusión
 
 **Core purpose**: Answer the RQs, summarize contributions, propose outlook
 **Core argument**: Blended learning policy needs to shift from "one-size-fits-all" to "differentiated promotion"
@@ -454,17 +454,17 @@ Be careful not to introduce new evidence or arguments. Make the ending impactful
   1. Empirical findings of the threshold effect
   2. Feasibility of three-level practical recommendations
   3. Future research directions (cross-institutional, longitudinal, intervention studies)
-**Potential risk**: Conclusion that is too short may appear hasty
+**Potential risk**: Conclusión that is too short may appear hasty
 **Expected word count**: 500-700 words
 **User confirmation**: Yes
 
 [INSIGHT: conclusion_summary]
-Conclusion's core message: Shift from "should we promote blended learning" to "how do we promote it without harming disadvantaged students" — calling for differentiated policy.
+Conclusión's core message: Shift from "should we promote blended learning" to "how do we promote it without harming disadvantaged students" — calling for differentiated policy.
 ```
 
 ---
 
-## Step 3: Argument Stress Test
+## Paso 3: Argument Stress Test
 
 ### Round 1
 
@@ -479,7 +479,7 @@ I admit that testing only one moderating variable is a limitation. But choosing 
 **Socratic Mentor**:
 [argument_builder assessment: Argument strength Moderate — theoretical basis is solid but empirical scope is limited]
 
-The response is reasonable, but I recommend explicitly mentioning other potential moderating variables in the Discussion's limitations section to demonstrate your scholarly self-awareness.
+The response is reasonable, but I recommend explicitly mentioning other potential moderating variables in the Discusión's limitations section to demonstrate your scholarly self-awareness.
 
 **Challenge 2**: Your effect sizes are small (d = 0.35 and d = -0.28). Someone might say these have no practical significance. How do you respond?
 
@@ -526,7 +526,7 @@ All arguments are at Moderate or above — we can proceed to Chapter Plan output
 - **Paper type**: IMRaD
 - **Target word count**: 7,000-8,000 words
 
-## Chapter 1: Introduction (800-1,000 words)
+## Chapter 1: Introducción (800-1,000 words)
 - **Core Argument**: Taiwanese universities are massively promoting blended learning but lack local empirical evidence
 - **Supporting Evidence**:
   - MOE digital transformation policy data
@@ -536,7 +536,7 @@ All arguments are at Moderate or above — we can proceed to Chapter Plan output
 - **Response**: Meta-analysis conclusions have limited generalizability (context/student differences)
 - **Argument Strength**: Strong
 
-## Chapter 2: Literature Review (2,000-2,500 words)
+## Chapter 2: Revisión de Literatura (2,000-2,500 words)
 - **Core Argument**: Blended learning effectiveness research needs to incorporate learner characteristics as moderating variables
 - **Supporting Evidence**:
   - Diversity of blended learning definitions (Garrison & Kanuka, 2004; Graham, 2006)
@@ -546,7 +546,7 @@ All arguments are at Moderate or above — we can proceed to Chapter Plan output
 - **Response**: Overall effects mask subgroup differences
 - **Argument Strength**: Strong
 
-## Chapter 3: Methodology (1,200-1,500 words)
+## Chapter 3: Metodología (1,200-1,500 words)
 - **Core Argument**: Quasi-experimental design + PSM + hierarchical regression can effectively answer the moderating effect RQ
 - **Supporting Evidence**:
   - n=1200 across three academic years
@@ -556,7 +556,7 @@ All arguments are at Moderate or above — we can proceed to Chapter Plan output
 - **Response**: PSM controls observed confounders, MSLQ measures stable traits
 - **Argument Strength**: Moderate
 
-## Chapter 4: Results (1,000-1,200 words)
+## Chapter 4: Resultados (1,000-1,200 words)
 - **Core Argument**: Overall effect not significant but moderating effect is significant, showing threshold effect
 - **Supporting Evidence**:
   - Main effect p = .23 (not significant)
@@ -566,7 +566,7 @@ All arguments are at Moderate or above — we can proceed to Chapter Plan output
 - **Response**: d = 0.2-0.4 has practical significance in educational observational research (Hattie, 2009)
 - **Argument Strength**: Strong
 
-## Chapter 5: Discussion (1,500-2,000 words)
+## Chapter 5: Discusión (1,500-2,000 words)
 - **Core Argument**: The "overall null result" is a statistical artifact of positive and negative effects canceling out
 - **Supporting Evidence**:
   - Critical dialogue with Means et al. (2013)
@@ -576,7 +576,7 @@ All arguments are at Moderate or above — we can proceed to Chapter Plan output
 - **Response**: Limitations are real but don't affect the directionality of core findings
 - **Argument Strength**: Moderate
 
-## Chapter 6: Conclusion (500-700 words)
+## Chapter 6: Conclusión (500-700 words)
 - **Core Argument**: Blended learning policy needs to shift from "one-size-fits-all" to "differentiated promotion"
 - **Supporting Evidence**:
   - Empirical basis of the threshold effect

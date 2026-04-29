@@ -1,6 +1,6 @@
 # Failure Paths — Academic Paper Writing Failure Path Map
 
-This document records the failure scenarios that the academic-paper skill may encounter at each stage, their trigger conditions, and handling strategies. All agents should refer to this guide when they detect a failure scenario.
+Este documento records the failure scenarios that the academic-paper skill may encounter at each stage, their trigger conditions, and handling strategies. All agents should refer to this guide when they detect a failure scenario.
 
 ---
 
@@ -97,7 +97,7 @@ more efficiently.
    b. Condense the literature review (keep core literature)
    c. Remove overly detailed method descriptions
    d. Compress repeated literature dialogue in Discussion
-4. Do not proactively delete; let the user decide
+4. No proactively delete; let the user decide
 ```
 
 ---
@@ -184,7 +184,7 @@ more efficiently.
 4. Execute revision after user confirmation
 ```
 
-**Note**: If still Reject after 2 rounds of revision, recommend the user to:
+**Nota**: If still Reject after 2 rounds of revision, recommend the user to:
 - Consult domain experts
 - Rethink the research design
 - Consider switching target journals (lower the bar)
@@ -252,7 +252,7 @@ more efficiently.
    - INSIGHT Collection
    - Any completed draft sections
 3. Inform the user they can come back anytime with these materials to continue
-4. Do not actively persuade them to continue (but encouragement is fine)
+4. No actively persuade them to continue (but encouragement is fine)
 ```
 
 **Save Format**:

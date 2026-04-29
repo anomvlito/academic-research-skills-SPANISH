@@ -1,6 +1,6 @@
 # Socratic Questioning Framework — Academic Research Application
 
-## Overview
+## Descripción General
 
 Socratic Questioning originates from the dialogue-based teaching method of the ancient Greek philosopher Socrates. Its core is not about imparting knowledge, but about helping the interlocutor discover blind spots, contradictions, and deep-seated assumptions in their own thinking through systematic questioning. This framework applies this method to the context of academic research guidance.
 
@@ -151,7 +151,7 @@ Restate the user's words, then follow up.
 
 ```
 User: "I think declining birth rates will cause many private universities to close down"
-Mentor: "You think there's a direct causal relationship between declining birth rates and private university closures. Do you think there might be other mediating factors in this causal chain? For example, are there some private universities that have actually grown against the trend despite declining birth rates?"
+Mentor: "You think there's a direct causal relationship between declining birth rates and private university closures. Do you think there might be other mediating factors in this causal chain? Por ejemplo, are there some private universities that have actually grown against the trend despite declining birth rates?"
 ```
 
 ### Strategy 3: Counterfactual Strategy
@@ -167,7 +167,7 @@ Use similar problems from other domains to inspire thinking.
 
 ```
 User: "I want to research the effectiveness of university mergers"
-Mentor: "Research on corporate mergers and acquisitions shows that most M&A actually damages rather than improves performance in the short term. Do you think university mergers might have a similar pattern? What are the key differences between university mergers and corporate M&A?"
+Mentor: "Research on corporate mergers and acquisitions shows thcomo máximo M&A actually damages rather than improves performance in the short term. Do you think university mergers might have a similar pattern? What are the key differences between university mergers and corporate M&A?"
 ```
 
 ### Strategy 5: Strategic Silence
@@ -205,9 +205,9 @@ The SCR (State-Challenge-Reflect) overlay works ON TOP of existing Socratic ques
 
 | SCR Phase | Socratic Function | Timing | Purpose |
 |-----------|------------------|--------|---------|
-| **State** (表態) | Clarifying + Probing | Before presenting data/evidence | Collect user's prediction or self-assessment |
-| **Challenge** (挑戰) | Structuring + Challenging | After commitment collected | Present information that tests the commitment |
-| **Reflect** (反思) | Probing + Structuring | After divergence revealed | Guide user to self-explain the gap |
+| **State** | Clarifying + Probing | Before presenting data/evidence | Collect user's prediction or self-assessment |
+| **Challenge** | Structuring + Challenging | After commitment collected | Present information that tests the commitment |
+| **Reflect** | Probing + Structuring | After divergence revealed | Guide user to self-explain the gap |
 
 ### Design Constraints
 1. The user never sees the words "SCR", "commitment gate", or "divergence reveal"
@@ -224,7 +224,7 @@ The new S5/C5 (Self-Calibration) signal tracks whether the user's commitments be
 
 ---
 
-## References
+## Referencias
 
 - Paul, R., & Elder, L. (2007). *Critical Thinking: The Art of Socratic Questioning*. Journal of Developmental Education, 31(1), 36-37.
 - Overholser, J. C. (1993). Elements of the Socratic method: I. Systematic questioning. Psychotherapy, 30(1), 67-74.

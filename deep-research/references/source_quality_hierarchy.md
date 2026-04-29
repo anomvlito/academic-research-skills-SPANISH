@@ -1,6 +1,6 @@
 # Source Quality Hierarchy — Evidence Grading Framework
 
-## Purpose
+## Propósito
 Systematic framework for grading evidence quality, used by the source_verification_agent and bibliography_agent.
 
 ## Evidence Pyramid (7 Levels)
@@ -127,7 +127,7 @@ Systematic framework for grading evidence quality, used by the source_verificati
 - **B**: Use as supporting evidence
 - **C**: Use with explicit caveats
 - **D**: Use only if no better source; acknowledge weakness
-- **F**: Do not use; cite only if critiquing
+- **F**: No use; cite only if critiquing
 
 ## Field-Specific Adjustments
 

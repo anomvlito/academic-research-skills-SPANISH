@@ -8,7 +8,7 @@
 
 ---
 
-## Purpose
+## Propósito
 
 Provides programmatic verification of reference existence and bibliographic accuracy using the Semantic Scholar Academic Graph API. This supplements (not replaces) WebSearch-based verification by adding a structured, API-grounded check that returns machine-readable metadata.
 
@@ -101,7 +101,7 @@ When two references resolve to the same `semantic_scholar_id`, flag as duplicate
 
 ---
 
-## References
+## Referencias
 
 - Song, Y., Song, Y., Pfister, T., & Yoon, J. (2026). PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing. *arXiv preprint arXiv:2604.05018*. — Section 4 Step 3 (Literature Review Agent), Appendix D.3 (Citation Verification).
 - Semantic Scholar API documentation: https://api.semanticscholar.org/

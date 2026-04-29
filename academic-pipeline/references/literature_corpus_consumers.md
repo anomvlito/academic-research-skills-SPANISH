@@ -66,7 +66,7 @@ Apply the same Inclusion / Exclusion criteria to corpus entries and external dat
 
 ### Iron Rule 2 — No silent skip
 
-Any skipped corpus entry must be recorded in the PRE-SCREENED block's skipped sub-section with a reason. Silently dropping an entry is a prompt-layer violation. The lint enforces structural markers; behaviour is enforced by the BAD / GOOD example pair below and observed in real runs.
+Any skipped corpus entry debe ser recorded in the PRE-SCREENED block's skipped sub-section with a reason. Silently dropping an entry is a prompt-layer violation. The lint enforces structural markers; behaviour is enforced by the BAD / GOOD example pair below and observed in real runs.
 
 <!-- BAD -->
 ```
@@ -104,7 +104,7 @@ Consumer agents never modify, backfill, or derive new content into `literature_c
 
 ### Iron Rule 4 — Graceful fallback on parse failure
 
-Consumer agents do NOT re-validate schema, do NOT parse JSON Schema at runtime, and do NOT dereference `source_pointer` URIs. The v3.6.4 input-port lint validates adapter output, but a passport may reach a Phase 1 agent through other paths (hand-edits, `resume_from_passport`, assembled passports). When a consumer cannot parse `literature_corpus[]`, emit `[CORPUS PARSE FAILURE: <cause>]` in the Search Strategy Report and fall back to external-DB-only flow. Do not abort Phase 1, do not attempt schema repair, do not invent contents.
+Consumer agents do NOT re-validate schema, do NOT parse JSON Schema at runtime, and do NOT dereference `source_pointer` URIs. The v3.6.4 input-port lint validates adapter output, but a passport may reach a Phase 1 agent through other paths (hand-edits, `resume_from_passport`, assembled passports). When a consumer cannot parse `literature_corpus[]`, emit `[CORPUS PARSE FAILURE: <cause>]` in the Search Strategy Report and fall back to external-DB-only flow. No abort Phase 1, do not attempt schema repair, do not invent contents.
 
 ## Zero-hit and provenance reporting (F3 / F4)
 

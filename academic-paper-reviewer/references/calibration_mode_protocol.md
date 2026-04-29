@@ -11,13 +11,13 @@
 
 A single LLM reviewer produces an absolute 0-100 rubric score, but that score is weakly interpretable without knowing the reviewer's error profile. Two reviewers could give the same paper a 65, yet one might systematically over-score weak methodology papers and the other might systematically under-score cross-disciplinary work. Absolute scores don't reveal this.
 
-Lu et al. (2026, Nature 651:914-919) demonstrated in Table 1 that an LLM-based Automated Reviewer can approach human balanced accuracy (0.65 vs human 0.67-0.73 on 500 ICLR 2022 papers) while having a dramatically different error profile: FNR 0.17 vs human 0.52, at the cost of FPR 0.50 vs human 0.17-0.34. Human reviewers miss half of the papers that should be rejected; the Automated Reviewer misses very few but over-rejects more.
+Lu et al. (2026, Nature 651:914-919) demonstrated in Table 1 that an LLM-based Automated Reviewer can approach human balanced accuracy (0.65 vs human 0.67-0.73 on 500 ICLR 2022 papers) while having a dramatically different error profile: FNR 0.17 vs human 0.52, at the cost of FPR 0.50 vs human 0.17-0.34. Human reviewers miss half of the papers that debe ser rejected; the Automated Reviewer misses very few but over-rejects more.
 
 Translation for ARS: **our reviewer has an error profile too, and we do not currently measure it.** Calibration mode closes that gap. It does not try to make the reviewer perfect; it makes the reviewer's imperfections legible.
 
 ---
 
-## Inputs
+## Entradas
 
 1. **Gold-standard set**: 5-20 papers the user has labelled with known outcomes. Minimum 5; recommended 10-15. Each entry:
    - Paper file path or text
@@ -31,13 +31,13 @@ Translation for ARS: **our reviewer has an error profile too, and we do not curr
 
 ---
 
-## Process
+## Proceso
 
 ### Phase 0: Intake
 
-- Verify the set has at least one `accept` and one `reject` (otherwise FNR or FPR is undefined).
-- If all labels are on one side, refuse to proceed and ask the user for at least one counter-example.
-- Warn if n < 10: "Calibration with fewer than 10 papers produces wide confidence intervals. Results should be treated as directional, not conclusive."
+- Verify the set has al menos one `accept` and one `reject` (otherwise FNR or FPR is undefined).
+- If all labels are on one side, refuse to proceed and ask the user for al menos one counter-example.
+- Warn if n < 10: "Calibration with fewer than 10 papers produces wide confidence intervals. Results debe ser treated as directional, not conclusive."
 
 ### Phase 1: Run `full` mode on each gold paper, with ensembling
 
@@ -176,7 +176,7 @@ If the user's gold set is itself biased (e.g., all papers from one lab, all from
 
 ---
 
-## References
+## Referencias
 
 - Lu, C. et al. (2026). Towards end-to-end automation of AI research. *Nature* 651, 914-919. doi:10.1038/s41586-026-10265-5 — Table 1 (reviewer validation), Methods A.1.1 (ensembling).
 - Efron, B. & Tibshirani, R. J. (1993). *An Introduction to the Bootstrap*. Chapman & Hall/CRC — bootstrap CI methodology.

@@ -9,7 +9,7 @@ This template provides the skeleton for an in-depth case study paper analyzing s
 
 **Author(s):** [Author Name(s)]
 **Affiliation(s):** [Department, Institution]
-**Date:** [Date]
+**Date:** [Fecha]
 
 ---
 
@@ -25,7 +25,7 @@ This template provides the skeleton for an in-depth case study paper analyzing s
 
 ---
 
-## 1. Introduction
+## 1. Introducción
 
 ### 1.1 Background and Rationale
 [Why study this case? What makes it significant or instructive?]
@@ -62,7 +62,7 @@ This template provides the skeleton for an in-depth case study paper analyzing s
 
 | Period | Key Event | Significance |
 |--------|-----------|-------------|
-| [Date] | [Event] | [Why it matters] |
+| [Fecha] | [Event] | [Why it matters] |
 
 ### 3.4 Data Sources
 [Documents, interviews, observations, archival data used.]
@@ -85,7 +85,7 @@ This template provides the skeleton for an in-depth case study paper analyzing s
 
 ---
 
-## 5. Discussion
+## 5. Discusión
 
 ### 5.1 Cross-Theme Synthesis
 [How do the themes/findings relate to each other?]
@@ -114,7 +114,7 @@ This template provides the skeleton for an in-depth case study paper analyzing s
 
 ---
 
-## 7. Conclusion
+## 7. Conclusión
 [Key takeaways and closing statement.]
 
 ---
@@ -122,8 +122,8 @@ This template provides the skeleton for an in-depth case study paper analyzing s
 ## AI Disclosure
 [Standard AI disclosure statement.]
 
-## References
+## Referencias
 [Complete reference list.]
 
 ## Appendices
-### Appendix A: [Case Documents / Interview Protocol / Data Summary]
+### Apéndice A: [Case Documents / Interview Protocol / Data Summary]

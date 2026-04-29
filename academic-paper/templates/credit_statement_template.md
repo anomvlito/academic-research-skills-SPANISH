@@ -2,7 +2,7 @@
 
 ## Usage
 
-Use this template to record author contributions using the CRediT (Contributor Roles Taxonomy) framework. Fill in the contribution matrix, then use the output format to generate the CRediT statement for your manuscript.
+Use this template to record author contributions using the CRediT (Contributor Roles Taxonomy) framework. Completar the contribution matrix, then use the output format to generate the CRediT statement for your manuscript.
 
 Reference: `references/credit_authorship_guide.md`
 
@@ -12,10 +12,10 @@ Reference: `references/credit_authorship_guide.md`
 
 | # | Author Name | Affiliation | ORCID | Corresponding Author? |
 |---|-------------|-------------|-------|:---------------------:|
-| 1 | [Name] | [Institution] | [0000-0000-0000-0000] | [Yes/No] |
-| 2 | [Name] | [Institution] | [0000-0000-0000-0000] | [Yes/No] |
-| 3 | [Name] | [Institution] | [0000-0000-0000-0000] | [Yes/No] |
-| 4 | [Name] | [Institution] | [0000-0000-0000-0000] | [Yes/No] |
+| 1 | [Name] | [Institución] | [0000-0000-0000-0000] | [Yes/No] |
+| 2 | [Name] | [Institución] | [0000-0000-0000-0000] | [Yes/No] |
+| 3 | [Name] | [Institución] | [0000-0000-0000-0000] | [Yes/No] |
+| 4 | [Name] | [Institución] | [0000-0000-0000-0000] | [Yes/No] |
 
 *Add rows as needed.*
 
@@ -32,7 +32,7 @@ Fill each cell with: **Lead** / **Supporting** / **--** (not involved)
 | 3. Formal analysis | [ ] | [ ] | [ ] | [ ] |
 | 4. Funding acquisition | [ ] | [ ] | [ ] | [ ] |
 | 5. Investigation | [ ] | [ ] | [ ] | [ ] |
-| 6. Methodology | [ ] | [ ] | [ ] | [ ] |
+| 6. Metodología | [ ] | [ ] | [ ] | [ ] |
 | 7. Project administration | [ ] | [ ] | [ ] | [ ] |
 | 8. Resources | [ ] | [ ] | [ ] | [ ] |
 | 9. Software | [ ] | [ ] | [ ] | [ ] |
@@ -59,7 +59,7 @@ Author Contributions:
 
 ```
 Author Contributions:
-Yu-Chen Wang: Conceptualization, Methodology, Funding acquisition,
+Yu-Chen Wang: Conceptualization, Metodología, Funding acquisition,
 Writing – original draft, Supervision, Project administration.
 Mei-Ling Chen: Data curation, Formal analysis, Software, Visualization,
 Writing – original draft, Writing – review & editing.
@@ -81,7 +81,7 @@ Author Contribution Statement:
 
 ```
 Author Contribution Statement:
-Yu-Chen Wang: Conceptualization, Methodology, Funding acquisition,
+Yu-Chen Wang: Conceptualization, Metodología, Funding acquisition,
 Writing -- original draft, Supervision, Project administration.
 Mei-Ling Chen: Data curation, Formal analysis, Software, Visualization,
 Writing -- original draft, Writing -- review & editing.
@@ -124,7 +124,7 @@ share first authorship.
 
 ---
 
-## Notes
+## Notas
 
 - CRediT roles should be discussed and agreed upon by **all co-authors** before submission
 - The contribution matrix serves as an internal record; the text statement is what appears in the manuscript

@@ -23,7 +23,7 @@ For each item in the Revision Roadmap:
 Priority 1 (Required):
   -> Check each item for corresponding changes in the revised manuscript
   -> Assess revision quality (FULLY_ADDRESSED / PARTIALLY_ADDRESSED / NOT_ADDRESSED / MADE_WORSE)
-  -> All Priority 1 items must be FULLY_ADDRESSED for Accept
+  -> All Priority 1 items debe ser FULLY_ADDRESSED for Accept
 
 **Traceability Rule**: For each Priority 1 item, the reviewer MUST:
 1. Read the author's claim from the Response to Reviewers
@@ -57,7 +57,7 @@ If Re-Review Decision = Major Revision:
   -> EIC guides user through Socratic dialogue:
     1. Gap analysis — "How many issues did the first round of revisions resolve? Why are the remaining ones hard to address?"
     2. Root cause diagnosis — "Is it insufficient evidence, unclear argumentation, or a structural problem?"
-    3. Trade-off decisions — "Which ones can be marked as research limitations?"
+    3. Trade-off decisions — "Which ones puede ser marked as research limitations?"
     4. Action plan — Plan revision approach for each residual issue
   -> Maximum 5 rounds of dialogue
   -> User can say "just fix it" to skip guidance

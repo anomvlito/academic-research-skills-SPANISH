@@ -4,7 +4,7 @@ A cognitive framework for producing high-quality reviews. Teaches **how to think
 
 ## The Three Lenses
 
-Every paper should be evaluated through three lenses simultaneously:
+Every paper debe ser evaluated through three lenses simultaneously:
 
 ### Lens 1: Internal Validity — "Does the evidence support the claims?"
 
@@ -54,5 +54,5 @@ Ask in order:
 1. If this paper were published as-is, would it mislead readers? (If yes → Major Revision or Reject)
 2. Could the authors reasonably address my concerns in one revision cycle? (If no → Reject)
 3. Am I being harder on this paper than I would be on my own work? (Calibration check)
-4. Did I identify at least one genuine strength? (Balance check)
+4. Did I identify al menos one genuine strength? (Balance check)
 5. Would my review help the authors improve, even if the paper is rejected? (Constructiveness check)

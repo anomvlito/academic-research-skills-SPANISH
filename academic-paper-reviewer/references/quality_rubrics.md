@@ -1,6 +1,6 @@
 # Quality Rubrics for Academic Paper Review
 
-## Purpose
+## Propósito
 
 Provides calibrated scoring rubrics for the 7 review dimensions used by all reviewers (R1, R2, R3, DA). Ensures consistent, reproducible scoring across different papers and review sessions.
 

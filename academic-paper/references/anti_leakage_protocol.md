@@ -6,7 +6,7 @@
 
 ---
 
-## Purpose
+## Propósito
 
 When the user provides comprehensive research materials (RQ Brief, Synthesis Report, Annotated Bibliography, experimental data), the writing agent should construct the paper **primarily from those materials**, not from LLM parametric memory. This prevents:
 
@@ -58,7 +58,7 @@ data, and methodology descriptions must come from session materials.
 
 ### [MATERIAL GAP] handling
 
-> **Tag vocabulary.** The `[MATERIAL GAP]`, `[WEAK EVIDENCE]`, `[GAP]` tags used throughout this protocol are canonically defined in [`shared/compliance_checkpoint_protocol.md#canonical-gap-tag-vocabulary`](../../shared/compliance_checkpoint_protocol.md#canonical-gap-tag-vocabulary). This section describes how the anti-leakage writing-time flag interacts with that vocabulary during manuscript production.
+> **Tag vocabulary.** The `[MATERIAL GAP]`, `[WEAK EVIDENCE]`, `[GAP]` tags used throughout this protocol are canonically defined in [`shared/compliance_checkpoint_protocol.md#canonical-gap-tag-vocabulary`](../../shared/compliance_checkpoint_protocol.md#canonical-gap-tag-vocabulary). Esta sección describes how the anti-leakage writing-time flag interacts with that vocabulary during manuscript production.
 
 When a `[MATERIAL GAP]` is flagged:
 1. The gap is surfaced at the next checkpoint
@@ -77,7 +77,7 @@ When a `[MATERIAL GAP]` is flagged:
 
 ---
 
-## References
+## Referencias
 
 - Song, Y. et al. (2026). PaperOrchestra. *arXiv:2604.05018*. Appendix D.4 (Anti-Leakage Prompt).
 - Lu, C. et al. (2026). Towards end-to-end automation of AI research. *Nature* 651, 914-919. — Mode 6 (Methodology fabrication).

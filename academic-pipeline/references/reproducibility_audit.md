@@ -43,7 +43,7 @@ Integrity Summary:
 
 ## Computational reproducibility (v3.3.5+)
 
-This document defines PROCESS reproducibility — consistent stages, fixed reviewer angles,
+Este documento defines PROCESS reproducibility — consistent stages, fixed reviewer angles,
 explicit pass/fail thresholds. That's one of two meanings of "reproducible."
 
 The other is COMPUTATIONAL re-run — could a third party re-execute the same pipeline and

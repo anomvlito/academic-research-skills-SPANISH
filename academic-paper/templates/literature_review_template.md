@@ -1,4 +1,4 @@
-# Literature Review Paper Template
+# Revisión de Literatura Paper Template
 
 ## Usage
 This template provides the skeleton for a thematic literature review paper that synthesizes existing research, identifies gaps, and proposes future directions.
@@ -9,7 +9,7 @@ This template provides the skeleton for a thematic literature review paper that 
 
 **Author(s):** [Author Name(s)]
 **Affiliation(s):** [Department, Institution]
-**Date:** [Date]
+**Date:** [Fecha]
 
 ---
 
@@ -25,7 +25,7 @@ This template provides the skeleton for a thematic literature review paper that 
 
 ---
 
-## 1. Introduction
+## 1. Introducción
 
 ### 1.1 Topic and Rationale
 [Why is this literature review needed? What makes it timely?]
@@ -35,7 +35,7 @@ This template provides the skeleton for a thematic literature review paper that 
 [What is included and excluded? Time period? Disciplines? Geographies?]
 [1 paragraph]
 
-### 1.3 Review Methodology
+### 1.3 Review Metodología
 [Search strategy: databases, keywords, inclusion/exclusion criteria.]
 [Number of sources reviewed.]
 [1-2 paragraphs]
@@ -116,7 +116,7 @@ This template provides the skeleton for a thematic literature review paper that 
 
 ---
 
-## 7. Conclusion
+## 7. Conclusión
 
 ### 7.1 Key Takeaways
 [Summarize the 3-5 most important insights from the review.]
@@ -131,5 +131,5 @@ This template provides the skeleton for a thematic literature review paper that 
 
 ---
 
-## References
+## Referencias
 [Complete reference list in selected citation format.]

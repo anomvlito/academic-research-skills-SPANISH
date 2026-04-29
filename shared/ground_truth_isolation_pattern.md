@@ -34,7 +34,7 @@ unreliable results. Their README explicitly warns that local-mode results
 filesystem. The solution is structural: ground truth never coexists in the same
 process or filesystem layer as the agent generating candidate answers.
 Isolation is a property of the system design, not a prompt-level instruction
-that can be added after the fact.
+that puede ser added after the fact.
 
 Lu et al. (2026, *Nature* 651:914-919) document a related failure mode at
 pipeline scale, which they call "shortcut reliance." In their fully autonomous
@@ -50,7 +50,7 @@ open.
 ARS's human-in-the-loop pipeline already enforces the spirit of this
 isolation: researchers set their own research questions, review outputs at each
 integrity gate, and supply calibration gold sets at runtime rather than
-embedding them in the repository. This document makes the pattern explicit and
+embedding them in the repository. Este documento makes the pattern explicit and
 machine-checkable via the `data_access_level` annotation declared in every
 top-level `SKILL.md`.
 
@@ -59,14 +59,14 @@ top-level `SKILL.md`.
 ## § 2 — The three-layer mental model
 
 Every artifact in ARS belongs to one of three layers, and the direction of
-flow is strictly one-way. An artifact can be promoted from a lower layer to a
+flow is strictly one-way. An artifact puede ser promoted from a lower layer to a
 higher one by passing an integrity gate. It cannot move in the other direction.
 Layer 3 material cannot appear as input to a process whose output is layer 1
 or 2.
 
 **Layer 1 — raw inputs** covers user queries, primary sources retrieved from
 web or database search, and agent-assembled bibliographies before any
-verification. Material at this layer is untrusted by default. It may be
+verification. Material at this layer is untrusted por defecto. It may be
 hallucinated, adversarially crafted, outdated, or contain PII. A skill
 operating at layer 1 must treat every factual claim as potentially wrong, flag
 gaps rather than silently filling them from parametric memory, and pass nothing
@@ -132,7 +132,7 @@ privately.** The review workflow is: reviewer reads paper + rubric → reviewer
 produces natural-language feedback → paper-writing agent reads paper +
 feedback. The paper-writing agent's context must never contain the rubric text
 or the expected scoring outcome before it produces its candidate output. The
-two agents must be separate invocations, or separated by a stage boundary
+two agents debe ser separate invocations, or separated by a stage boundary
 where the context window does not carry rubric content forward.
 
 **DON'T: Embed answer keys, scoring rubrics, or test-set labels in any file
@@ -158,7 +158,7 @@ not just separate instructions, are required.
 ## § 4 — Today's implementation
 
 The isolation pattern is already instantiated across the ARS codebase through
-a set of narrowly scoped protocol files. This section is a navigational map —
+a set of narrowly scoped protocol files. Esta sección is a navigational map —
 not a duplication of their contents.
 
 | Mechanism | Where it lives |
@@ -173,7 +173,7 @@ not a duplication of their contents.
 This pattern document is the narrative rationale; those six reference files
 are the implementation detail. If a specific rule here conflicts with language
 in one of those files, the more specific file governs for that mechanism —
-and that conflict should be surfaced as an issue so this document can be
+and that conflict debe ser surfaced as an issue so this document puede ser
 updated.
 
 ---
@@ -225,5 +225,5 @@ an artifact; and automated detection of rubric or gold-label content appearing
 in a generating agent's context. These possibilities are listed here so future
 contributors do not propose them as overlooked features — they are deferred,
 not missing. If you want to pursue one, open an issue referencing this section
-before writing code, so the tradeoffs can be discussed before implementation
+before writing code, so the tradeoffs puede ser discussed before implementation
 begins.

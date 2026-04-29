@@ -4,7 +4,7 @@ This template is used by `editorial_synthesizer_agent` to produce the final Edit
 
 ---
 
-## Template
+## Plantilla
 
 ```markdown
 # Editorial Decision
@@ -31,7 +31,7 @@ This template is used by `editorial_synthesizer_agent` to produce the final Edit
 | Reviewer | Role | Recommendation | Confidence |
 |----------|------|---------------|------------|
 | EIC | [Journal editor identity] | [Accept/Minor/Major/Reject] | [1-5] |
-| Reviewer 1 | [Methodology expert identity] | [Accept/Minor/Major/Reject] | [1-5] |
+| Reviewer 1 | [Metodología expert identity] | [Accept/Minor/Major/Reject] | [1-5] |
 | Reviewer 2 | [Domain expert identity] | [Accept/Minor/Major/Reject] | [1-5] |
 | Reviewer 3 | [Cross-disciplinary expert identity] | [Accept/Minor/Major/Reject] | [1-5] |
 
@@ -88,13 +88,13 @@ Requirements:
 
 ### Required Item Details
 
-**R1: [Title]**
+**R1: [Título]**
 - **Problem**: [Specific description]
 - **Source**: [Which reviewer raised it, citing report passage]
 - **Requirement**: [Specifically how to fix it]
 - **Acceptance criteria**: [How to confirm the issue is resolved after fixing]
 
-**R2: [Title]**
+**R2: [Título]**
 - [Same format as above]
 
 ---
@@ -133,7 +133,7 @@ Requirements:
 
 ## Revision Deadline
 
-- **Recommended deadline**: [Date]
+- **Recommended deadline**: [Fecha]
 - **Basis**: [Minor: 2-4 weeks / Major: 6-8 weeks]
 - **Extension policy**: [If extension is needed, notify 1 week before the deadline]
 
@@ -171,14 +171,14 @@ After careful consideration, we are unable to accept your manuscript for publica
 
 ---
 
-## Appendix: Full Reviewer Reports
+## Apéndice: Full Reviewer Reports
 
 [Attach all 4 complete reviewer reports for the author's reference]
 ```
 
 ---
 
-## Format Guidelines
+## Formato Guidelines
 
 ### Revision Roadmap Design Principles
 

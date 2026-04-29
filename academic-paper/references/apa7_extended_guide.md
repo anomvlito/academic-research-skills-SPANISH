@@ -50,7 +50,7 @@ Due Date
 **Usage rules**:
 - Don't skip levels (e.g., don't go from Level 1 to Level 3)
 - Introduction doesn't need a Level 1 heading (it's assumed)
-- Subsections need at least 2 sibling sections
+- Subsections need al menos 2 sibling sections
 
 ## Extended Citation Rules
 

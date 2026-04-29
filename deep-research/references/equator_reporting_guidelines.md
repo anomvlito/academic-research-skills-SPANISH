@@ -1,6 +1,6 @@
 # EQUATOR Reporting Guidelines — Research Design and Reporting Guideline Mapping
 
-## Purpose
+## Propósito
 Quick reference for EQUATOR Network (Enhancing the QUAlity and Transparency Of health Research) reporting guidelines. Assists the research_architect_agent in selecting the appropriate reporting checklist during the methodology design stage, and the report_compiler_agent in ensuring report completeness during the writing stage.
 
 ---
@@ -39,7 +39,7 @@ Quick reference for EQUATOR Network (Enhancing the QUAlity and Transparency Of h
 | 3 | **Registration** | Registration number and platform (e.g., PROSPERO) | Strongly recommended |
 | 4 | **Eligibility criteria** | Inclusion/exclusion criteria in PICOS or PEO format | Required |
 | 5 | **Information sources** | Databases searched and dates | Required |
-| 6 | **Search strategy** | Complete search strategy for at least one database | Required |
+| 6 | **Search strategy** | Complete search strategy for al menos one database | Required |
 | 7 | **Selection process** | Screening process (number of reviewers, how disagreements were resolved) | Required |
 | 8 | **Data extraction** | Data extraction methods | Required |
 | 9 | **Risk of bias** | Risk of bias assessment tool and results | Required |

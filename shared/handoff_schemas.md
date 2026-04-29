@@ -1,6 +1,6 @@
 # Handoff Schemas — Cross-Skill Data Contracts
 
-## Purpose
+## Propósito
 
 Defines the exact data structure for every artifact passed between pipeline stages.
 All agents that produce or consume these artifacts MUST conform to these schemas.
@@ -203,7 +203,7 @@ AI-assisted assessment's primary advantage lies in the immediacy of feedback, re
 | Field | Type | Description |
 |-------|------|-------------|
 | `title` | string | Paper title |
-| `abstract` | object | `{english: string, chinese: string}` (chinese is required only if bilingual) |
+| `abstract` | object | `{english: string, chinese: string}` (chinese es obligatorio only if bilingual) |
 | `authors` | list[Author] | Author information with CRediT roles |
 | `keywords` | object | `{en: list[string], zh_tw: list[string]}` bilingual keywords (3-6 each) |
 | `sections` | list[Section] | Ordered paper sections |
@@ -223,7 +223,7 @@ AI-assisted assessment's primary advantage lies in the immediacy of feedback, re
 | `citation_count` | integer | Number of in-text citations in this section |
 | `argument_strength` | enum | `compelling` / `strong` / `adequate` / `weak` (see argument_builder scoring) |
 
-### Reference Object
+### Referencia Object
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -630,7 +630,7 @@ See `shared/style_calibration_protocol.md` for full consumption rules and confli
 **Paragraph Length**: mean 5 sentences, variation: "moderate — 3-7 sentences, shorter in Methods"
 **Vocabulary Preferences**:
   - Hedging: suggests, appears to, may
-  - Transitions: However, In contrast, Yet
+  - Transitions: Sin embargo, In contrast, Yet
   - Reporting verbs: found, argued, noted
   - Formality: moderate-formal
 **Citation Style**: narrative 40%, parenthetical 60%, density 2.3/paragraph, placement: mixed
@@ -711,16 +711,16 @@ Ordering: chronological by `generated_at`. A Stage 2.5 FAIL followed by backfill
 ## Validation Rules
 
 1. **Required field check**: All schema fields marked without "(optional)" or "No" in the Required column are REQUIRED. Consumer agents MUST verify all required fields are present before proceeding
-2. **Type check**: Fields must match declared types (e.g., `enum` values must be from the allowed set)
+2. **Type check**: Fields must match declared types (e.g., `enum` values debe ser from the allowed set)
 3. **Cross-reference check**: Source IDs referenced in Synthesis must exist in Bibliography; RevisionItem IDs in Response to Reviewers must match the Revision Roadmap
-4. **Version tracking**: Each handoff artifact MUST carry a Material Passport (Schema 9) with a version label. Version labels must be monotonically increasing within a pipeline run
+4. **Version tracking**: Each handoff artifact MUST carry a Material Passport (Schema 9) with a version label. Version labels debe ser monotonically increasing within a pipeline run
 5. **Failure on missing**: If a required field is missing, return `HANDOFF_INCOMPLETE` with a list of missing fields; do NOT proceed with partial data
 6. **Producer validation**: Producing agent must validate output against its schema BEFORE handoff
 7. **Consumer validation**: Consuming agent should validate input on receipt and request re-generation if schema violations are found
 8. **Integrity gating**: Artifacts that have passed through integrity verification (Schema 5) must have their Material Passport updated with `verification_status: "VERIFIED"` and `integrity_pass_date`
-9. **Staleness detection**: If an upstream artifact is modified after a downstream artifact was produced, the downstream artifact's Material Passport should be updated to `verification_status: "STALE"`
+9. **Staleness detection**: If an upstream artifact is modified after a downstream artifact was produced, the downstream artifact's Material Passport debe ser updated to `verification_status: "STALE"`
 10. **Passport freshness**: A Material Passport's integrity results are considered STALE if `integrity_pass_date` is more than 24 hours old relative to the current timestamp. Stale passports require re-verification before proceeding
-11. **Stage-skip eligibility via passport**: A passport allows skipping Stage 2.5 (pre-review integrity) ONLY when ALL of the following conditions are met: (a) `verification_status` = `"VERIFIED"`, (b) `integrity_pass_date` is within the current session or less than 24 hours old, (c) `version_label` matches the current artifact version (content has not been modified since verification), and (d) the user explicitly confirms the skip. If any condition fails, full Stage 2.5 re-verification is required
+11. **Stage-skip eligibility via passport**: A passport allows skipping Stage 2.5 (pre-review integrity) ONLY when ALL of the following conditions are met: (a) `verification_status` = `"VERIFIED"`, (b) `integrity_pass_date` is within the current session or less than 24 hours old, (c) `version_label` matches the current artifact version (content has not been modified since verification), and (d) the user explicitly confirms the skip. If any condition fails, full Stage 2.5 re-verification es obligatorio
 12. **Passport does not grant Stage 4.5 skip**: The final integrity check (Stage 4.5) can NEVER be skipped via Material Passport, regardless of passport status. Stage 4.5 always requires full Mode 2 verification
 
 ## `data_access_level` (v3.3.2+)

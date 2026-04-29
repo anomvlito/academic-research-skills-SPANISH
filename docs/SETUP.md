@@ -54,7 +54,7 @@ export ANTHROPIC_API_KEY=sk-ant-xxxxx
 
 ## DOCX output (optional)
 
-Direct `.docx` generation uses [Pandoc](https://pandoc.org/). If Pandoc is unavailable, the formatter falls back to Markdown + DOCX conversion instructions.
+La generación directa de `.docx` usa [Pandoc](https://pandoc.org/). If Pandoc is unavailable, the formatter falls back to Markdown + DOCX conversion instructions.
 
 ```bash
 # macOS
@@ -80,13 +80,12 @@ curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net | sh
 # Windows — download from https://tectonic-typesetting.github.io/en-US/install.html
 ```
 
-**Required fonts** (for APA 7.0 CJK output):
+**Required fonts**:
 
 - **Times New Roman** — usually pre-installed on macOS/Windows; on Linux install `ttf-mscorefonts-installer`
-- **Source Han Serif TC VF** (思源宋體) — download from [Google Fonts](https://fonts.google.com/specimen/Noto+Serif+TC) or [Adobe GitHub](https://github.com/adobe-fonts/source-han-serif)
 - **Courier New** — usually pre-installed
 
-> If you only need Markdown output or DOCX conversion instructions, skip this entirely. Direct `.docx` generation requires Pandoc, and PDF generation requires `tectonic`.
+> If you only need Markdown output or DOCX conversion instructions, skip this entirely. La generación directa de `.docx` requiere Pandoc, y la generación de PDF requiere `tectonic`.
 
 ---
 
@@ -242,7 +241,7 @@ Use this when you want the four ARS skills available in [Claude Cowork](https://
 
 Cowork uses the same skill folder shape: `~/.claude/skills/<skill-name>/SKILL.md`.
 
-#### Prerequisites
+#### Requisitos Previos
 
 - Claude Desktop latest version on macOS or Windows. Download from Anthropic's [Claude Desktop page](https://claude.ai/download).
 - Active internet connection; Cowork tasks call the Anthropic API.
@@ -326,7 +325,7 @@ ARS is a Claude Code-native suite. The four skills are 12-13-agent teams that de
 - **Method 4b — Project + GitHub integration** (recommended for claude.ai users): brings the repository into a claude.ai Project as retrievable knowledge. Claude can read the skill bodies, references, schemas, and example outputs, and answer questions or draft against them. Not a Skill install — auto-loading and skill routing do not happen, but the content is fully available for reading and citation.
 - **Method 4a — Custom Skill upload**: claude.ai's standard Skill install path (Settings → Capabilities → Skills, one zip per skill). Not recommended for this suite — see the rationale below before using it.
 
-#### Prerequisites
+#### Requisitos Previos
 
 - A claude.ai account. Plan availability differs by sub-method (see below).
 - **For Method 4b**: claude.ai Projects are available across plan tiers per Anthropic's [What are Projects?](https://support.claude.com/en/articles/9517075-what-are-projects); paid plans (Pro, Max, Team, Enterprise) get larger knowledge capacity and stronger retrieval. GitHub authentication is required through the Anthropic connector — see [Using the GitHub integration](https://support.claude.com/en/articles/10167454-using-the-github-integration) and [Set up Claude integrations](https://support.claude.com/en/articles/10168395-set-up-claude-integrations). Private repositories require the Anthropic GitHub App to be authorized on the repo or organization. Team and Enterprise plans require owner-level connector enablement before users can add GitHub-sourced files.

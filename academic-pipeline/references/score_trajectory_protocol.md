@@ -6,7 +6,7 @@
 
 ---
 
-## Purpose
+## Propósito
 
 Tracks how rubric scores change across revision rounds. Detects score regressions — dimensions where the revised paper scores lower than the original — which indicate that a revision fix inadvertently damaged another aspect of the paper.
 
@@ -87,6 +87,6 @@ Early-stop eligible: No (overall delta = 4 >= 3)
 
 ---
 
-## References
+## Referencias
 
 - Song, Y. et al. (2026). PaperOrchestra. *arXiv:2604.05018*. — Section 4 Step 5 (Content Refinement Agent: score-driven accept/revert).

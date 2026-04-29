@@ -26,6 +26,13 @@ def expect_contains(rel_path: str, needle: str) -> None:
         fail(f"{rel_path}: missing expected text: {needle!r}")
 
 
+def expect_contains_any(rel_path: str, *needles: str) -> None:
+    """Pass if ANY of the given strings is present (supports bilingual docs)."""
+    text = read(rel_path)
+    if not any(n in text for n in needles):
+        fail(f"{rel_path}: missing any of: {needles!r}")
+
+
 def expect_absent(rel_path: str, needle: str) -> None:
     text = read(rel_path)
     if needle in text:
@@ -73,8 +80,8 @@ def check_mode_registry() -> None:
 
 def check_claude_md() -> None:
     rel_path = ".claude/CLAUDE.md"
-    expect_contains(rel_path, "integrity check (Stage 2.5)")
-    expect_contains(rel_path, "final integrity check (Stage 4.5)")
+    expect_contains_any(rel_path, "integrity check (Stage 2.5)", "verificación de integridad (Etapa 2.5)")
+    expect_contains_any(rel_path, "final integrity check (Stage 4.5)", "verificación de integridad final (Etapa 4.5)")
     expect_contains(rel_path, "**Suite version**: 3.6.5")
     for forbidden in (
         "6th independent reviewer",
@@ -120,15 +127,21 @@ def check_pipeline_docs() -> None:
         "academic-pipeline/agents/pipeline_orchestrator_agent.md",
     ):
         expect_absent(rel_path, "auto-continue in 5 seconds")
-        expect_contains(rel_path, "One-line status + explicit continue/pause prompt")
+        expect_contains_any(
+            rel_path,
+            "One-line status + explicit continue/pause prompt",
+            "Estado en una línea + confirmación explícita de continuar/pausar",
+        )
 
-    expect_contains(
+    expect_contains_any(
         "academic-pipeline/agents/pipeline_orchestrator_agent.md",
         "Stage 2.5 can NEVER be skipped",
+        "La Etapa 2.5 NUNCA puede omitirse",
     )
-    expect_contains(
+    expect_contains_any(
         "academic-pipeline/agents/pipeline_orchestrator_agent.md",
         "Stage 4.5 can NEVER be skipped",
+        "La Etapa 4.5 NUNCA puede omitirse",
     )
 
 
@@ -150,40 +163,56 @@ def check_readme_sections() -> None:
     expect_contains(rel_path, "### v3.3.4 (2026-04-15)")
     expect_contains(rel_path, "### v3.3.3 (2026-04-15)")
     expect_contains(rel_path, "### v3.3.2 (2026-04-15)")
-    for heading in (
-        "#### Deep Research (7 modes)",
-        "#### Academic Paper (10 modes)",
-        "#### Academic Paper Reviewer (6 modes)",
-        "### Deep Research (v2.8)",
-        "### Academic Paper (v3.0)",
-        "### Academic Paper Reviewer (v1.8)",
-        "### Academic Pipeline (v3.6)",
-    ):
-        if heading not in text:
-            fail(f"{rel_path}: missing heading {heading!r}")
+    # Headings: accept English or Spanish equivalents
+    HEADING_PAIRS = [
+        ("#### Deep Research (7 modes)", "#### Investigación Profunda (7 modos)"),
+        ("#### Academic Paper (10 modes)", "#### Artículo Académico (10 modos)"),
+        ("#### Academic Paper Reviewer (6 modes)", "#### Revisor de Artículo Académico (6 modos)"),
+        ("### Deep Research (v2.8)", "### Investigación Profunda (v2.8)"),
+        ("### Academic Paper (v3.0)", "### Artículo Académico (v3.0)"),
+        ("### Academic Paper Reviewer (v1.8)", "### Revisor de Artículo Académico (v1.8)"),
+        ("### Academic Pipeline (v3.6)", "### Pipeline Académico (v3.6)"),
+    ]
+    for en, es in HEADING_PAIRS:
+        if en not in text and es not in text:
+            fail(f"{rel_path}: missing heading {en!r} (or Spanish equivalent {es!r})")
 
-    paper_usage = extract_section(
-        text, "#### Academic Paper (10 modes)", "#### Academic Paper Reviewer (6 modes)"
-    )
-    for expected in ("outline-only mode", "abstract-only mode", "disclosure mode"):
-        if expected not in paper_usage:
-            fail(f"{rel_path}: Academic Paper usage section missing {expected!r}")
+    # Detect language to pick correct section markers
+    if "#### Academic Paper (10 modes)" in text:
+        paper_start = "#### Academic Paper (10 modes)"
+        paper_end = "#### Academic Paper Reviewer (6 modes)"
+        deep_start = "#### Deep Research (7 modes)"
+        deep_end = "#### Academic Paper (10 modes)"
+        reviewer_start = "#### Academic Paper Reviewer (6 modes)"
+        reviewer_end = "#### Academic Pipeline (Orchestrator)"
+    else:
+        paper_start = "#### Artículo Académico (10 modos)"
+        paper_end = "#### Revisor de Artículo Académico (6 modos)"
+        deep_start = "#### Investigación Profunda (7 modos)"
+        deep_end = "#### Artículo Académico (10 modos)"
+        reviewer_start = "#### Revisor de Artículo Académico (6 modos)"
+        reviewer_end = "#### Pipeline Académico (Orquestador)"
+
+    paper_usage = extract_section(text, paper_start, paper_end)
+    for expected_en, expected_es in [
+        ("outline-only mode", "modo solo-esquema"),
+        ("abstract-only mode", "modo solo-resumen"),
+        ("disclosure mode", "modo declaración"),
+    ]:
+        if expected_en not in paper_usage and expected_es not in paper_usage:
+            fail(f"{rel_path}: Academic Paper usage section missing {expected_en!r} (or Spanish equivalent)")
     for forbidden in ("bilingual-abstract mode", "writing-polish mode", "full-auto mode"):
         if forbidden in paper_usage:
             fail(f"{rel_path}: Academic Paper usage section still contains {forbidden!r}")
 
-    deep_usage = extract_section(
-        text, "#### Deep Research (7 modes)", "#### Academic Paper (10 modes)"
-    )
-    if "review mode" not in deep_usage:
+    deep_usage = extract_section(text, deep_start, deep_end)
+    if "review mode" not in deep_usage and "modo revisión" not in deep_usage:
         fail(f"{rel_path}: Deep Research usage section missing 'review mode'")
     if "paper-review" in deep_usage:
         fail(f"{rel_path}: Deep Research usage section still contains 'paper-review'")
 
-    reviewer_usage = extract_section(
-        text, "#### Academic Paper Reviewer (6 modes)", "#### Academic Pipeline (Orchestrator)"
-    )
-    if "calibration mode" not in reviewer_usage:
+    reviewer_usage = extract_section(text, reviewer_start, reviewer_end)
+    if "calibration mode" not in reviewer_usage and "modo calibración" not in reviewer_usage:
         fail(f"{rel_path}: reviewer usage section missing 'calibration mode'")
 
     for forbidden in (
@@ -192,115 +221,51 @@ def check_readme_sections() -> None:
     ):
         expect_absent(rel_path, forbidden)
     # DOCX contract lines moved to docs/SETUP.md in v3.3.6; checked there instead.
-    expect_contains(rel_path, "DOCX (via Pandoc when available)")
+    expect_contains_any(rel_path, "DOCX (via Pandoc when available)", "DOCX (vía Pandoc cuando esté disponible)")
     check_relative_markdown_links(rel_path)
 
 
-def check_readme_zh_sections() -> None:
-    rel_path = "README.zh-TW.md"
-    text = read(rel_path)
-
-    expect_contains(rel_path, "version-v3.6.5-blue")
-    expect_contains(rel_path, "releases/tag/v3.6.5")
-    expect_contains(rel_path, "### v3.6.5（2026-04-27）")
-    expect_contains(rel_path, "### v3.6.4（2026-04-25）")
-    expect_contains(rel_path, "### v3.6.3（2026-04-23）")
-    expect_contains(rel_path, "### v3.6.2（2026-04-23）")
-    expect_contains(rel_path, "### v3.5.1（2026-04-22）")
-    expect_contains(rel_path, "### v3.5.0（2026-04-21）")
-    expect_contains(rel_path, "### v3.4.0（2026-04-20）")
-    expect_contains(rel_path, "### v3.3.6 (2026-04-15)")
-    expect_contains(rel_path, "### v3.3.5 (2026-04-15)")
-    expect_contains(rel_path, "### v3.3.4 (2026-04-15)")
-    expect_contains(rel_path, "### v3.3.3 (2026-04-15)")
-    expect_contains(rel_path, "### v3.3.2 (2026-04-15)")
-    for heading in (
-        "#### Deep Research（深度研究，7 種模式）",
-        "#### Academic Paper（學術論文撰寫，10 種模式）",
-        "#### Academic Paper Reviewer（論文審查，6 種模式）",
-        "### Deep Research (v2.8)",
-        "### Academic Paper (v3.0)",
-        "### Academic Paper Reviewer (v1.8)",
-        "### Academic Pipeline (v3.6)",
-    ):
-        if heading not in text:
-            fail(f"{rel_path}: missing heading {heading!r}")
-
-    paper_usage = extract_section(
-        text,
-        "#### Academic Paper（學術論文撰寫，10 種模式）",
-        "#### Academic Paper Reviewer（論文審查，6 種模式）",
-    )
-    for expected in ("outline-only mode", "abstract-only mode", "disclosure mode"):
-        if expected not in paper_usage:
-            fail(f"{rel_path}: Academic Paper usage section missing {expected!r}")
-    for forbidden in ("bilingual-abstract mode", "writing-polish mode", "full-auto mode"):
-        if forbidden in paper_usage:
-            fail(f"{rel_path}: Academic Paper usage section still contains {forbidden!r}")
-
-    deep_usage = extract_section(
-        text,
-        "#### Deep Research（深度研究，7 種模式）",
-        "#### Academic Paper（學術論文撰寫，10 種模式）",
-    )
-    if "review mode" not in deep_usage:
-        fail(f"{rel_path}: Deep Research usage section missing 'review mode'")
-    if "paper-review" in deep_usage:
-        fail(f"{rel_path}: Deep Research usage section still contains 'paper-review'")
-
-    reviewer_usage = extract_section(
-        text,
-        "#### Academic Paper Reviewer（論文審查，6 種模式）",
-        "#### Academic Pipeline（全流程調度器）",
-    )
-    if "calibration mode" not in reviewer_usage:
-        fail(f"{rel_path}: reviewer usage section missing 'calibration mode'")
-
-    for forbidden in (
-        "6th independent reviewer",
-        "Peer review gains 6th independent reviewer",
-    ):
-        expect_absent(rel_path, forbidden)
-    # DOCX contract lines moved to docs/SETUP.zh-TW.md in v3.3.6; checked there instead.
-    expect_contains(rel_path, "DOCX（Pandoc 可用時）")
-    check_relative_markdown_links(rel_path)
 
 
 def check_setup_docs() -> None:
-    expect_contains("docs/SETUP.md", "Direct `.docx` generation uses [Pandoc]")
-    expect_contains(
+    expect_contains_any(
+        "docs/SETUP.md",
+        "Direct `.docx` generation uses [Pandoc]",
+        "La generación directa de `.docx` usa [Pandoc]",
+    )
+    expect_contains_any(
         "docs/SETUP.md",
         "Direct `.docx` generation requires Pandoc, and PDF generation requires `tectonic`",
-    )
-    expect_contains("docs/SETUP.zh-TW.md", "若要直接產出 `.docx`，需要安裝 [Pandoc]")
-    expect_contains(
-        "docs/SETUP.zh-TW.md",
-        "直接產出 `.docx` 需要 Pandoc，PDF 需要 `tectonic`",
+        "La generación directa de `.docx` requiere Pandoc, y la generación de PDF requiere `tectonic`",
     )
     check_relative_markdown_links("docs/SETUP.md")
-    check_relative_markdown_links("docs/SETUP.zh-TW.md")
 
 
 def check_docx_contract() -> None:
-    expect_contains(
+    expect_contains_any(
         "academic-paper/SKILL.md",
         "LaTeX/DOCX-via-Pandoc/PDF output",
+        "salida LaTeX/DOCX-vía-Pandoc/PDF",
     )
-    expect_contains(
+    expect_contains_any(
         "academic-paper/agents/formatter_agent.md",
         "If Pandoc is available, generate the `.docx` file directly",
+        "Si Pandoc está disponible, genera el archivo `.docx` directamente",
     )
-    expect_contains(
+    expect_contains_any(
         "academic-paper/agents/formatter_agent.md",
         "If Pandoc is unavailable, provide complete markdown + DOCX conversion instructions",
+        "Si Pandoc no está disponible, proporciona instrucciones completas de conversión a DOCX",
     )
-    expect_contains(
+    expect_contains_any(
         "academic-pipeline/SKILL.md",
         "DOCX via Pandoc when available, otherwise conversion instructions",
+        "DOCX vía Pandoc cuando esté disponible, de lo contrario instrucciones de conversión",
     )
-    expect_contains(
+    expect_contains_any(
         "academic-pipeline/agents/pipeline_orchestrator_agent.md",
         "DOCX via Pandoc when available (otherwise instructions)",
+        "DOCX vía Pandoc cuando esté disponible (de lo contrario instrucciones)",
     )
     for rel_path in (
         "academic-pipeline/SKILL.md",
@@ -310,17 +275,20 @@ def check_docx_contract() -> None:
 
 
 def check_reference_docs() -> None:
-    expect_contains(
+    expect_contains_any(
         "academic-pipeline/references/passport_as_reset_boundary.md",
         "# Passport as Reset Boundary (v3.6.3)",
+        "# Passport como Límite de Reinicio (v3.6.3)",
     )
-    expect_contains(
+    expect_contains_any(
         "academic-pipeline/references/passport_as_reset_boundary.md",
         "## `resume_from_passport` mode contract",
+        "## Contrato del modo `resume_from_passport`",
     )
-    expect_contains(
+    expect_contains_any(
         "academic-pipeline/references/passport_as_reset_boundary.md",
         "## Iron rules",
+        "## Reglas de Hierro",
     )
     # Unified PASSPORT-RESET tag format across protocol doc + orchestrator emission + checkpoint template.
     # Divergence here breaks cross-session machine-stable handoff.
@@ -341,7 +309,6 @@ def main() -> int:
     check_reviewer_version_block()
     check_pipeline_docs()
     check_readme_sections()
-    check_readme_zh_sections()
     check_setup_docs()
     check_docx_contract()
     check_reference_docs()

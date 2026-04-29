@@ -16,7 +16,7 @@ This example demonstrates the complete Phase 0-2 workflow of `academic-paper-rev
 
 ---
 
-## Phase 0: Field Analysis & Persona Configuration
+## Fase 0: Field Analysis & Persona Configuration
 
 ### Field Analysis Report
 
@@ -33,7 +33,7 @@ This example demonstrates the complete Phase 0-2 workflow of `academic-paper-rev
 | Primary Discipline | Higher Education Management |
 | Secondary Disciplines | Strategic Management, Education Policy, Demography |
 | Research Paradigm | Qualitative |
-| Methodology Type | Multiple Case Study |
+| Metodología Type | Multiple Case Study |
 | Target Journal Tier | Q2 — Above-average paper quality, complete case study design, but limited international generalizability |
 | Paper Maturity | Revised draft — Complete structure, but some arguments could be further refined |
 
@@ -61,7 +61,7 @@ This example demonstrates the complete Phase 0-2 workflow of `academic-paper-rev
 
 ### Reviewer Configuration Card #2
 
-**Role**: Peer Reviewer 1 (Methodology)
+**Role**: Peer Reviewer 1 (Metodología)
 **Identity Description**: Qualitative research methodology expert, specializing in multiple case study design (influenced by Yin and Eisenhardt), with multiple published methodological reflection articles in education and organizational management.
 **Review Focus**:
   1. Eisenhardt (1989) method compliance — Whether true cross-case analysis is conducted, or just 6 independent cases placed side by side
@@ -98,7 +98,7 @@ This example demonstrates the complete Phase 0-2 workflow of `academic-paper-rev
 
 ---
 
-## Phase 1: Parallel Multi-Perspective Review
+## Fase 1: Parallel Multi-Perspective Review
 
 ### EIC Review Report
 
@@ -130,7 +130,7 @@ This paper examines a highly timely topic in East Asian higher education policy 
 
 ---
 
-### Methodology Review Report (Peer Reviewer 1)
+### Metodología Review Report (Peer Reviewer 1)
 
 #### Reviewer Identity
 Qualitative research methodology expert, specializing in multiple case study design.
@@ -215,7 +215,7 @@ The author has chosen a topic of vital importance to Taiwan's higher education. 
    **Suggestion**: Add a paragraph in the discussion comparing this study's classification with existing ones, explaining this study's new findings.
    **Severity**: Major
 
-#### Missing Key References
+#### Missing Key Referencias
 - Tai, H.H. (2020). Marketization and quality assurance in Taiwan's higher education. *Bulletin of Educational Research*.
 - Yang, Y. (2019). Quality assurance systems and exit mechanisms in higher education. *Higher Education*.
 - Ministry of Education (2023). Higher Education Sprout Project Phase 2 Effectiveness Report.
@@ -278,7 +278,7 @@ The author uses Porter's competitive strategy and RBV to analyze university stra
 
 ---
 
-## Phase 2: Editorial Synthesis & Decision
+## Fase 2: Editorial Synthesis & Decision
 
 ### Editorial Decision Package
 
@@ -305,7 +305,7 @@ The author uses Porter's competitive strategy and RBV to analyze university stra
 2. Strategy classification needs comparison with existing classifications (EIC + R2 + R3)
 
 **Disagreement 1: Severity of methodology issues**
-- **R1 view**: Methodology is basically acceptable, only needs Minor Revision (supplement within-case analysis and codebook)
+- **R1 view**: Metodología is basically acceptable, only needs Minor Revision (supplement within-case analysis and codebook)
 - **R2/R3 view**: No major methodology issues (their Major comes from other aspects)
 - **Editor's Resolution**: Adopt R1's suggestions as methodology supplements, listed as P1 revision items, but this alone does not escalate the overall severity. R1's confidence is 5/5, and their methodology opinion is within their area of expertise and should be respected.
 

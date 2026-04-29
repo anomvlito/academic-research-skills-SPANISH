@@ -2,7 +2,7 @@
 
 A suite of Claude Code skills for rigorous academic research, paper writing, peer review, and pipeline orchestration.
 
-## Skills Overview
+## Descripción de Habilidades
 
 | Skill | Purpose | Key Modes |
 |-------|---------|-----------|
@@ -32,7 +32,7 @@ A suite of Claude Code skills for rigorous academic research, paper writing, pee
 ## v3.6.3 Key Additions
 
 - **Opt-in passport reset boundary**: new `ARS_PASSPORT_RESET=1` flag promotes every FULL checkpoint to a context-reset boundary. New `resume_from_passport=<hash>` mode in `academic-pipeline` lets users resume a pipeline run in a fresh Claude Code session from the Material Passport ledger alone, without replaying prior turns. For `systematic-review` mode with the flag ON, reset is mandatory at every FULL checkpoint; other modes treat reset as the flag-gated default. Flag OFF preserves pre-v3.6.3 continuation behavior byte-for-byte.
-- **Schema 9 `reset_boundary[]` append-only ledger** with two entry kinds: `kind: boundary` (recorded at FULL checkpoints) and `kind: resume` (recorded when a boundary is consumed). Hash uses JSON Canonical Form + SHA-256 with canonical `"000000000000"` placeholder for self-reference safety. Optional `pending_decision` field handles MANDATORY branch choices (Stage 3 reject/restructure/abort, Stage 5 finalization) that would otherwise be lost on reset.
+- **Schema 9 `reset_boundary[]` append-only ledger** with two entry kinds: `kind: boundary` (recorded at FULL checkpoints) and `kind: resume` (recorded when a boundary is consumed). Hash uses JSON Canonical Form + SHA-256 with canonical `"000000000000"` placeholder for self-reference safety. Opcional `pending_decision` field handles MANDATORY branch choices (Stage 3 reject/restructure/abort, Stage 5 finalization) that would otherwise be lost on reset.
 - **Protocol doc** `academic-pipeline/references/passport_as_reset_boundary.md` (authoritative) + **CI lint** `scripts/check_passport_reset_contract.py` enforcing every mention of the flag co-locates a protocol-doc reference.
 - **Docs** `docs/PERFORMANCE.md` + `docs/PERFORMANCE.zh-TW.md` updated with long-running-session guidance for the reset workflow.
 
@@ -42,7 +42,7 @@ A suite of Claude Code skills for rigorous academic research, paper writing, pee
 
 ## v3.5.1 Key Additions
 
-- **Opt-in Socratic reading-check probe**: new §"Optional Reading Probe Layer" in `deep-research/agents/socratic_mentor_agent.md`. Gated by `ARS_SOCRATIC_READING_PROBE=1`. Fires at most once per goal-oriented Socratic session when the user has cited a specific paper. Decline is logged without penalty. Outcome is recorded inline in the Research Plan Summary and carried into the Stage 6 AI Self-Reflection Report. No new agent, no new mode, no schema change. See `docs/design/2026-04-22-ars-v3.7.3-reading-check-probe-design.md`.
+- **Opt-in Socratic reading-check probe**: new §"Opcional Reading Probe Layer" in `deep-research/agents/socratic_mentor_agent.md`. Gated by `ARS_SOCRATIC_READING_PROBE=1`. Fires at most once per goal-oriented Socratic session when the user has cited a specific paper. Decline is logged without penalty. Outcome is recorded inline in the Research Plan Summary and carried into the Stage 6 AI Self-Reflection Report. No new agent, no new mode, no schema change. See `docs/design/2026-04-22-ars-v3.7.3-reading-check-probe-design.md`.
 
 ## v3.5 Key Additions
 
@@ -59,7 +59,7 @@ A suite of Claude Code skills for rigorous academic research, paper writing, pee
 
 - **Semantic Scholar API Verification**: Tier 0 programmatic reference verification. See `deep-research/references/semantic_scholar_api_protocol.md`.
 - **Anti-Leakage Protocol**: Knowledge isolation prioritizing session materials over LLM memory. See `academic-paper/references/anti_leakage_protocol.md`.
-- **VLM Figure Verification**: Optional closed-loop figure verification via vision LLM. See `academic-paper/references/vlm_figure_verification.md`.
+- **VLM Figure Verification**: Opcional closed-loop figure verification via vision LLM. See `academic-paper/references/vlm_figure_verification.md`.
 - **Score Trajectory Protocol**: Per-dimension rubric score delta tracking across revision rounds. See `academic-pipeline/references/score_trajectory_protocol.md`.
 - **Stage 2 Parallelization**: Visualization and argument building can run in parallel after outline.
 
@@ -82,7 +82,7 @@ A suite of Claude Code skills for rigorous academic research, paper writing, pee
 
 1. **academic-pipeline vs individual skills**: academic-pipeline = full pipeline orchestrator (research → write → integrity → review → revise → final integrity → finalize). If the user only needs a single function (just research, just write, just review), trigger the corresponding skill directly without the pipeline.
 
-2. **deep-research vs academic-paper**: Complementary. deep-research = upstream research engine (investigation + fact-checking), academic-paper = downstream publication engine (paper writing + bilingual abstracts). Recommended flow: deep-research → academic-paper.
+2. **deep-research vs academic-paper**: Complementary. deep-research = upstream research engine (investigation + fact-checking), academic-paper = downstream publication engine (paper writing + bilingual abstracts). Recomendado flow: deep-research → academic-paper.
 
 3. **deep-research socratic vs full**: socratic = guided Socratic dialogue to help users clarify their research question. full = direct production of research report. When the user's research question is unclear, suggest socratic mode.
 
@@ -103,11 +103,11 @@ A suite of Claude Code skills for rigorous academic research, paper writing, pee
 ```
 deep-research (socratic/full)
   → academic-paper (plan/full)
-    → integrity check (Stage 2.5)
+    → verificación de integridad (Etapa 2.5)
       → academic-paper-reviewer (full/guided)
         → academic-paper (revision)
           → academic-paper-reviewer (re-review, max 2 loops)
-            → final integrity check (Stage 4.5)
+            → verificación de integridad final (Etapa 4.5)
               → academic-paper (format-convert → final output)
                 → Process Summary + AI Self-Reflection Report
 ```

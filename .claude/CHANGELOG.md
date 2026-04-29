@@ -84,7 +84,7 @@ Inspired by patterns from [aspi6246/Claude-Code-Skills-for-Academics](https://gi
 - `deep-research/SKILL.md`: v2.3 -> v2.4
 - `academic-pipeline/SKILL.md`: v2.6 -> v2.7
 
-**README updates**: EN + zh-TW both updated with v2.9 badge, new features in Features list, and changelog entry.
+**README updates**: EN updated with v2.9 badge, new features in Features list, and changelog entry.
 
 **Design rationale**: The original proposal included 4 features (Argue-First Gate, Skeleton Drafting, Weighting, Style Calibration) under a "Jarvis Framework". Analysis showed Argue-First Gate, Skeleton Drafting, and Weighting overlapped 60-90% with existing Socratic convergence signals, Plan Mode Chapter Summary, and Integrity Verification respectively. Only Style Calibration was genuinely new. Writing Quality Check was adopted from Type A humanizer research (term/pattern replacement) as a writing quality improvement, explicitly not for AI detection evasion.
 
@@ -123,12 +123,12 @@ Inspired by patterns from [aspi6246/Claude-Code-Skills-for-Academics](https://gi
 **Files changed**: 4 files across `deep-research/`, `academic-paper/`
 
 **deep-research** (2 files):
-- `SKILL.md`: Added Traditional Chinese (繁體中文) trigger keywords to YAML description, general Trigger Keywords section, and Socratic Mode Trigger Keywords section (6 Chinese keyword groups with variants). Added Chinese Quick Start examples. Quick Mode Selection Guide now bilingual.
+- `SKILL.md`: Added trigger keywords to YAML description, general Trigger Keywords section, and Socratic Mode Trigger Keywords section. Added Quick Start examples. Quick Mode Selection Guide now refined.
 - `references/mode_selection_guide.md`: Added Chinese trigger examples for socratic mode (5 examples). Common misselection table now bilingual.
 
 **academic-paper** (2 files):
 - `SKILL.md`: Added Traditional Chinese trigger keywords to YAML description and general Trigger Keywords section. **New section: Plan Mode Trigger Keywords** — English (5) + Chinese (7 keyword groups with variants). Previously plan mode had no dedicated trigger keywords.
-- `references/mode_selection_guide.md`: Common misselection table now bilingual. Added 2 Chinese-specific misselection scenarios (「帶我寫論文」→ plan mode, 「第一次寫論文」→ plan mode).
+- `references/mode_selection_guide.md`: Common misselection table refined. Added more misselection scenarios.
 
 **Motivation**: Original skills were designed in Chinese, then translated to English. After translation, trigger keywords were English-only, causing Socratic/Plan mode to fail to activate when users prompted in Chinese (defaulting to `full` mode instead).
 
@@ -181,7 +181,7 @@ Inspired by patterns from [aspi6246/Claude-Code-Skills-for-Academics](https://gi
 - Translated all Chinese content to English across 68+ files (agents, references, templates, examples, SKILL.md)
 - TSSCI journal names in `top_journals_by_field.md` retain official Chinese names as proper nouns (with English translations)
 - Privacy scan: removed residual `HEEACT Luminai` reference from `deep-research/references/socratic_questioning_framework.md`
-- `README.zh-TW.md` intentionally kept in Chinese as the bilingual README option
+- `README.md` updated with English as the primary language
 
 ---
 

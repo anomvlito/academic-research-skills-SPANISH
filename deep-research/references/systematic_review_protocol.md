@@ -89,7 +89,7 @@ User: "Systematic review of [topic]" / "Meta-analysis of [topic]"
 ## Checkpoint Rules
 
 1. All standard checkpoint rules apply (see SKILL.md Checkpoint Rules)
-2. **Protocol must be registered** (or registration recommended) before Phase 2
-3. **Risk of bias must be completed for all studies** before Phase 3
+2. **Protocol debe ser registered** (or registration recommended) before Phase 2
+3. **Risk of bias debe ser completed for all studies** before Phase 3
 4. **GRADE assessment required** for every pooled outcome
 5. **PRISMA checklist compliance** verified in Phase 5

@@ -10,7 +10,7 @@ Reference: `references/funding_statement_guide.md`
 
 ## Step 1: Funding Source Registry
 
-Fill in one row per funding source. Leave empty if no funding.
+Completar one row per funding source. Leave empty if no funding.
 
 | # | Funder | Grant Type | Grant No. | PI / Role | Period | Amount |
 |---|-----|------|------|------|------|------|

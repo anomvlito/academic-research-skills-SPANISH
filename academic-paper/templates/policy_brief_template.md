@@ -8,8 +8,8 @@ This template provides the skeleton for an evidence-based policy brief targeting
 # [Policy Brief Title — Clear and Action-Oriented]
 
 **Author(s):** [Author Name(s)]
-**Affiliation:** [Institution]
-**Date:** [Date]
+**Affiliation:** [Institución]
+**Date:** [Fecha]
 **Target Audience:** [e.g., MOE officials, university administrators, legislators]
 
 ---
@@ -45,14 +45,14 @@ This template provides the skeleton for an evidence-based policy brief targeting
 
 ## 2. Evidence Base
 
-### 2.1 Key Finding 1: [Title]
+### 2.1 Key Finding 1: [Título]
 [Present evidence clearly with citations.]
 [Include a figure or table if helpful.]
 
-### 2.2 Key Finding 2: [Title]
+### 2.2 Key Finding 2: [Título]
 [Present evidence clearly with citations.]
 
-### 2.3 Key Finding 3: [Title]
+### 2.3 Key Finding 3: [Título]
 [Present evidence clearly with citations.]
 
 ### 2.4 International Comparisons *(if relevant)*
@@ -124,7 +124,7 @@ This template provides the skeleton for an evidence-based policy brief targeting
 
 ---
 
-## 5. Conclusion
+## 5. Conclusión
 [1 paragraph restating the urgency and recommended action.]
 
 ---
@@ -132,8 +132,8 @@ This template provides the skeleton for an evidence-based policy brief targeting
 ## AI Disclosure
 [Standard AI disclosure statement.]
 
-## References
+## Referencias
 [Complete reference list — keep concise for policy brief audience.]
 
-## Appendix: Methodology Note
+## Apéndice: Metodología Note
 [Brief description of how the evidence was gathered and analyzed.]

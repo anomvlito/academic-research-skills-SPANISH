@@ -1,6 +1,6 @@
 # Writing Quality Check
 
-## Purpose
+## Propósito
 
 A set of writing quality rules extracted from common patterns in AI-generated text. These are **good writing rules** that apply regardless of whether the text was AI-generated or human-written. The goal is better prose, not detection evasion.
 
@@ -87,7 +87,7 @@ Delete the following sentence starters. Cut to the point.
 | "This serves as a testament to..." | Replace with direct claim: "This demonstrates..." or just state the evidence |
 | "It goes without saying that..." | If it goes without saying, don't say it |
 | "In order to..." | Replace with "To..." |
-| "It should be noted that..." | Delete. Just note it |
+| "It debe ser noted that..." | Delete. Just note it |
 | "As a matter of fact..." | Delete. State the fact |
 | "When it comes to..." | Replace with the subject directly: "X shows..." |
 | "At the end of the day..." | Delete. Colloquial and vague |
@@ -96,11 +96,11 @@ Delete the following sentence starters. Cut to the point.
 ### Meta-Commentary to Avoid
 
 Also watch for sentences that describe what the paper is doing instead of doing it:
-- "This section will discuss..." → Just discuss it
+- "Esta sección will discuss..." → Just discuss it
 - "The following paragraph examines..." → Just examine it
 - "We now turn our attention to..." → Just turn to it
 
-Exception: Roadmap sentences in the Introduction ("Section 2 reviews the literature; Section 3 describes the methodology") are standard academic practice and should be kept.
+Exception: Roadmap sentences in the Introduction ("Section 2 reviews the literature; Section 3 describes the methodology") are standard academic practice and debe ser kept.
 
 ---
 
@@ -129,7 +129,7 @@ Exception: Roadmap sentences in the Introduction ("Section 2 reviews the literat
 ### Mirror Structure
 - **Pattern**: Every section has the same internal structure (topic sentence → 3 evidence points → synthesis sentence)
 - **Why**: Creates a template-stamped feel. Different sections serve different purposes and should have different internal rhythms
-- **Fix**: Let section structure follow content needs. Methods can be procedural. Discussion can be exploratory
+- **Fix**: Let section structure follow content needs. Methods puede ser procedural. Discussion puede ser exploratory
 
 ---
 

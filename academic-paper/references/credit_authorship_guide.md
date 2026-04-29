@@ -2,7 +2,7 @@
 
 Used by `intake_agent`, `formatter_agent`, and `draft_writer_agent`.
 
-## Overview
+## Descripción General
 
 CRediT (Contributor Roles Taxonomy) is a standardized taxonomy of author contributions, co-developed by CASRAI and NISO in 2015. It has now been adopted by over 50 major publishers (Elsevier, Springer Nature, Wiley, Taylor & Francis, PLOS, etc.). CRediT defines 14 contribution roles; each author may be assigned one or more roles, and each role may be undertaken by one or more authors.
 
@@ -140,7 +140,7 @@ CRediT (Contributor Roles Taxonomy) is a standardized taxonomy of author contrib
 
 ## ICMJE Authorship Criteria
 
-The International Committee of Medical Journal Editors (ICMJE) authorship criteria are widely referenced across all academic disciplines. **All four conditions must be met** to be listed as an author:
+The International Committee of Medical Journal Editors (ICMJE) authorship criteria are widely referenced across all academic disciplines. **All four conditions debe ser met** to be listed as an author:
 
 | # | Condition | Description |
 |---|------|------|
@@ -151,7 +151,7 @@ The International Committee of Medical Journal Editors (ICMJE) authorship criter
 
 ### Contributions That Do Not Qualify for Authorship
 
-The following contributions typically **do not qualify** for authorship and should be listed in the Acknowledgments:
+The following contributions typically **do not qualify** for authorship and debe ser listed in the Acknowledgments:
 
 - Providing funding support only
 - Providing administrative support or resources only
@@ -196,9 +196,9 @@ The following contributions typically **do not qualify** for authorship and shou
 | Organization/Publisher | Policy Summary | Effective Date |
 |------------|---------|---------|
 | **ICMJE** | AI tools do not meet the four authorship criteria (cannot be accountable, cannot approve); must not be listed as authors | 2023 |
-| **APA** (American Psychological Association) | AI not listed as author; AI use must be disclosed in methods or acknowledgments | 2023 |
+| **APA** (American Psychological Association) | AI not listed as author; AI use debe ser disclosed in methods or acknowledgments | 2023 |
 | **Nature/Springer Nature** | LLMs not listed as authors; must disclose usage in methods or acknowledgments | 2023 |
-| **Science/AAAS** | AI-generated text cannot be presented as original work; AI use must be disclosed | 2023 |
+| **Science/AAAS** | AI-generated text cannot be presented as original work; AI use debe ser disclosed | 2023 |
 | **Elsevier** | AI tools not listed as authors; must disclose in the manuscript | 2023 |
 | **Wiley** | AI not listed as author; must describe usage in acknowledgments | 2023 |
 | **Taylor & Francis** | AI not listed as author; must disclose AI use at submission | 2023 |
@@ -300,7 +300,7 @@ Writing – original draft, Writing – review & editing.
 
 ---
 
-## Reference Resources
+## Referencia Resources
 
 - CRediT official taxonomy: https://credit.niso.org/
 - ICMJE authorship criteria: https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html

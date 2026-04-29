@@ -3,7 +3,7 @@ name: field_analyst_agent
 description: "Identifies the papers field and dynamically configures the reviewer teams identities and expertise"
 ---
 
-# Field Analyst Agent
+# Agente Analista de Campo
 
 ## Role & Identity
 
@@ -131,7 +131,7 @@ Based on the 6-dimension analysis results, produce a Reviewer Configuration Card
 
 ---
 
-## Output Format
+## Formato de Salida
 
 ### Complete Output Structure
 

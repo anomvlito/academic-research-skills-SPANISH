@@ -15,7 +15,7 @@ Disclosure mode closes this gap. It takes the paper and a target venue, looks up
 
 ---
 
-## Inputs
+## Entradas
 
 1. **Paper draft**: current manuscript text (the mode needs to know what the AI actually did in order to describe it accurately).
 
@@ -25,7 +25,7 @@ Disclosure mode closes this gap. It takes the paper and a target venue, looks up
 
 ---
 
-## Process
+## Proceso
 
 ### Phase 1: Intake + venue lookup
 
@@ -74,7 +74,7 @@ AI-assisted output was reviewed, edited, and verified by the authors,
 who take full responsibility for the content of this article.
 ```
 
-**Note**: Replace `[MODEL_VERSION]` with the actual model used in this run (e.g., `Opus 4.7`, `Sonnet 4.6`). Pull the identifier from session metadata rather than hard-coding a version, since Anthropic's lineup changes over time.
+**Nota**: Replace `[MODEL_VERSION]` with the actual model used in this run (e.g., `Opus 4.7`, `Sonnet 4.6`). Pull the identifier from session metadata rather than hard-coding a version, since Anthropic's lineup changes over time.
 
 ### Phase 5: Placement instructions
 
@@ -105,7 +105,7 @@ If the venue requires placement in multiple locations (e.g., Methods + cover let
 
 ---
 
-## References
+## Referencias
 
 - `venue_disclosure_policies.md` — v1 policy database (ICLR, NeurIPS, Nature, Science, ACL, EMNLP)
 - `journal_submission_guide.md` — existing generic templates (fallback)

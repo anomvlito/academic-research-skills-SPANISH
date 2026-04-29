@@ -1,6 +1,6 @@
 # Team Collaboration Protocol
 
-## Purpose
+## Propósito
 
 Guidelines for coordinating multi-person academic research teams using the pipeline. Claude Code runs as a single-user session; this protocol documents the **human coordination layer** that wraps around pipeline executions.
 
@@ -19,10 +19,10 @@ Guidelines for coordinating multi-person academic research teams using the pipel
 ### Role Assignment Rules
 
 - One person may hold multiple roles (common in small teams)
-- Research Lead and Lead Author are the minimum required roles (can be the same person)
-- Integration Lead is recommended for teams of 3+
+- Research Lead and Lead Author are the minimum required roles (puede ser the same person)
+- Integration Lead se recomienda for teams of 3+
 - Methods Specialist is strongly recommended for empirical papers
-- All role assignments should be documented at pipeline intake
+- All role assignments debe ser documented at pipeline intake
 
 ---
 
@@ -114,12 +114,12 @@ main
 | `v0.4-post-rereview` | After Stage 4' completion (if applicable) | Second revision complete |
 | `v1.0-final` | After Stage 5 completion | Final manuscript |
 
-### Rules
+### Reglas
 
 - Never overwrite; always create a new version
 - All versions are preserved for audit trail
 - Version labels must match the Material Passport `version_label` field (Schema 9 in `shared/handoff_schemas.md`)
-- Each team member's changes should be attributable (use git author info)
+- Each team member's changes debe ser attributable (use git author info)
 
 ---
 
@@ -135,7 +135,7 @@ main
 
 ### Disagreement Documentation
 
-All disagreements must be documented in the revision tracking:
+All disagreements debe ser documented in the revision tracking:
 
 ```markdown
 ## Disagreement Record

@@ -1,7 +1,7 @@
 # IMRaD Paper Template
 
 ## Usage
-This template provides the section-by-section skeleton for an empirical research paper following the Introduction-Method-Results-and-Discussion structure.
+This template provides the section-by-section skeleton for an empirical research paper following the Introducción-Method-Resultados-and-Discusión structure.
 
 Replace all `[bracketed text]` with your content. Delete instructional comments after use.
 
@@ -12,7 +12,7 @@ Replace all `[bracketed text]` with your content. Delete instructional comments 
 **Author(s):** [Author Name(s)]
 **Affiliation(s):** [Department, Institution]
 **Corresponding Author:** [Name, Email]
-**Date:** [Date]
+**Date:** [Fecha]
 
 ---
 
@@ -28,7 +28,7 @@ Replace all `[bracketed text]` with your content. Delete instructional comments 
 
 ---
 
-## 1. Introduction
+## 1. Introducción
 
 ### 1.1 Context and Background
 [Establish the broader context. What is the landscape? Why does this topic matter?]
@@ -58,7 +58,7 @@ The following research questions guide this study:
 
 ---
 
-## 2. Literature Review
+## 2. Revisión de Literatura
 
 ### 2.1 Theoretical Framework
 [What theory/framework underpins this study?]
@@ -82,7 +82,7 @@ The following research questions guide this study:
 
 ---
 
-## 3. Methodology
+## 3. Metodología
 
 ### 3.1 Research Design
 [Describe the overall research design and justify the choice.]
@@ -114,7 +114,7 @@ The following research questions guide this study:
 
 ---
 
-## 4. Results / Findings
+## 4. Resultados / Findings
 
 ### 4.1 Descriptive Overview
 [Present descriptive statistics or overview of data.]
@@ -133,7 +133,7 @@ The following research questions guide this study:
 
 ---
 
-## 5. Discussion
+## 5. Discusión
 
 ### 5.1 Summary of Key Findings
 [Brief overview of main results.]
@@ -161,7 +161,7 @@ The following research questions guide this study:
 
 ---
 
-## 6. Conclusion
+## 6. Conclusión
 [Summarize the paper's contribution in 1-2 paragraphs. End with a strong closing statement.]
 
 ---
@@ -171,7 +171,7 @@ The following research questions guide this study:
 
 ---
 
-## References
+## Referencias
 
 [APA 7th edition format. Hanging indent. Alphabetical order.]
 
@@ -179,5 +179,5 @@ The following research questions guide this study:
 
 ## Appendices *(if applicable)*
 
-### Appendix A: [Title]
+### Apéndice A: [Título]
 [Supplementary materials]

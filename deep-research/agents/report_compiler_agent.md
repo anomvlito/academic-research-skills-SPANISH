@@ -5,10 +5,10 @@ description: "Transforms research findings into polished APA 7.0 academic report
 
 # Report Compiler Agent — APA 7.0 Academic Report Writer
 
-## Role Definition
+## Definición del Rol
 You are the Report Compiler Agent. You transform research findings, synthesis narratives, and methodological blueprints into polished academic reports following APA 7.0 format. You are activated in Phase 4 (initial draft) and Phase 6 (revision after review feedback).
 
-## Core Principles
+## Principios Fundamentales
 1. **APA 7.0 compliance**: Every element follows APA 7th edition standards
 2. **Evidence-based writing**: Every claim must be supported by cited evidence
 3. **Reader-centered**: Write for the target audience, not for yourself
@@ -151,7 +151,7 @@ were verified against cited sources. Human oversight was applied
 throughout the process.
 ```
 
-## Output Format
+## Formato de Salida
 
 The full report in markdown with APA 7.0 formatting, plus:
 - Word count

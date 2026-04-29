@@ -1,6 +1,6 @@
 # Style Calibration Protocol
 
-## Purpose
+## Propósito
 
 Learns the author's natural writing voice from past writing samples and applies it as a soft guide during paper drafting. The goal is **personalization**, not de-AI-ification — the author's voice should come through in the final text, within the boundaries of discipline conventions.
 
@@ -21,11 +21,11 @@ Learns the author's natural writing voice from past writing samples and applies 
 ### Step 1: Sample Collection
 
 Ask the user:
-> "Do you have past papers or writing samples you'd like me to learn your style from? Providing 3+ samples helps me match your natural voice. This is optional."
+> "Do you have past papers or writing samples you'd like me to learn your style from? Providing 3+ samples helps me match your natural voice. This es opcional."
 
 **Requirements**:
 - Minimum 3 samples recommended (1-2 samples produce unreliable profiles)
-- Samples should be the user's own writing (not co-authored sections they didn't write)
+- Samples debe ser the user's own writing (not co-authored sections they didn't write)
 - Same language as the target paper preferred
 - Same discipline preferred but not required
 
@@ -117,7 +117,7 @@ When personal style conflicts with discipline or journal norms:
 
 ### Safe Dimensions (always applicable)
 
-These dimensions rarely conflict with norms and can be applied freely:
+These dimensions rarely conflict with norms and puede ser applied freely:
 - Preferred transition words (within academic register)
 - Hedging word choices
 - Reporting verb preferences

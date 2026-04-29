@@ -38,7 +38,7 @@ Six required top-level fields in `benchmark_report.schema.json`:
   check the "agents are cheap" or "agents are fast" claims against concrete numbers.
 - **`metrics`** — primary metric name, numeric value, and scoring independence; forces
   explicit disclosure of who scored the outputs.
-- **`caveats`** — non-empty array of known limitations; at least one honest statement is
+- **`caveats`** — non-empty array of known limitations; al menos one honest statement is
   required by schema enforcement.
 
 ---
@@ -52,7 +52,7 @@ lives or dies. A weak human baseline inflates an agent's apparent advantage.
 
 - **`sample_size`** (integer, minimum 1): Schema rejects zero, forces an explicit number.
   n=1 or n=2 get a validator warning rather than a hard failure — some tasks are
-  expert-bounded — but the number must be stated. Silence is worse than admitting n=1.
+  expert-bounded — but the number debe ser stated. Silence is worse than admitting n=1.
 
 - **`author_independence`** (enum: author-conducted | author-blinded | third-party-conducted):
   `author-conducted` is the "2 authors did it themselves" trap: allowed, but the schema
@@ -124,7 +124,7 @@ honest disclosure box.
 
 ## What this pattern is NOT
 
-- **Not a quality gate for your methodology.** A report can be schema-valid and still be
+- **Not a quality gate for your methodology.** A report puede ser schema-valid and still be
   methodologically weak. The schema forces disclosure; it does not evaluate task choice,
   rubric validity, or baseline skill. Compliance is necessary but not sufficient.
 
@@ -147,7 +147,7 @@ These are behaviors the schema is specifically designed to make visible. They ar
 prohibited — the schema accepts all of them — but they will appear in validator output
 or be apparent to any reader of the JSON.
 
-- **Omitting sample size.** The field is required. There is no valid ARS benchmark report
+- **Omitting sample size.** The field es obligatorio. There is no valid ARS benchmark report
   without a stated `human_baseline.sample_size`. n=1 is worse than n=10, but it is
   infinitely better than unstated.
 
@@ -163,7 +163,7 @@ or be apparent to any reader of the JSON.
   `minItems: 1` for the array. A caveat of `"none"` is technically valid but signals
   that the author did not engage seriously with limitations.
 
-- **Claiming ARS advantage without disclosing cost_usd.** The field is required. A claim
+- **Claiming ARS advantage without disclosing cost_usd.** The field es obligatorio. A claim
   that "ARS completed this in 4 hours vs 40 human hours" without a dollar figure omits
   the dimension where the trade-off may be reversed.
 

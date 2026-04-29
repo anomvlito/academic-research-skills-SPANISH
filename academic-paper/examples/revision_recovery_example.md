@@ -12,7 +12,7 @@ This example shows how the revision process handles a Major Revision decision wi
 
 **Paper**: "Augmenting Academic Advising: How AI-Driven Recommendation Systems Reshape Student Pathway Decisions in Research Universities"
 **Word count**: 8,400 words (IMRaD)
-**References**: 52 entries (APA 7.0)
+**Referencias**: 52 entries (APA 7.0)
 **Pipeline state**: Stage 2.5 (INTEGRITY) passed, Stage 3 (REVIEW) completed
 
 ---
@@ -55,11 +55,11 @@ Per the quality rubrics (50-64 = Major Revision), this score yields:
 
 | # | Description | Reviewer | Type | Priority | Target Section |
 |---|-------------|----------|------|----------|---------------|
-| 1 | Sample limited to 3 universities — insufficient for generalizable claims about "research universities" as a category. Selection criteria unclear. | R1 | Major | must_fix | Methodology (Section 3) |
-| 2 | Missing discussion of competing framework: Transformative Learning Theory (Mezirow, 2000) and Self-Determination Theory (Ryan & Deci, 2020) are directly relevant but absent from the theoretical grounding. | R2 | Major | must_fix | Literature Review (Section 2) |
-| 3 | Core premise "AI replaces human judgment in advising" is a strawman — no serious scholar or practitioner claims this. The paper argues against a position no one holds, which weakens the entire contribution. | DA | DA-CRITICAL | must_fix | Introduction (Section 1) + Discussion (Section 5) |
-| 4 | Table 3 reports regression coefficients without confidence intervals; Table 5 reports chi-square values without effect sizes (Cramer's V). Incomplete statistical reporting. | R1 | Minor | should_fix | Results (Section 4) |
-| 5 | Several paragraphs in the Discussion exceed 200 words, making them difficult to parse. APA 7.0 style guide recommends paragraph lengths that support readability. | R3 | Minor | consider | Discussion (Section 5) |
+| 1 | Muestra limited to 3 universities — insufficient for generalizable claims about "research universities" as a category. Selection criteria unclear. | R1 | Major | must_fix | Metodología (Section 3) |
+| 2 | Missing discussion of competing framework: Transformative Learning Theory (Mezirow, 2000) and Self-Determination Theory (Ryan & Deci, 2020) are directly relevant but absent from the theoretical grounding. | R2 | Major | must_fix | Revisión de Literatura (Section 2) |
+| 3 | Core premise "AI replaces human judgment in advising" is a strawman — no serious scholar or practitioner claims this. The paper argues against a position no one holds, which weakens the entire contribution. | DA | DA-CRITICAL | must_fix | Introducción (Section 1) + Discusión (Section 5) |
+| 4 | Table 3 reports regression coefficients without confidence intervals; Table 5 reports chi-square values without effect sizes (Cramer's V). Incomplete statistical reporting. | R1 | Minor | should_fix | Resultados (Section 4) |
+| 5 | Several paragraphs in the Discusión exceed 200 words, making them difficult to parse. APA 7.0 style guide recommends paragraph lengths that support readability. | R3 | Minor | consider | Discusión (Section 5) |
 
 ---
 
@@ -81,11 +81,11 @@ Per the quality rubrics (50-64 = Major Revision), this score yields:
 
 | # | Issue Description | Reviewer | Type | Section | Resolution Summary | Location of Change | Status | Reason (if not resolved) |
 |---|-------------------|----------|------|---------|-------------------|-------------------|--------|--------------------------|
-| 1 | Sample limited to 3 universities; selection criteria unclear; generalizable claims unsupported | R1 | Major | Methodology | Expanded sample from 3 to 8 universities via secondary dataset integration; added explicit selection criteria (Carnegie R1/R2, geographic distribution, enrollment size bands); softened generalizability claims | Section 3.1 (para 1-3), Section 3.2 (new subsection), Section 5.3 (limitations) | RESOLVED | -- |
-| 2 | Missing Transformative Learning Theory and Self-Determination Theory frameworks | R2 | Major | Literature Review | Added 2-page section (Section 2.3) integrating TLT and SDT; connected both frameworks to AI-mediated advising through autonomy, competence, and relatedness constructs; added 5 new references | Section 2.3 (new, 850 words), Section 5.1 (para 3-4, theoretical integration) | RESOLVED | -- |
-| 3 | "AI replaces human judgment" is a strawman; no one claims this | DA | DA-CRITICAL | Introduction + Discussion | Completely reframed from "replacement vs augmentation" binary to "augmentation spectrum" model; replaced strawman with genuine scholarly tension between algorithmic efficiency and relational advising | Section 1 (para 3-5 rewritten), Section 5.1 (para 1-2 rewritten), Section 5.4 (new synthesis paragraph) | RESOLVED | -- |
-| 4 | Tables 3 and 5 missing confidence intervals and effect sizes | R1 | Minor | Results | Added 95% CIs to all regression coefficients in Table 3; added Cramer's V to all chi-square tests in Table 5; added footnotes explaining effect size interpretation | Table 3 (reformatted), Table 5 (reformatted), Table footnotes | RESOLVED | -- |
-| 5 | Discussion paragraphs exceed 200 words; readability concern | R3 | Minor | Discussion | Most paragraphs restructured to 150-190 words. Three paragraphs retained at 210-220 words where splitting would disrupt a sustained argument with multiple evidence sources. | Section 5.1 (para 2: 215 words), Section 5.2 (para 4: 218 words), Section 5.4 (para 1: 212 words) | DELIBERATE_LIMITATION | These three paragraphs develop complex arguments integrating 3-4 sources each. Splitting them would require artificial transitions that weaken argumentative coherence. APA 7.0 provides a readability guideline, not a strict rule. The 10-20 word excess is marginal, and we prioritize argument integrity. Noted in Response to Reviewers with justification. |
+| 1 | Muestra limited to 3 universities; selection criteria unclear; generalizable claims unsupported | R1 | Major | Metodología | Expanded sample from 3 to 8 universities via secondary dataset integration; added explicit selection criteria (Carnegie R1/R2, geographic distribution, enrollment size bands); softened generalizability claims | Section 3.1 (para 1-3), Section 3.2 (new subsection), Section 5.3 (limitations) | RESOLVED | -- |
+| 2 | Missing Transformative Learning Theory and Self-Determination Theory frameworks | R2 | Major | Revisión de Literatura | Added 2-page section (Section 2.3) integrating TLT and SDT; connected both frameworks to AI-mediated advising through autonomy, competence, and relatedness constructs; added 5 new references | Section 2.3 (new, 850 words), Section 5.1 (para 3-4, theoretical integration) | RESOLVED | -- |
+| 3 | "AI replaces human judgment" is a strawman; no one claims this | DA | DA-CRITICAL | Introducción + Discusión | Completely reframed from "replacement vs augmentation" binary to "augmentation spectrum" model; replaced strawman with genuine scholarly tension between algorithmic efficiency and relational advising | Section 1 (para 3-5 rewritten), Section 5.1 (para 1-2 rewritten), Section 5.4 (new synthesis paragraph) | RESOLVED | -- |
+| 4 | Tables 3 and 5 missing confidence intervals and effect sizes | R1 | Minor | Resultados | Added 95% CIs to all regression coefficients in Table 3; added Cramer's V to all chi-square tests in Table 5; added footnotes explaining effect size interpretation | Table 3 (reformatted), Table 5 (reformatted), Table footnotes | RESOLVED | -- |
+| 5 | Discusión paragraphs exceed 200 words; readability concern | R3 | Minor | Discusión | Most paragraphs restructured to 150-190 words. Three paragraphs retained at 210-220 words where splitting would disrupt a sustained argument with multiple evidence sources. | Section 5.1 (para 2: 215 words), Section 5.2 (para 4: 218 words), Section 5.4 (para 1: 212 words) | DELIBERATE_LIMITATION | These three paragraphs develop complex arguments integrating 3-4 sources each. Splitting them would require artificial transitions that weaken argumentative coherence. APA 7.0 provides a readability guideline, not a strict rule. The 10-20 word excess is marginal, and we prioritize argument integrity. Noted in Response to Reviewers with justification. |
 
 ### Summary Statistics
 
@@ -104,7 +104,7 @@ Per the quality rubrics (50-64 = Major Revision), this score yields:
 
 ## Detailed Revisions
 
-### Item 1 (RESOLVED): Sample Expansion and Selection Criteria
+### Item 1 (RESOLVED): Muestra Expansion and Selection Criteria
 
 **R1's concern**: "The study draws conclusions about 'research universities' as a category based on data from only three institutions. The selection criteria for these three are not stated. Were they convenience samples? If so, the paper cannot claim that findings generalize to research universities broadly."
 
@@ -114,7 +114,7 @@ Per the quality rubrics (50-64 = Major Revision), this score yields:
 > Data were collected from three research universities that had implemented AI-driven advising recommendation systems between 2022 and 2024. A total of 1,247 students participated in the quasi-experimental design.
 
 *Section 3.1 — After:*
-> Data were drawn from eight research universities classified as Carnegie R1 (n = 5) or R2 (n = 3) that had implemented AI-driven advising recommendation systems between 2022 and 2024. Institutions were selected using stratified purposive sampling across three dimensions: geographic region (Northeast: 2, Midwest: 2, South: 2, West: 2), enrollment size (large >30,000: 3, medium 15,000-30,000: 3, small <15,000: 2), and years since AI system deployment (1-2 years: 4, 3+ years: 4). The expanded dataset comprises 3,812 students across treatment (n = 1,946) and comparison (n = 1,866) groups. Five institutions contributed primary data collected for this study, while three contributed comparable secondary data from institutional research offices under data sharing agreements (see Appendix B for IRB approval details across all sites).
+> Data were drawn from eight research universities classified as Carnegie R1 (n = 5) or R2 (n = 3) that had implemented AI-driven advising recommendation systems between 2022 and 2024. Institutions were selected using stratified purposive sampling across three dimensions: geographic region (Northeast: 2, Midwest: 2, South: 2, West: 2), enrollment size (large >30,000: 3, medium 15,000-30,000: 3, small <15,000: 2), and years since AI system deployment (1-2 years: 4, 3+ years: 4). The expanded dataset comprises 3,812 students across treatment (n = 1,946) and comparison (n = 1,866) groups. Five institutions contributed primary data collected for this study, while three contributed comparable secondary data from institutional research offices under data sharing agreements (see Apéndice B for IRB approval details across all sites).
 
 *Section 3.2 (new subsection) — Added:*
 > 3.2 Site Selection Rationale
@@ -154,7 +154,7 @@ Per the quality rubrics (50-64 = Major Revision), this score yields:
 
 **Devil's Advocate finding**: "The paper's core framing — 'AI replaces human judgment in advising' — is a strawman. No advising professional, institutional leader, or serious EdTech scholar argues for wholesale replacement of human advisors with algorithms. The actual scholarly tension is about the *degree* of algorithmic influence on student decisions and whether AI-mediated nudges constitute legitimate guidance or subtle coercion. By arguing against a position no one holds, the paper's contribution is undermined: it triumphantly demonstrates that augmentation is better than replacement, when no one disputed this."
 
-**This was the most significant revision.** The DA-CRITICAL finding required reframing the paper's central argument, affecting the Introduction and Discussion.
+**This was the most significant revision.** The DA-CRITICAL finding required reframing the paper's central argument, affecting the Introducción and Discusión.
 
 **Changes made**:
 
@@ -227,9 +227,9 @@ Per the quality rubrics (50-64 = Major Revision), this score yields:
 
 ### Item 5 (DELIBERATE_LIMITATION): Paragraph Length
 
-**R3's concern**: "Several paragraphs in the Discussion exceed 200 words. While not a strict rule violation, shorter paragraphs improve readability and signal clear argumentative structure."
+**R3's concern**: "Several paragraphs in the Discusión exceed 200 words. While not a strict rule violation, shorter paragraphs improve readability and signal clear argumentative structure."
 
-**Action taken**: 14 of 17 Discussion paragraphs were restructured to 150-190 words. Three paragraphs were deliberately retained at 210-220 words:
+**Action taken**: 14 of 17 Discusión paragraphs were restructured to 150-190 words. Three paragraphs were deliberately retained at 210-220 words:
 
 | Paragraph | Word Count | Justification |
 |-----------|-----------|---------------|
@@ -237,7 +237,7 @@ Per the quality rubrics (50-64 = Major Revision), this score yields:
 | Section 5.2, para 4 (institutional context moderation) | 218 | Synthesizes advisor-to-student ratio data across 8 institutions with qualitative themes about advising culture. The comparison structure (high-ratio vs low-ratio institutions) requires sustained exposition. |
 | Section 5.4, para 1 (augmentation spectrum synthesis) | 212 | The new synthesis paragraph responding to the DA-CRITICAL item. This is the paper's core theoretical contribution and splitting it would dilute the argument. |
 
-**Limitations section reference**: "We acknowledge that three Discussion paragraphs exceed the 200-word readability guideline (APA 7.0 Section 3.08). These paragraphs were retained at 210-220 words to preserve argumentative coherence in passages that integrate multiple evidence sources."
+**Limitations section reference**: "We acknowledge that three Discusión paragraphs exceed the 200-word readability guideline (APA 7.0 Section 3.08). These paragraphs were retained at 210-220 words to preserve argumentative coherence in passages that integrate multiple evidence sources."
 
 ---
 
@@ -261,11 +261,11 @@ Thank you for your thorough and constructive review of our manuscript. The feedb
 
 ### Response to Reviewer 1
 
-#### Comment R1-1: Sample Size and Selection Criteria (Major)
+#### Comment R1-1: Muestra Size and Selection Criteria (Major)
 
 **Reviewer comment**: "The study draws conclusions about 'research universities' as a category based on data from only three institutions. The selection criteria for these three are not stated. Were they convenience samples? If so, the paper cannot claim that findings generalize to research universities broadly."
 
-**Author response**: We agree that the original three-institution sample was insufficient for the generalizability claims made in the paper. We have addressed this in two ways: (1) expanded the dataset from 3 to 8 universities by integrating comparable secondary data from five additional institutions under data sharing agreements, and (2) added explicit stratified purposive sampling criteria across three dimensions (geographic region, enrollment size, and AI system deployment maturity). We have also softened the generalizability language throughout the paper, particularly in the Discussion and Limitations sections, to reflect the expanded but still bounded scope.
+**Author response**: We agree that the original three-institution sample was insufficient for the generalizability claims made in the paper. We have addressed this in two ways: (1) expanded the dataset from 3 to 8 universities by integrating comparable secondary data from five additional institutions under data sharing agreements, and (2) added explicit stratified purposive sampling criteria across three dimensions (geographic region, enrollment size, and AI system deployment maturity). We have also softened the generalizability language throughout the paper, particularly in the Discusión and Limitations sections, to reflect the expanded but still bounded scope.
 
 **Changes made**:
 - Section 3.1, paragraphs 1-3: Rewritten to describe the 8-institution sample with selection criteria (pp. 12-13)
@@ -296,7 +296,7 @@ Thank you for your thorough and constructive review of our manuscript. The feedb
 
 **Reviewer comment**: "The paper grounds its framework in Technology Acceptance Model and Nudge Theory, which are appropriate but insufficient. Transformative Learning Theory (Mezirow, 2000) and Self-Determination Theory (Ryan & Deci, 2020) are directly relevant but absent from the theoretical grounding."
 
-**Author response**: We fully agree that these frameworks are essential and their absence was a significant gap. We have added a new Section 2.3 ("Complementary Frameworks: Transformative Learning and Self-Determination," approximately 850 words) that integrates both TLT and SDT into the paper's theoretical foundation. Specifically, we use TLT to explain how AI pathway recommendations function as "disorienting dilemmas" that prompt premise reflection, and SDT to explain how autonomy, competence, and relatedness needs moderate student responses to algorithmic recommendations. Five new references support this section. We have also woven these frameworks into the Discussion (Section 5.1, paragraphs 3-4), connecting our empirical findings to SDT's autonomy predictions.
+**Author response**: We fully agree that these frameworks are essential and their absence was a significant gap. We have added a new Section 2.3 ("Complementary Frameworks: Transformative Learning and Self-Determination," approximately 850 words) that integrates both TLT and SDT into the paper's theoretical foundation. Specifically, we use TLT to explain how AI pathway recommendations function as "disorienting dilemmas" that prompt premise reflection, and SDT to explain how autonomy, competence, and relatedness needs moderate student responses to algorithmic recommendations. Five new references support this section. We have also woven these frameworks into the Discusión (Section 5.1, paragraphs 3-4), connecting our empirical findings to SDT's autonomy predictions.
 
 **Changes made**:
 - Section 2.3 (new, 850 words): TLT and SDT integration with advising context (pp. 9-11)
@@ -319,9 +319,9 @@ The original binary framing ("replacement vs augmentation") has been replaced wi
 
 Specific changes:
 
-1. **Introduction (Section 1, paragraphs 3-5)**: Completely rewritten. The new framing explicitly acknowledges that replacement is not the live question, introduces the "augmentation spectrum" concept, and positions the paper's contribution as investigating the interaction between algorithmic influence degree and student decision-making agency. Three hypotheses have been refined to reflect this reframing.
+1. **Introducción (Section 1, paragraphs 3-5)**: Completely rewritten. The new framing explicitly acknowledges that replacement is not the live question, introduces the "augmentation spectrum" concept, and positions the paper's contribution as investigating the interaction between algorithmic influence degree and student decision-making agency. Three hypotheses have been refined to reflect this reframing.
 
-2. **Discussion (Section 5.1, paragraphs 1-2)**: Rewritten to interpret findings through the augmentation spectrum lens. The most theoretically interesting finding — that high-influence interfaces produce better short-term outcomes but lower perceived autonomy, while low-influence interfaces produce the inverse — is now the centerpiece of the Discussion rather than an afterthought.
+2. **Discusión (Section 5.1, paragraphs 1-2)**: Rewritten to interpret findings through the augmentation spectrum lens. The most theoretically interesting finding — that high-influence interfaces produce better short-term outcomes but lower perceived autonomy, while low-influence interfaces produce the inverse — is now the centerpiece of the Discusión rather than an afterthought.
 
 3. **New synthesis paragraph (Section 5.4)**: Proposes that the augmentation spectrum framework moves the field toward a more productive question: what degree of algorithmic involvement is appropriate for what advising interaction, for which student population, at which institutional context?
 
@@ -340,11 +340,11 @@ Specific changes:
 
 ### Response to Reviewer 3
 
-#### Comment R3-1: Discussion Paragraph Length (Minor)
+#### Comment R3-1: Discusión Paragraph Length (Minor)
 
-**Reviewer comment**: "Several paragraphs in the Discussion exceed 200 words. While not a strict rule violation, shorter paragraphs improve readability."
+**Reviewer comment**: "Several paragraphs in the Discusión exceed 200 words. While not a strict rule violation, shorter paragraphs improve readability."
 
-**Author response**: We have restructured 14 of 17 Discussion paragraphs to 150-190 words. We respectfully retained three paragraphs at 210-220 words (Section 5.1 para 2, Section 5.2 para 4, Section 5.4 para 1) where splitting would disrupt sustained arguments that integrate multiple evidence sources. APA 7.0 Section 3.08 provides a readability guideline rather than a strict rule, and we believe the marginal 10-20 word excess is justified by argumentative coherence. We have documented this as a deliberate limitation in the Limitations section.
+**Author response**: We have restructured 14 of 17 Discusión paragraphs to 150-190 words. We respectfully retained three paragraphs at 210-220 words (Section 5.1 para 2, Section 5.2 para 4, Section 5.4 para 1) where splitting would disrupt sustained arguments that integrate multiple evidence sources. APA 7.0 Section 3.08 provides a readability guideline rather than a strict rule, and we believe the marginal 10-20 word excess is justified by argumentative coherence. We have documented this as a deliberate limitation in the Limitations section.
 
 **Changes made**:
 - Section 5 throughout: 14 paragraphs restructured to 150-190 words (pp. 29-35)
@@ -373,7 +373,7 @@ Revision Date: 2026-03-06
 
 ---
 
-## Stage 3': Re-Review Verdict
+## Etapa 3': Re-Review Verdict
 
 ```
 Entering Stage 3' (RE-REVIEW) -- Loop 1/2
@@ -387,11 +387,11 @@ Passing Revised Draft + Response to Reviewers + original Revision Roadmap...
 
 | # | Original Issue | Response Adequate? | Detail |
 |---|---------------|:------------------:|--------|
-| 1 | Sample limited to 3 universities | Adequate | Expanded to 8 with clear selection criteria (stratified purposive sampling). Generalizability claims appropriately softened. New Table 1 provides full institutional profiles. Secondary data integration is methodologically sound with IRB documentation. |
-| 2 | Missing TLT and SDT frameworks | Adequate | New Section 2.3 (850 words) integrates both frameworks with specific connections to AI advising context. Five new references are all peer-reviewed. SDT is further applied in Discussion Section 5.1 to interpret the autonomy-outcome tension finding. Integration is substantive, not superficial. |
+| 1 | Muestra limited to 3 universities | Adequate | Expanded to 8 with clear selection criteria (stratified purposive sampling). Generalizability claims appropriately softened. New Table 1 provides full institutional profiles. Secondary data integration is methodologically sound with IRB documentation. |
+| 2 | Missing TLT and SDT frameworks | Adequate | New Section 2.3 (850 words) integrates both frameworks with specific connections to AI advising context. Five new references are all peer-reviewed. SDT is further applied in Discusión Section 5.1 to interpret the autonomy-outcome tension finding. Integration is substantive, not superficial. |
 | 3 | "AI replaces human judgment" strawman (DA-CRITICAL) | Adequate | Complete reframing from replacement binary to augmentation spectrum. The new framing identifies a genuine scholarly tension (algorithmic influence degree vs student agency) and makes a substantive contribution. The DA-CRITICAL item is fully resolved — the paper no longer argues against a position no one holds. |
 | 4 | Missing CIs and effect sizes | Adequate | 95% bootstrap CIs added to Table 3; Cramer's V with interpretation added to Table 5. Footnotes appropriately note that small effect sizes with large samples should be interpreted cautiously. |
-| 5 | Discussion paragraph length | Adequate (DELIBERATE_LIMITATION) | 14/17 paragraphs restructured. Three retained at 210-220 words with documented justification. This is a reasonable editorial decision and does not compromise the paper's quality. |
+| 5 | Discusión paragraph length | Adequate (DELIBERATE_LIMITATION) | 14/17 paragraphs restructured. Three retained at 210-220 words with documented justification. This is a reasonable editorial decision and does not compromise the paper's quality. |
 
 ### Five-Dimension Scores (Post-Revision)
 
@@ -413,7 +413,7 @@ Per the quality rubrics: 65-79 = Minor Revision, >= 80 = Accept. Score of 78.0 i
 | Core framing | "AI replaces human judgment" — strawman binary | "Augmentation spectrum" — genuine scholarly tension |
 | Central question | Can AI replace human advisors? (trivially answered) | What degree of algorithmic influence optimizes both outcomes and agency? (substantive) |
 | Theoretical depth | TAM + Nudge Theory only | TAM + Nudge Theory + TLT + SDT (4 frameworks) |
-| Discussion contribution | "Augmentation works better than replacement" (obvious) | Autonomy-outcome tension as a function of interface design and institutional context (novel) |
+| Discusión contribution | "Augmentation works better than replacement" (obvious) | Autonomy-outcome tension as a function of interface design and institutional context (novel) |
 | DA verdict | CRITICAL — undermines entire contribution | Resolved — paper now addresses a genuine gap |
 
 ### Editorial Synthesizer Assessment

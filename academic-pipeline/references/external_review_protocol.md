@@ -64,7 +64,7 @@ For each Major comment, guide the user to think through:
 3. Strategy layer
    "How will you phrase this in the response letter?"
    - Accept revision: Show specifically what was changed and where
-   - Partially accept: Explain the accepted parts + reasons for non-acceptance (must be persuasive)
+   - Partially accept: Explain the accepted parts + reasons for non-acceptance (debe ser persuasive)
    - Reject: Provide sufficient scholarly rationale (literature, data, methodological argumentation)
 
 4. Risk assessment
@@ -72,10 +72,10 @@ For each Major comment, guide the user to think through:
 ```
 
 **Key principles**:
-- **Do not default to "accept all"**: Real reviewer comments are not always correct — some may be based on misunderstanding or school-of-thought bias
+- **No default to "accept all"**: Real reviewer comments are not always correct — some may be based on misunderstanding or school-of-thought bias
 - **Encourage user to inject context**: "What school of thought do you think this reviewer might come from? What context might they not be aware of?"
 - **User can say "just fix it for me" to skip**: But when skipping strategic discussion, AI defaults to accepting all comments (conservative strategy)
-- **Maximum 8 rounds of dialogue**, but at least 1 round per Major comment
+- **Maximum 8 rounds of dialogue**, but al menos 1 round per Major comment
 
 ## Step 3: Revision and Response to Reviewers
 
@@ -118,9 +118,9 @@ Stage 3' behavior adjustments in external review mode:
    - New references added during revision enter Stage 4.5 integrity verification
 
 3. Things NOT done (different from internal review):
-   - Do not reassess paper quality (that is the human reviewers' job)
-   - Do not issue a new Editorial Decision
-   - Do not raise new revision requests
+   - No reassess paper quality (that is the human reviewers' job)
+   - No issue a new Editorial Decision
+   - No raise new revision requests
 ```
 
 ## Honest Capability Boundaries

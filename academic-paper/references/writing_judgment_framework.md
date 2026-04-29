@@ -14,7 +14,7 @@ For every paragraph, ask: "If I remove this paragraph, does the paper still make
 
 ## The Reader's Journey
 
-Academic writing is a guided tour. At any point, the reader should be able to answer:
+Academic writing is a guided tour. At any point, the reader debe ser able to answer:
 
 1. **Where am I?** (Section structure, signposting)
 2. **Why am I here?** (Connection to the research question)

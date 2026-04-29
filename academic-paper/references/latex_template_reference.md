@@ -183,7 +183,7 @@ When APA 7.0 format is requested, use the `apa7` document class instead of `arti
 | Abstract | `\abstract{}` in preamble | `\begin{abstract}` in body |
 | Heading levels | APA 5-level automatic | Manual formatting |
 | Double spacing | Automatic in `man` mode | Requires `\doublespacing` |
-| Text alignment | **Ragged-right (must override!)** | Justified by default |
+| Text alignment | **Ragged-right (must override!)** | Justified por defecto |
 
 ### Table Column Width Formula (Mandatory)
 

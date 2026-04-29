@@ -15,7 +15,7 @@ Quick-reference for switching between 5 citation formats. Used by `citation_comp
 | Multiple works | (Chen, 2023; Smith, 2024) | ¹ ² | (Chen 2023; Smith 2024) | (Chen 12; Smith 45) | [1], [2] | ¹˒² |
 | Order | Alphabetical | Order of appearance | Alphabetical | Alphabetical | Order of appearance | Order of appearance |
 
-### Reference List Naming
+### Referencia List Naming
 
 | Format | Section Title | Entry Order |
 |--------|--------------|-------------|

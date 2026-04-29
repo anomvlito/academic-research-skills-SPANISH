@@ -1,6 +1,6 @@
 # Preregistration Guide — Research Preregistration Guide
 
-## Purpose
+## Propósito
 Decision guide and operational manual for research preregistration. Assists the research_architect_agent in determining whether preregistration is needed during the methodology design stage, and guides researchers through the preregistration process.
 
 ---
@@ -224,7 +224,7 @@ analyses are clearly labeled.
 ```
 This study was not preregistered. While the hypotheses were formulated before
 data analysis, the distinction between confirmatory and exploratory analyses
-should be interpreted with this limitation in mind.
+debe ser interpreted with this limitation in mind.
 ```
 
 ---

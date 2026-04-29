@@ -2,9 +2,9 @@
 
 Used by `intake_agent`, `formatter_agent`, and `draft_writer_agent`.
 
-## Overview
+## Descripción General
 
-A funding statement is a mandatory declaration in academic papers. Whether or not the research received funding, it must be clearly stated. Most journals require funding information at submission and include a formal statement in the manuscript. This guide covers format standards for major funding agencies in Taiwan and internationally, statement templates, and the distinction from COI statements.
+A funding statement is a mandatory declaration in academic papers. Whether or not the research received funding, it debe ser clearly stated. Most journals require funding information at submission and include a formal statement in the manuscript. This guide covers format standards for major funding agencies in Taiwan and internationally, statement templates, and the distinction from COI statements.
 
 ---
 
@@ -136,7 +136,7 @@ under the European Union's Horizon 2020 research and innovation programme
 This work was supported by JSPS KAKENHI Grant Number JP12345678.
 ```
 
-**Note**: Some funding agencies (especially NSF) have specific disclaimer requirements that must be quoted verbatim.
+**Nota**: Some funding agencies (especially NSF) have specific disclaimer requirements that debe ser quoted verbatim.
 
 ---
 
@@ -311,7 +311,7 @@ Regulations vary by institution. Recommendations:
 
 ---
 
-## Reference Resources
+## Referencia Resources
 
 - NSTC Research Project Guidelines: https://www.nstc.gov.tw/
 - Elsevier funding body agreements: https://www.elsevier.com/about/open-science/open-access/agreements

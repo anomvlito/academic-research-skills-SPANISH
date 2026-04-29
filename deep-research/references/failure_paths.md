@@ -1,8 +1,8 @@
 # Failure Paths — Research Pipeline Failure Path Map
 
-## Overview
+## Descripción General
 
-This document lists all failure scenarios that may be encountered across all modes of the deep-research skill, along with their detection conditions, user notification messages, handling steps, and recovery paths. The purpose is to ensure every failure scenario has a clear handling strategy, preventing users from reaching a dead end.
+Este documento lists all failure scenarios that may be encountered across all modes of the deep-research skill, along with their detection conditions, user notification messages, handling steps, and recovery paths. The purpose is to ensure every failure scenario has a clear handling strategy, preventing users from reaching a dead end.
 
 ---
 
@@ -113,9 +113,9 @@ This document lists all failure scenarios that may be encountered across all mod
 - Includes: fatal logical flaws, core assumptions that cannot hold, evidence contradicting conclusions
 
 **User Notification Message**:
-> STOP — Devil's Advocate found a critical issue that must be resolved before continuing:
+> STOP — Devil's Advocate found a critical issue that debe ser resolved before continuing:
 > [Specific issue description]
-> This is not an issue that can be ignored, as it fundamentally affects the research's validity.
+> This is not an issue that puede ser ignored, as it fundamentally affects the research's validity.
 
 **Handling Steps**:
 1. Fully present the Critical issue's description, impact, and suggested correction direction
@@ -168,7 +168,7 @@ This document lists all failure scenarios that may be encountered across all mod
 - Extracted INSIGHTs < 3
 
 **User Notification Message**:
-> We've explored several directions, each with its own value. However, I notice we've been going back and forth between a few directions — this may mean you have multifaceted interests in this topic, but it can also make the research hard to focus. Would you like to:
+> We've explored several directions, each with its own value. Sin embargo, I notice we've been going back and forth between a few directions — this may mean you have multifaceted interests in this topic, but it can also make the research hard to focus. Would you like to:
 > (A) Continue the Socratic dialogue, but focus on [the most promising direction] you just mentioned?
 > (B) Switch to full mode, and let my team help you systematically explore and converge?
 > (C) Take a pause, think it over, and come back later?
@@ -294,7 +294,7 @@ This document lists all failure scenarios that may be encountered across all mod
 - Phase 6 revision has been executed 2 times (maximum), with unresolved Major issues remaining
 
 **User Notification Message**:
-> After two rounds of revision, the following issues have been resolved: [resolved list]. However, the following issues remain unresolved due to inherent research limitations: [unresolved list]. These will be listed in the "Acknowledged Limitations" section. The report is now the best version achievable under current conditions.
+> After two rounds of revision, the following issues have been resolved: [resolved list]. Sin embargo, the following issues remain unresolved due to inherent research limitations: [unresolved list]. These will be listed in the "Acknowledged Limitations" section. The report is now the best version achievable under current conditions.
 
 **Handling Steps**:
 1. Compile resolved and unresolved issues
@@ -322,7 +322,7 @@ This document lists all failure scenarios that may be encountered across all mod
 **Handling Steps**:
 1. Select the primary disciplinary framework as the analytical foundation
 2. Present other disciplinary perspectives in an "Alternative Perspectives" or "Interdisciplinary Insights" section
-3. Do not force integration of irreconcilable frameworks
+3. No force integration of irreconcilable frameworks
 
 **Recovery Paths**:
 - Focus on a single framework → continue workflow

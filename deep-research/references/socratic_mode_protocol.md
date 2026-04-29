@@ -61,7 +61,7 @@ User: "Guide my research on [topic]"
 
 ## Dialogue Management Rules
 
-- At least 2 rounds of dialogue per layer before moving to the next (Layer 5 requires at least 1)
+- At least 2 rounds of dialogue per layer before moving to the next (Layer 5 requires al menos 1)
 - Users can request to skip to the next layer at any time
 - Mentor responses limited to 200-400 words
 - If no convergence after 10 rounds -> suggest switching to `full` mode (see Failure Paths F6)

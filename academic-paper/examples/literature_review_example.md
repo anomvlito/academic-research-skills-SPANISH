@@ -1,4 +1,4 @@
-# Literature Review Example — Higher Education Domain
+# Revisión de Literatura Example — Higher Education Domain
 
 This example demonstrates a thematic literature review paper structure in the higher education field.
 
@@ -28,7 +28,7 @@ East Asian higher education systems face unprecedented enrollment challenges due
 
 ---
 
-## 1. Introduction
+## 1. Introducción
 
 ### 1.1 Topic and Rationale
 
@@ -44,7 +44,7 @@ This review covers peer-reviewed studies published between 2015 and 2025, focusi
 - **Strategies**: Enrollment management, restructuring, merger, and exit
 - **Excluded**: K-12 enrollment issues, purely demographic studies without institutional focus
 
-### 1.3 Review Methodology
+### 1.3 Review Metodología
 
 A systematic search was conducted across ERIC, Scopus, Web of Science, and Airiti Library using the terms: ("enrollment decline" OR "demographic change" OR "declining birth rate") AND ("higher education" OR "university" OR "college") AND ("adaptation" OR "strategy" OR "merger" OR "restructuring"). After screening 312 initial hits, 58 studies met the inclusion criteria.
 
@@ -178,7 +178,7 @@ The reviewed literature is dominated by single-country case studies (72%) and cr
 
 ---
 
-## 7. Conclusion
+## 7. Conclusión
 
 ### 7.1 Key Takeaways
 
@@ -199,7 +199,7 @@ This literature review was prepared with the assistance of AI-powered academic r
 
 ---
 
-## References
+## Referencias
 
 *(Illustrative — not real citations)*
 

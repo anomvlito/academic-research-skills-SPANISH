@@ -4,46 +4,44 @@
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![Sponsor](https://img.shields.io/badge/sponsor-Buy%20Me%20a%20Coffee-orange?logo=buy-me-a-coffee)](https://buymeacoffee.com/crucify020v)
 
-[繁體中文版](README.zh-TW.md)
 
-A comprehensive suite of Claude Code skills for academic research, covering the full pipeline from research to publication.
+Una suite completa de habilidades de Claude Code para investigación académica, que cubre el pipeline completo desde la investigación hasta la publicación.
 
-> **AI is your copilot, not the pilot.** This tool won't write your paper for you. It handles the grunt work — hunting down references, formatting citations, verifying data, checking logical consistency — so you can focus on the parts that actually require your brain: defining the question, choosing the method, interpreting what the data means, and writing the sentence after "I argue that."
+> **La IA es tu copiloto, no el piloto.** Esta herramienta no escribirá tu artículo por ti. Se encarga del trabajo pesado — buscar referencias, formatear citas, verificar datos, revisar la coherencia lógica — para que puedas concentrarte en las partes que realmente requieren tu cerebro: definir la pregunta, elegir el método, interpretar qué significan los datos y escribir la oración después de "Yo argumento que."
 >
-> Unlike a humanizer, this tool doesn't help you hide the fact that you used AI. It helps you write better. Style Calibration learns your voice from past work. Writing Quality Check catches the patterns that make prose feel machine-generated. The goal is quality, not cheating.
+> A diferencia de un humanizador, esta herramienta no te ayuda a ocultar que usaste IA. Te ayuda a escribir mejor. La Calibración de Estilo aprende tu voz de trabajos anteriores. El Control de Calidad de Escritura detecta los patrones que hacen que la prosa se sienta generada por máquina. El objetivo es la calidad, no el engaño.
 
-### Why human-in-the-loop, not full automation?
+### ¿Por qué humano-en-el-ciclo y no automatización completa?
 
 Lu et al. (2026, *Nature* 651:914-919) built **The AI Scientist** — the first fully autonomous AI research system to publish a paper through blind peer review at a top-tier ML venue (ICLR 2025 workshop, score 6.33/10 vs workshop average 4.87). Their Limitations section enumerates the failure modes that any fully-autonomous AI research pipeline inherits: implementation bugs, hallucinated results, shortcut reliance, bug-as-insight reframing, methodology fabrication, frame-lock, citation hallucinations.
 
-ARS is built on the premise that **a human researcher augmented by AI avoids these failure modes better than either alone**. Stage 2.5 and Stage 4.5 integrity gates run a 7-mode blocking checklist (see [`academic-pipeline/references/ai_research_failure_modes.md`](academic-pipeline/references/ai_research_failure_modes.md)); the reviewer offers an opt-in calibration mode that measures its own FNR/FPR against a user-supplied gold set.
+ARS se construye sobre la premisa de que **un investigador humano potenciado por IA evita estos modos de falla mejor que cualquiera de los dos por separado**. Stage 2.5 and Stage 4.5 integrity gates run a 7-mode blocking checklist (see [`academic-pipeline/references/ai_research_failure_modes.md`](academic-pipeline/references/ai_research_failure_modes.md)); the reviewer offers an opt-in calibration mode that measures its own FNR/FPR against a user-supplied gold set.
 
 v3.3 was inspired by [**PaperOrchestra**](https://arxiv.org/abs/2604.05018) (Song, Song, Pfister & Yoon, 2026, Google): Semantic Scholar API verification, anti-leakage protocol, VLM figure verification, and score trajectory tracking.
 
 ---
 
-## Architecture & pipeline
+## Arquitectura y pipeline
 
-**👉 [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)** — the full pipeline view: flow diagram, stage-by-stage matrix, data-access flow, skill dependency graph, quality gates, and mode list.
+**👉 [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)** — vista completa del pipeline: diagrama de flujo, matriz etapa por etapa, flujo de acceso a datos, grafo de dependencias de habilidades, compuertas de calidad y lista de modos.
 
-The architecture doc supersedes the sprawling pipeline description that used to live here. Everything about *what runs in which stage* now lives in one place.
+El documento de arquitectura reemplaza la extensa descripción del pipeline que solía estar aquí. Todo sobre *qué se ejecuta en qué etapa* ahora vive en un solo lugar.
 
-## Setup & installation
+## Configuración e instalación
 
-**👉 [docs/SETUP.md](docs/SETUP.md)** — install Claude Code, set up API keys, optional Pandoc/tectonic for DOCX/PDF, cross-model verification (`ARS_CROSS_MODEL`), and four installation methods including claude.ai Project import.
+**👉 [docs/SETUP.md](docs/SETUP.md)** — instala Claude Code, configura claves API, Pandoc/tectonic opcional para DOCX/PDF, verificación multi-modelo (`ARS_CROSS_MODEL`), y cuatro métodos de instalación incluyendo importación de Proyecto claude.ai.
 
-## Performance & cost
+## Rendimiento y costo
 
-**👉 [docs/PERFORMANCE.md](docs/PERFORMANCE.md)** — per-mode token budgets, full-pipeline estimate (~$4–6 for a 15k-word paper), and recommended Claude Code settings (Skip Permissions; Agent Team optional).
+**👉 [docs/PERFORMANCE.md](docs/PERFORMANCE.md)** — presupuestos de tokens por modo, estimación del pipeline completo (~$4–6 para un artículo de 15k palabras), y configuraciones recomendadas de Claude Code (Omitir Permisos; Equipo de Agentes opcional).
 
-## Guides & articles
+## Guías y artículos
 
-- [Academic Writing Shouldn't Be a Solo Act](https://open.substack.com/pub/edwardwu223235/p/academic-writing-shouldnt-be-a-solo?r=4dczl&utm_medium=ios) — full pipeline walkthrough (English)
-- [學術寫作不該是一個人的事：一套開源 AI 協作工具如何改變研究者的工作流](https://open.substack.com/pub/edwardwu223235/p/ai?r=4dczl&utm_medium=ios) — 完整使用指南（繁體中文）
+- [Academic Writing Shouldn't Be a Solo Act](https://open.substack.com/pub/edwardwu223235/p/academic-writing-shouldnt-be-a-solo?r=4dczl&utm_medium=ios) — guía completa del pipeline (Inglés)
 
 ---
 
-## Features at a glance
+## Características principales
 
 - **Deep Research** — 13-agent research team with Socratic guided mode, PRISMA systematic review, intent detection, dialogue health monitoring, optional cross-model DA, Semantic Scholar API verification.
 - **Academic Paper** — 12-agent paper writing with Style Calibration, Writing Quality Check, LaTeX hardening, visualization, revision coaching, citation conversion, anti-leakage protocol, and VLM figure verification.
@@ -56,16 +54,15 @@ The architecture doc supersedes the sprawling pipeline description that used to 
 
 ---
 
-## Showcase: real pipeline output
+## Ejemplos: salida real del pipeline
 
-See the complete artifacts from a real 10-stage pipeline run — peer review reports, integrity verification reports, and the final paper:
+Consulta los artefactos completos de una ejecución real del pipeline de 10 etapas — informes de revisión por pares, informes de verificación de integridad y el artículo final:
 
-**[Browse all pipeline artifacts →](examples/showcase/)**
+**[Ver todos los artefactos del pipeline →](examples/showcase/)**
 
 | Artifact | Description |
 |---|---|
 | [Final Paper (EN)](examples/showcase/full_paper_apa7.pdf) | APA 7.0 formatted, LaTeX-compiled |
-| [Final Paper (ZH)](examples/showcase/full_paper_zh_apa7.pdf) | Chinese version, APA 7.0 |
 | [Integrity Report — Pre-Review](examples/showcase/integrity_report_stage2.5.pdf) | Stage 2.5: caught 15 fabricated refs + 3 statistical errors |
 | [Integrity Report — Final](examples/showcase/integrity_report_stage4.5.pdf) | Stage 4.5: zero regressions confirmed |
 | [Peer Review Round 1](examples/showcase/stage3_review_report.pdf) | EIC + 3 Reviewers + Devil's Advocate |
@@ -76,7 +73,7 @@ See the complete artifacts from a real 10-stage pipeline run — peer review rep
 
 ---
 
-## Companion: Experiment Agent
+## Complemento: Agente de Experimentos
 
 If your research involves running experiments (code or human studies) before writing, the [Experiment Agent](https://github.com/Imbad0202/experiment-agent) skill fills the gap between ARS Stage 1 (RESEARCH) and Stage 2 (WRITE).
 
@@ -94,9 +91,9 @@ ARS Stage 2 WRITE     →  write paper with verified experiment results
 
 ---
 
-## Usage
+## Uso
 
-### Quick Start
+### Inicio Rápido
 
 ```
 # Start a full research pipeline
@@ -115,36 +112,36 @@ You: "Review this paper" (then provide the paper)
 You: "status"
 ```
 
-### Individual Skills
+### Habilidades Individuales
 
-#### Deep Research (7 modes)
+#### Investigación Profunda (7 modos)
 
 ```
 "Research the impact of AI on higher education"       → full mode
 "Give me a quick brief on X"                          → quick mode
 "Do a systematic review on X with PRISMA"             → systematic-review mode
-"Guide my research on X"                              → socratic mode (guided)
+"Guide my research on X"                              → socratic mode (guiado)
 "Fact-check these claims"                             → fact-check mode
 "Do a literature review on X"                         → lit-review mode
-"Review this paper's research quality"                → review mode
+"Review this paper's research quality"                → modo revisión
 ```
 
-#### Academic Paper (10 modes)
+#### Artículo Académico (10 modos)
 
 ```
 "Write a paper on X"                                  → full mode
-"Guide me through writing a paper"                    → plan mode (guided)
-"Build a paper outline"                               → outline-only mode
+"Guide me through writing a paper"                    → plan mode (guiado)
+"Build a paper outline"                               → modo solo-esquema
 "I have a draft, here are reviewer comments"          → revision mode
 "Parse these reviewer comments into a roadmap"        → revision-coach mode
-"Write an abstract for this paper"                    → abstract-only mode
+"Write an abstract for this paper"                    → modo solo-resumen
 "Turn this into a literature review paper"            → lit-review mode
 "Convert to LaTeX" / "Convert citations to IEEE"      → format-convert mode
 "Check citations"                                     → citation-check mode
-"Generate an AI disclosure statement for NeurIPS"     → disclosure mode
+"Generate an AI disclosure statement for NeurIPS"     → modo declaración
 ```
 
-#### Academic Paper Reviewer (6 modes)
+#### Revisor de Artículo Académico (6 modos)
 
 ```
 "Review this paper"                                   → full mode (EIC + R1/R2/R3 + Devil's Advocate)
@@ -152,10 +149,10 @@ You: "status"
 "Guide me to improve this paper"                      → guided mode
 "Check the methodology"                               → methodology-focus mode
 "Verify the revisions"                                → re-review mode
-"Calibrate this reviewer against my gold set"         → calibration mode
+"Calibrate this reviewer against my gold set"         → modo calibración
 ```
 
-#### Academic Pipeline (Orchestrator)
+#### Pipeline Académico (Orquestador)
 
 ```
 "I want to write a complete research paper"           → full pipeline from Stage 1
@@ -165,25 +162,22 @@ You: "status"
 
 > Pipeline ends with **Stage 6: Process Summary** — auto-generates a paper creation process record with 6-dimension Collaboration Quality Evaluation (1–100 scoring).
 
-### Supported Languages
+### Idiomas Compatibles
 
-- **Traditional Chinese** (繁體中文) — default when user writes in Chinese
-- **English** — default when user writes in English
-- Bilingual abstracts (Chinese + English) for academic papers
+- **Español** — idioma por defecto
+- **Inglés** — compatible
 
-> **Using a different language?** Socratic mode (deep-research) and Plan mode (academic-paper) use **intent-based activation** — they detect the meaning of your request, not specific keywords. This means they work in **any language** without modification.
->
-> However, the general `Trigger Keywords` section (which determines whether the skill is activated at all) still lists English and Traditional Chinese keywords. If you find the skill isn't activating reliably in your language, you can add your language's keywords to the `### Trigger Keywords` section in each `SKILL.md` file to improve matching confidence.
+> **¿Usas otro idioma?** El modo Socrático (*deep-research*) y el modo Plan (*academic-paper*) usan **activación basada en intención** — detectan el significado de tu solicitud, no palabras clave específicas. Esto significa que funcionan en **cualquier idioma** sin modificación.
 
-### Supported Citation Formats
+### Formatos de Cita Compatibles
 
-- APA 7.0 (default, including Chinese citation rules)
+- APA 7.0 (default)
 - Chicago (Notes & Author-Date)
 - MLA
 - IEEE
 - Vancouver
 
-### Supported Paper Structures
+### Estructuras de Artículo Compatibles
 
 - IMRaD (empirical research)
 - Thematic Literature Review
@@ -194,23 +188,23 @@ You: "status"
 
 ---
 
-## Skill Details
+## Detalles de las Habilidades
 
-Per-agent responsibilities and per-stage artifacts now live in [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). Version numbers are anchored here so release metadata stays in one place.
+Las responsabilidades por agente y los artefactos por etapa ahora están en [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). Los números de versión están anclados aquí para que los metadatos de versiones permanezcan en un solo lugar.
 
-### Deep Research (v2.8)
+### Investigación Profunda (v2.8)
 
 13-agent research team. Modes: full, quick, review, lit-review, fact-check, socratic, systematic-review. Full agent roster and artifacts: see ARCHITECTURE.md §3.
 
-### Academic Paper (v3.0)
+### Artículo Académico (v3.0)
 
-12-agent paper writing pipeline. Modes: full, plan, outline-only, revision, revision-coach, abstract-only, lit-review, format-convert, citation-check, disclosure. Output: MD + DOCX (via Pandoc when available) + LaTeX (APA 7.0 `apa7` class / IEEE / Chicago) → PDF via tectonic. Full agent roster and per-phase responsibilities: see ARCHITECTURE.md §3.
+12-agent paper writing pipeline. Modes: full, plan, outline-only, revision, revision-coach, abstract-only, lit-review, format-convert, citation-check, disclosure. Output: MD + DOCX (vía Pandoc cuando esté disponible) + LaTeX (APA 7.0 `apa7` class / IEEE / Chicago) → PDF via tectonic. Full agent roster and per-phase responsibilities: see ARCHITECTURE.md §3.
 
-### Academic Paper Reviewer (v1.8)
+### Revisor de Artículo Académico (v1.8)
 
 7-agent multi-perspective review with **0-100 quality rubrics**. Modes: full, re-review, quick, methodology-focus, guided, calibration. **Decision mapping:** ≥80 Accept, 65-79 Minor Revision, 50-64 Major Revision, <50 Reject. First-round review team vs. narrow re-review team boundary: see ARCHITECTURE.md §3 Stage 3 / Stage 3'.
 
-### Academic Pipeline (v3.6)
+### Pipeline Académico (v3.6)
 
 10-stage orchestrator with integrity verification, two-stage review, Socratic coaching, and collaboration evaluation. Pipeline guarantees: every stage requires user confirmation checkpoint; integrity verification (Stage 2.5 + 4.5) cannot be skipped; R&R Traceability Matrix (Schema 11) independently verifies author revision claims. v3.4 added the Compliance Agent (PRISMA-trAIce + RAISE) at Stage 2.5 / 4.5. v3.5 adds the **Collaboration Depth Observer** (`collaboration_depth_agent`, advisory only — never blocks) at every FULL/SLIM checkpoint and at pipeline completion. MANDATORY integrity gates (2.5 / 4.5) explicitly skip the observer so compliance checks are not diluted. Based on Wang & Zhang (2026), IJETHE 23:11. Stage-by-stage matrix with agents, artifacts, and gates: see ARCHITECTURE.md §3.
 
@@ -255,19 +249,19 @@ The deeper lesson: AI literacy isn't about learning to use AI as a tool, followi
 
 ---
 
-## License
+## Licencia
 
 This work is licensed under [CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
-**You are free to:**
-- Share — copy and redistribute the material
-- Adapt — remix, transform, and build upon the material
+**Eres libre de:**
+- Compartir — copiar y redistribuir el material
+- Adaptar — remezclar, transformar y construir sobre el material
 
-**Under the following terms:**
-- **Attribution** — You must give appropriate credit
-- **NonCommercial** — You may not use the material for commercial purposes
+**Bajo los siguientes términos:**
+- **Atribución** — Debes dar el crédito apropiado
+- **No Comercial** — No puedes usar el material con fines comerciales
 
-**Attribution format:**
+**Formato de atribución:**
 ```
 Based on Academic Research Skills by Cheng-I Wu
 https://github.com/Imbad0202/academic-research-skills
@@ -275,9 +269,9 @@ https://github.com/Imbad0202/academic-research-skills
 
 ---
 
-## Contributors
+## Colaboradores
 
-**Cheng-I Wu** (吳政宜) — Author and maintainer
+**Cheng-I Wu** — Author and maintainer
 
 **[aspi6246](https://github.com/aspi6246)** — Contributor. The v3.1 optimization was inspired by patterns from [Claude-Code-Skills-for-Academics](https://github.com/aspi6246/Claude-Code-Skills-for-Academics): read-only constraint pattern, anti-pattern codification as first-class design, cognitive framework approach (teaching "how to think" not just procedures), and lean skill size philosophy.
 
@@ -287,7 +281,7 @@ https://github.com/Imbad0202/academic-research-skills
 
 ---
 
-## Changelog
+## Registro de Cambios
 
 ### v3.6.5 (2026-04-27) — Material Passport `literature_corpus[]` Consumer Integration
 
@@ -481,22 +475,22 @@ Inspired by patterns from [aspi6246/Claude-Code-Skills-for-Academics](https://gi
 - Both modes now have a **default rule**: when intent is ambiguous, prefer `socratic`/`plan` over `full` — safer to guide first.
 - Two-layer architecture: Layer 1 (skill activation) uses bilingual keywords for matching confidence; Layer 2 (mode routing) uses language-agnostic intent signals.
 
-### v2.6.1 (2026-03-09) — Bilingual Trigger Keywords
-- **deep-research**: Added Traditional Chinese trigger keywords for general activation and Socratic mode.
-- **academic-paper**: Added Traditional Chinese trigger keywords and Plan Mode trigger section.
-- Both mode selection guides now include bilingual examples and Chinese-specific misselection scenarios.
+### v2.6.1 (2026-03-09) — Trigger Keywords
+- **deep-research**: Added trigger keywords for general activation and Socratic mode.
+- **academic-paper**: Added trigger keywords and Plan Mode trigger section.
+- Both mode selection guides now include examples and misselection scenarios.
 
 ### v2.6 / v2.4 / v1.4 (2026-03-08) — 15+ Improvements
 - **deep-research v2.3**: New systematic-review / PRISMA mode (7th); 3 new agents (risk_of_bias, meta_analysis, monitoring); PRISMA protocol/report templates; Socratic convergence criteria (4 signals + auto-end); Quick Mode Selection Guide
-- **academic-paper v2.4**: 2 new agents (visualization, revision_coach); revision tracking template with 4 status types; citation format conversion (APA↔Chicago↔MLA↔IEEE↔Vancouver); statistical visualization standards; Socratic convergence criteria; revision recovery example; **LaTeX output hardening** — mandatory `apa7` document class, text justification fix (`ragged2e` + `etoolbox`), table column width formula, bilingual abstract centering, standardized font stack (Times New Roman + Source Han Serif TC VF + Courier New), PDF via tectonic only
+- **academic-paper v2.4**: 2 new agents (visualization, revision_coach); revision tracking template with 4 status types; citation format conversion (APA↔Chicago↔MLA↔IEEE↔Vancouver); statistical visualization standards; Socratic convergence criteria; revision recovery example; **LaTeX output hardening** — mandatory `apa7` document class, text justification fix (`ragged2e` + `etoolbox`), table column width formula, abstract centering, standardized font stack (Times New Roman + Courier New), PDF via tectonic only
 - **academic-paper-reviewer v1.4**: Quality rubrics with 0-100 scoring and behavioral indicators; decision mapping (≥80 Accept, 65-79 Minor, 50-64 Major, <50 Reject); Quick Mode Selection Guide
 - **academic-pipeline v2.6**: Adaptive checkpoint system (FULL/SLIM/MANDATORY); Phase E Claim Verification in integrity checks; Material Passport for mid-entry provenance; cross-skill mode advisor (14 scenarios); team collaboration protocol; enhanced handoff schemas (9 schemas); integrity failure recovery example
 
 ### v2.4 / v1.3 (2026-03-08)
-- **academic-pipeline v2.4**: New Stage 6 PROCESS SUMMARY — auto-generates structured paper creation process record (MD → LaTeX → PDF, bilingual); mandatory final chapter: **Collaboration Quality Evaluation** with 6 dimensions scored 1–100 (Direction Setting, Intellectual Contribution, Quality Gatekeeping, Iteration Discipline, Delegation Efficiency, Meta-Learning), honest feedback, and improvement recommendations; pipeline expanded from 9 to 10 stages
+- **academic-pipeline v2.4**: New Stage 6 PROCESS SUMMARY — auto-generates structured paper creation process record (MD → LaTeX → PDF); mandatory final chapter: **Collaboration Quality Evaluation** with 6 dimensions scored 1–100 (Direction Setting, Intellectual Contribution, Quality Gatekeeping, Iteration Discipline, Delegation Efficiency, Meta-Learning), honest feedback, and improvement recommendations; pipeline expanded from 9 to 10 stages
 
 ### v2.3 / v1.3 (2026-03-08)
-- **academic-pipeline v2.3**: Stage 5 FINALIZE now prompts for formatting style (APA 7.0 / Chicago / IEEE); PDF must compile from LaTeX via `tectonic` (no HTML-to-PDF); APA 7.0 uses `apa7` document class (`man` mode) with XeCJK for bilingual CJK support; font stack: Times New Roman + Source Han Serif TC VF + Courier New
+- **academic-pipeline v2.3**: Stage 5 FINALIZE now prompts for formatting style (APA 7.0 / Chicago / IEEE); PDF must compile from LaTeX via `tectonic` (no HTML-to-PDF); APA 7.0 uses `apa7` document class (`man` mode); font stack: Times New Roman + Courier New
 
 ### v2.2 / v1.3 (2025-03-05)
 - **Cross-Agent Quality Alignment**: unified definitions (peer-reviewed, currency rule, CRITICAL severity, source tier) across all agents

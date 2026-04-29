@@ -9,7 +9,7 @@
 
 A reviewer sprint contract is a machine-checkable pre-registered acceptance criterion. The orchestrator loads a frozen template, inlines runtime fields (`generated_at`, optional `agent_amendments`), and drives each reviewer through a paper-content-blind Phase 1 followed by a paper-visible Phase 2. The synthesizer then runs a three-step mechanical protocol over the `panel_size` reviewer outputs to emit an editorial decision.
 
-This protocol exists to destroy the "read the paper, then rationalise the scoring standard" drift path. The load-bearing mechanism is the **physical separation of calls**: Phase 1 never sees paper content.
+Este protocolo exists to destroy the "read the paper, then rationalise the scoring standard" drift path. The load-bearing mechanism is the **physical separation of calls**: Phase 1 never sees paper content.
 
 ## 2. Two-phase reviewer call
 
@@ -31,7 +31,7 @@ For each reviewer in `range(panel_size)`:
 
 ## 3. Contract injection
 
-- **Template on disk is frozen.** Do not mutate. Deep-copy into an in-memory dict.
+- **Template on disk is frozen.** No mutate. Deep-copy into an in-memory dict.
 - **Runtime-only fields:** `generated_at`, `agent_amendments.stage_specific_notes`, `agent_amendments.additional_measurement_hints`.
 - **Baseline fields are orchestrator-immutable.** Schema cannot enforce this; the orchestrator must not rewrite `acceptance_dimensions` / `failure_conditions` / `measurement_procedure` / `override_ladder` / `mode` / `stage` / `contract_id` / `baseline_version` / `panel_size` between template load and injection. Optional: emit sha256 of baseline-field subset to audit log for drift detection.
 
@@ -40,7 +40,7 @@ For each reviewer in `range(panel_size)`:
 Structural checks (orchestrator, not validator). On failure retry Phase 1 once with the specific lint gap hinted in the system prompt; second failure aborts that reviewer.
 
 - Required sections in order: `## Contract Paraphrase`, `## Scoring Plan`, terminal `[CONTRACT-ACKNOWLEDGED]`.
-- Paraphrase paragraph count ≥ `measurement_procedure.paraphrase_minimum_dimensions` (for `"all"`, one paragraph per dimension; for integer `k`, at least `k` paragraphs each matching a distinct dimension).
+- Paraphrase paragraph count ≥ `measurement_procedure.paraphrase_minimum_dimensions` (for `"all"`, one paragraph per dimension; for integer `k`, al menos `k` paragraphs each matching a distinct dimension).
 - `## Scoring Plan` has one `### <Dn>: <name>` subsection per acceptance dimension (always full coverage, regardless of `paraphrase_minimum_dimensions`).
 - Each `scoring_plan` subsection contains lines matching `measurement_procedure.scoring_plan_schema.required`.
 - Phase 1 content refers to `<title>`, `<field>`, `<word_count>` only; no specific paper content. Not schema-enforced; behavioural rule in reviewer prompt.
@@ -60,12 +60,12 @@ Structural checks run before handoff to synthesizer. **No Phase 2 retry** (revie
 - **Consistency check (structural):** For every dimension not under dissent, the Phase 2 score must substring-match the reviewer's Phase 1 `scoring_plan` trigger tokens. Vacuous triggers bypass this check — documented limitation.
 - `## Editorial Decision` is one of the `action` values derivable from `## Failure Condition Checks` via the synthesizer precedence rule (§8 step 3). Inconsistency marks the reviewer unusable.
 
-On any Phase 2 lint failure other than multi-dissent: emit `[PROTOCOL-VIOLATION]` and mark reviewer unusable. Do not synthesise a substitute score for the synthesizer.
+On any Phase 2 lint failure other than multi-dissent: emit `[PROTOCOL-VIOLATION]` and mark reviewer unusable. No synthesise a substitute score for the synthesizer.
 
 ## 6. Multi-reviewer orchestration
 
 - **Independent cycles.** Each of the `panel_size` reviewers runs its own Phase 1 + Phase 2. Failures in one do not pause the others.
-- **Panel cardinality invariant (§2 step 6).** After all reviewers complete, if `len(usable_phase2_outputs) < panel_size`, abort the editorial round with `[PANEL-SHRUNK]`. Do not silently recompute `cross_reviewer_quantifier` thresholds against a smaller panel — the contract's published aggregation semantics bind on a specific `panel_size`.
+- **Panel cardinality invariant (§2 step 6).** After all reviewers complete, if `len(usable_phase2_outputs) < panel_size`, abort the editorial round with `[PANEL-SHRUNK]`. No silently recompute `cross_reviewer_quantifier` thresholds against a smaller panel — the contract's published aggregation semantics bind on a specific `panel_size`.
 - **Operational monitor.** Track `[PANEL-SHRUNK]` rate in real SR runs. If > 5% of rounds abort in first 3 months, v3.6.3 introduces graceful-degradation fallback.
 
 ## 7. Reviewer panel mapping

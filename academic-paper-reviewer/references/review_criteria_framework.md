@@ -1,6 +1,6 @@
 # Review Criteria Framework — Structured Review Criteria Framework
 
-This document defines universal criteria for academic paper review and type-specific criteria differentiated by paper type. All reviewer agents share this framework.
+Este documento defines universal criteria for academic paper review and type-specific criteria differentiated by paper type. All reviewer agents share this framework.
 
 ---
 

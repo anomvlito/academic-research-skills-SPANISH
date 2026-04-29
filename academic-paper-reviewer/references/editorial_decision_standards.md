@@ -1,6 +1,6 @@
 # Editorial Decision Standards — Criteria for Editorial Decision Making
 
-This document defines the explicit criteria for Accept / Minor Revision / Major Revision / Reject decisions, for use by `eic_agent` and `editorial_synthesizer_agent`.
+Este documento defines the explicit criteria for Accept / Minor Revision / Major Revision / Reject decisions, for use by `eic_agent` and `editorial_synthesizer_agent`.
 
 ---
 
@@ -8,7 +8,7 @@ This document defines the explicit criteria for Accept / Minor Revision / Major 
 
 ### Accept
 
-**Definition**: The paper can be published without further review.
+**Definition**: The paper puede ser published without further review.
 
 **Criteria**:
 - Average score across all universal dimensions >= 4.0
@@ -29,13 +29,13 @@ This document defines the explicit criteria for Accept / Minor Revision / Major 
 
 ### Minor Revision
 
-**Definition**: The paper is fundamentally acceptable and can be published after limited modifications; typically does not need to be sent for review again after revision.
+**Definition**: The paper is fundamentally acceptable and puede ser published after limited modifications; typically does not need to be sent for review again after revision.
 
 **Criteria**:
 - Average score across all universal dimensions >= 3.5
 - No dimension scores below 2.5
 - At least 3/4 reviewers recommend Accept or Minor Revision
-- Issues can be resolved within 2-4 weeks
+- Issues puede ser resolved within 2-4 weeks
 - Modifications do not involve restructuring core arguments or methods
 
 **Typical revision items**:
@@ -196,7 +196,7 @@ This document defines the explicit criteria for Accept / Minor Revision / Major 
 3. **Timeliness**: Complete the review within the committed timeframe
 4. **Constructiveness**: Even when recommending Reject, provide constructive feedback
 5. **Impartiality**: No bias based on author's gender, race, institution, or nationality
-6. **No plagiarism**: Do not use unpublished ideas seen during review
+6. **No plagiarism**: No use unpublished ideas seen during review
 7. **Appropriate language**: Avoid personal attacks, sarcasm, or demeaning language
 
 ### Editor Ethics

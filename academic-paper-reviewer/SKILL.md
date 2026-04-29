@@ -23,7 +23,7 @@ Simulates a complete international journal peer review process: automatically id
 
 ---
 
-## Quick Start
+## Inicio Rápido
 
 **Simplest command:**
 ```
@@ -142,7 +142,7 @@ User: "Review this paper"
          - Arbitration and argumentation for disputed issues
          - Devil's Advocate CRITICAL issues are specially flagged in the Editorial Decision
          - Editorial Decision Letter
-         - Revision Roadmap (prioritized, can be directly input to academic-paper revision mode)
+         - Revision Roadmap (prioritized, puede ser directly input to academic-paper revision mode)
      |
 === Phase 2.5: REVISION COACHING (Socratic Revision Guidance) ===
      |
@@ -166,7 +166,7 @@ User: "Review this paper"
 
 1. **After Phase 0 completes**: Present Reviewer Configuration Card to user; user can adjust reviewer identities
 2. ⚠️ **IRON RULE**: 5 reviewers review independently, without cross-referencing each other.
-3. ⚠️ **IRON RULE**: Synthesizer cannot fabricate review comments; must be based on specific reports from Phase 1.
+3. ⚠️ **IRON RULE**: Synthesizer cannot fabricate review comments; debe ser based on specific reports from Phase 1.
 4. ⚠️ **IRON RULE**: If the Devil's Advocate finds CRITICAL issues, the Editorial Decision cannot be Accept.
 5. **Phase 2.5**: Revision Coaching only triggers when Decision is not Accept; user can choose to skip
 6. ⚠️ **IRON RULE — READ-ONLY CONSTRAINT**: Reviewers MUST NOT modify the submitted manuscript. All review output (reports, decisions, roadmaps) is produced as separate documents. The reviewer examines the paper — it never rewrites it. If a reviewer agent attempts to edit the manuscript file, STOP and redirect to report generation.
@@ -263,7 +263,7 @@ deep-research --> academic-paper --> [integrity check] --> academic-paper-review
 |----------------------|-------------|
 | **Upstream: academic-paper -> reviewer** | Receives the complete paper output from `academic-paper` full mode, directly enters Phase 0 |
 | **Upstream: integrity check -> reviewer** | In the Pipeline, the paper must pass integrity check before entering reviewer |
-| **Downstream: reviewer -> academic-paper** | The Revision Roadmap format can be directly used as reviewer feedback input for `academic-paper` revision mode |
+| **Downstream: reviewer -> academic-paper** | The Revision Roadmap format puede ser directly used as reviewer feedback input for `academic-paper` revision mode |
 | **Downstream: reviewer (re-review) -> integrity** | After re-review completes, proceeds to final integrity verification |
 
 ### Pipeline Usage Example
@@ -286,7 +286,7 @@ deep-research --> academic-paper --> [integrity check] --> academic-paper-review
 
 ---
 
-## Reference Files
+## Referencia Files
 
 | Reference | Purpose | Used By |
 |-----------|---------|---------|
@@ -314,7 +314,7 @@ deep-research --> academic-paper --> [integrity check] --> academic-paper-review
 
 ---
 
-## Examples
+## Ejemplos
 
 | Example | Demonstrates |
 |---------|-------------|
@@ -323,7 +323,7 @@ deep-research --> academic-paper --> [integrity check] --> academic-paper-review
 
 ---
 
-## Anti-Patterns
+## Anti-Patrones
 
 Explicit prohibitions to prevent common failure modes, especially during long conversations:
 
@@ -332,8 +332,8 @@ Explicit prohibitions to prevent common failure modes, especially during long co
 | 1 | **Fabricating review comments** | Synthesizer invents critique not in any reviewer report | Every synthesis point must trace to a specific Phase 1 reviewer report |
 | 2 | **Duplicate criticisms across reviewers** | R1/R2/R3 raise identical points = fake diversity | Each reviewer has a distinct perspective; overlapping topics get different angles |
 | 3 | **Ignoring Devil's Advocate CRITICAL findings** | Editorial Decision says Accept despite DA flagging critical issues | If DA finds CRITICAL → Decision cannot be Accept (Checkpoint Rule #4) |
-| 4 | **Rubber-stamp re-review** | Re-review says "all addressed" without verification | Each concern must be independently verified against the revised manuscript |
-| 5 | **Sycophantic score inflation** | Giving 8/10 to mediocre work to avoid conflict | Scores must be evidence-based; a paper with methodology gaps cannot score >6 on rigor |
+| 4 | **Rubber-stamp re-review** | Re-review says "all addressed" without verification | Each concern debe ser independently verified against the revised manuscript |
+| 5 | **Sycophantic score inflation** | Giving 8/10 to mediocre work to avoid conflict | Scores debe ser evidence-based; a paper with methodology gaps cannot score >6 on rigor |
 | 6 | **Editing the manuscript** | Reviewer "helpfully" fixes the paper directly | READ-ONLY: produce reports, never modify the paper (Checkpoint Rule #6) |
 | 7 | **Generic feedback** | "The methodology could be stronger" without specifics | Every criticism must include: what's wrong, where it is, and a proposed fix |
 
@@ -344,10 +344,10 @@ Explicit prohibitions to prevent common failure modes, especially during long co
 | Dimension | Requirement |
 |-----------|-------------|
 | Perspective differentiation | Each reviewer's review must come from a different angle; no duplicate criticisms |
-| Evidence-based | EIC's decision must be based on specific reviewer comments; no fabrication |
+| Evidence-based | EIC's decision debe ser based on specific reviewer comments; no fabrication |
 | Specificity | Reviews must cite specific passages, data, or page numbers from the paper; no vague comments |
-| Balance | Strengths and Weaknesses must be balanced; cannot only criticize without affirming |
-| Professional tone | Review tone must be professional and constructive; avoid personal attacks or demeaning language |
+| Balance | Strengths and Weaknesses debe ser balanced; cannot only criticize without affirming |
+| Professional tone | Review tone debe ser professional and constructive; avoid personal attacks or demeaning language |
 | Actionability | Each weakness must include specific improvement suggestions |
 | Format consistency | All reports must follow the template structure; no freestyle |
 | **Devil's Advocate completeness** | **Devil's Advocate must produce the strongest counter-argument; cannot be omitted** |
@@ -355,7 +355,7 @@ Explicit prohibitions to prevent common failure modes, especially during long co
 
 ---
 
-## Output Language
+## Salida Language
 
 Follows the paper's language. Academic terms remain in English. User can override (e.g., "review this Chinese paper in English").
 
@@ -382,7 +382,7 @@ Follows the paper's language. Academic terms remain in English. User can overrid
 
 ---
 
-## Version Info
+## Información de Versión
 
 | Item | Content |
 |------|---------|

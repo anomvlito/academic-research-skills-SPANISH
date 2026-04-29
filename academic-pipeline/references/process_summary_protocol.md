@@ -111,7 +111,7 @@ The second-to-last chapter of the process record is an "AI Self-Reflection Repor
 
 ### Tracked Metrics
 
-All metrics below are derived from existing agent logs (`[DA-DECISION]`, `[DA-REBUTTAL]`, `[HEALTH-CHECK]`, state tracker JSON) — no additional per-stage instrumentation is required. The orchestrator aggregates these at Stage 6 by scanning the dialogue transcript:
+All metrics below are derived from existing agent logs (`[DA-DECISION]`, `[DA-REBUTTAL]`, `[HEALTH-CHECK]`, state tracker JSON) — no additional per-stage instrumentation es obligatorio. The orchestrator aggregates these at Stage 6 by scanning the dialogue transcript:
 
 ```
 +--------------------------------------------------+
@@ -152,10 +152,10 @@ All metrics below are derived from existing agent logs (`[DA-DECISION]`, `[DA-RE
 3. **Frame-Lock Incidents**: List any `[CROSS-MODEL-FINDING]` that the primary DA missed (if cross-model was enabled), or any frame-lock detections triggered during checkpoints. If none, state "No frame-lock incidents detected — note this could mean either good coverage or undetected frame-lock."
 4. **Convergence Pattern**: In Socratic dialogue stages, was intent correctly detected? Did the mentor try to converge prematurely? Report mode transitions and any premature-convergence health alerts.
 5. **What AI Got Wrong**: Candid list of AI errors or shortcomings during the run — corrections needed, checkpoint failures, integrity issues found. This is not a failure report; it is evidence that quality gates are working.
-6. **Failure Mode Audit Log** (v3.2): For each of the 7 AI research failure modes from the Stage 2.5 / 4.5 checklist (see `references/ai_research_failure_modes.md`), report (a) final status at 4.5 — `CLEAR` / `OVERRIDDEN`, (b) history — was it ever `SUSPECTED` during the pipeline? At which stage? How was it resolved? (c) if `OVERRIDDEN`, the user's recorded reasoning. This makes the failure-mode defences part of the permanent process record. Modes with no history can be listed as `CLEAR (no flags)` in one line; expand only on modes that were flagged.
+6. **Failure Mode Audit Log** (v3.2): For each of the 7 AI research failure modes from the Stage 2.5 / 4.5 checklist (see `references/ai_research_failure_modes.md`), report (a) final status at 4.5 — `CLEAR` / `OVERRIDDEN`, (b) history — was it ever `SUSPECTED` during the pipeline? At which stage? How was it resolved? (c) if `OVERRIDDEN`, the user's recorded reasoning. This makes the failure-mode defences part of the permanent process record. Modes with no history puede ser listed as `CLEAR (no flags)` in one line; expand only on modes that were flagged.
 - **Reading Probe Outcomes (if present)** — transcribes the `### Reading Probe Outcomes` subsection from the Research Plan Summary verbatim, with a one-line note that the AI did not verify paraphrase accuracy. If the Research Plan Summary has no such subsection (i.e., `ARS_SOCRATIC_READING_PROBE` was unset), this item is omitted entirely (no "not applicable" noise). Pickup rule (two sources, either sufficient): (a) copy the entire `### Reading Probe Outcomes` subsection body verbatim — this is the authoritative human-readable record; (b) additionally grep for `[READING-PROBE: status=..., paper=..., outcome=..., turn=...]` which the Mentor emits once in the summary as a machine-stable anchor (including for `not_fired_*` statuses). If both are present use (a) as the display source and keep (b) as the final line of the transcribed block so downstream tooling can still parse it. If only raw inline tags from dialogue turns (`[READING-PROBE: paper=..., outcome=..., turn=...]` without the `status=` field) are found and no subsection exists, the Mentor compilation step was skipped — log this as a pipeline anomaly rather than silently dropping the probe data.
 
-### Output Length Guidance
+### Salida Length Guidance
 
 For dimensions with no findings, state the null result in one sentence. Expand only when issues are detected. The real risk is generating verbose "everything is fine" paragraphs for empty subsections — resist this.
 
@@ -164,9 +164,9 @@ For dimensions with no findings, state the null result in one sentence. Expand o
 - **Self-honesty**: AI must not minimize its own shortcomings. If the DA conceded too easily, say so.
 - **Not self-flagellation**: The purpose is transparency, not performative humility. Report facts with interpretation.
 - **Actionable**: Every finding should suggest what could be done differently next time (e.g., "Consider enabling cross-model verification for the next run" or "The user might want to push back harder on DA concessions")
-- **The irony is noted**: This self-reflection is itself produced by the same AI that may have been sycophantic during the pipeline. The user should read it with that awareness. This caveat must be stated in the report.
+- **The irony is noted**: This self-reflection is itself produced by the same AI that may have been sycophantic during the pipeline. The user should read it with that awareness. This caveat debe ser stated in the report.
 
-## Output Specifications
+## Salida Specifications
 
 - **Filename**: `paper_creation_process.md` (Chinese) / `paper_creation_process_en.md` (English)
 - **PDF**: `paper_creation_process_zh.pdf` / `paper_creation_process_en.pdf`

@@ -51,9 +51,9 @@ The user has a completed paper titled "The Impact of Micro-Credential Certificat
 
 (Agrees with Reviewer 1's minor comments, and adds:)
 
-**m5 (R2).** It is recommended to add a clearer research gap statement in the Introduction. The transition from problem description to research purpose is currently too abrupt.
+**m5 (R2).** It is recommended to add a clearer research gap statement in the Introducción. The transition from problem description to research purpose is currently too abrupt.
 
-**m6 (R2).** The "policy recommendations" paragraph in the Discussion chapter is too brief — it lists only three recommendations without supporting arguments. It is recommended to expand or downgrade this section to "future research directions."
+**m6 (R2).** The "policy recommendations" paragraph in the Discusión chapter is too brief — it lists only three recommendations without supporting arguments. It is recommended to expand or downgrade this section to "future research directions."
 
 **m7 (R2).** It is recommended to add a research ethics statement explaining the IRB review status and informed consent procedures.
 
@@ -67,24 +67,24 @@ The user has a completed paper titled "The Impact of Micro-Credential Certificat
 
 | No. | Type | Affected Section | Revision Scope | Estimated Workload |
 |-----|------|-----------------|----------------|-------------------|
-| M1 | Major | Methodology, Discussion | Methodological limitation discussion + possible data supplement | High |
-| M2 | Major | Literature Review | Supplement literature + update literature matrix | Medium-High |
-| M3 | Major | Results | Add statistical diagnostics + effect sizes | Medium |
+| M1 | Major | Metodología, Discusión | Methodological limitation discussion + possible data supplement | High |
+| M2 | Major | Revisión de Literatura | Supplement literature + update literature matrix | Medium-High |
+| M3 | Major | Resultados | Add statistical diagnostics + effect sizes | Medium |
 | m1 | Minor | Abstract | Revise abstract wording | Low |
-| m2 | Minor | References | Unify formatting + add DOI | Low |
+| m2 | Minor | Referencias | Unify formatting + add DOI | Low |
 | m3 | Minor | Figures | Fix figures and tables | Low |
 | m4 | Minor | Body text | Fix typesetting | Low |
-| m5 | Minor | Introduction | Add research gap statement | Low-Medium |
-| m6 | Minor | Discussion | Expand policy recommendations discussion | Medium |
-| m7 | Minor | Methodology | Add ethics statement | Low |
+| m5 | Minor | Introducción | Add research gap statement | Low-Medium |
+| m6 | Minor | Discusión | Expand policy recommendations discussion | Medium |
+| m7 | Minor | Metodología | Add ethics statement | Low |
 
 ### Recommended Revision Strategy
 
 The formatter_agent recommends the following revision order:
 
-1. Address M1 (methodology) first, as it affects the revision direction of Discussion and Limitations
+1. Address M1 (methodology) first, as it affects the revision direction of Discusión and Limitations
 2. Then address M3 (statistical analysis), as the supplementary statistical results may affect the limitation discussion in M1
-3. Then address M2 (literature review), as supplemented literature may require cascading updates to the Discussion
+3. Then address M2 (literature review), as supplemented literature may require cascading updates to the Discusión
 4. Finally, batch-process all minor comments
 
 ---
@@ -142,16 +142,16 @@ Huang, C.-W. (2021). Implications of micro-credit systems for technical and voca
 
 **Correction 3: In-text citation / reference list mismatch**
 
-Found that the in-text citation on page 23 reads "Chen et al.（2023）," but the reference list entry is "Chen, Y.-L., & Wang, S.-T.（2023）," which has only two authors and should not use "et al."
+Found that the in-text citation on page 23 reads "Chen et al. 2023 ," but the reference list entry is "Chen, Y.-L., & Wang, S.-T. 2023 ," which has only two authors and should not use "et al."
 
 Before correction:
 ```
-Chen et al.（2023）found that micro-credential certification helps...
+Chen et al. 2023 found that micro-credential certification helps...
 ```
 
 After correction:
 ```
-Chen and Wang（2023）found that micro-credential certification helps...
+Chen and Wang 2023 found that micro-credential certification helps...
 ```
 
 **Correction 4: Add English translated titles for Chinese references**
@@ -170,7 +170,7 @@ Ministry of Education. (2024). Technical and vocational education policy guideli
     [Technical and vocational education policy guidelines]. Ministry of Education.
 ```
 
-### New References Added (addressing M2)
+### New Referencias Added (addressing M2)
 
 In conjunction with M2's literature update requirement, the citation_compliance_agent verifies format compliance of newly added references:
 
@@ -232,13 +232,13 @@ The paper moved from Major Revision (3.24) before revision to the Minor Revision
 
 ---
 
-## Revision Results — Revision Comparison Table
+## Revision Resultados — Revision Comparison Table
 
 ### Major Revisions
 
 | Reviewer Comment | Before Revision | After Revision | Pages |
 |------------------|----------------|----------------|-------|
-| M1: Methodological validity | No discussion of self-report scale limitations | Added a new "3.6 Methodological Limitations" section (approximately 350 words), discussing the validity limitations of self-report scales, social desirability bias risk, and citing Hora et al. (2024) to support the reasonableness of self-assessed employability scales under specific conditions. Added 200 words to the Limitations paragraph in the Discussion, stating that future research should incorporate objective employment data for triangulation. | pp. 18-19, 38 |
+| M1: Methodological validity | No discussion of self-report scale limitations | Added a new "3.6 Methodological Limitations" section (approximately 350 words), discussing the validity limitations of self-report scales, social desirability bias risk, and citing Hora et al. (2024) to support the reasonableness of self-assessed employability scales under specific conditions. Added 200 words to the Limitations paragraph in the Discusión, stating that future research should incorporate objective employment data for triangulation. | pp. 18-19, 38 |
 | M2: Literature outdated | 23 references, 12 from before 2018 | Added 8 references from 2023-2025 (including UNESCO 2024, European Commission 2024), removed 3 outdated non-core references. Total references increased to 28, with post-2020 references rising from 48% to 68%. Added an "International Trends" thematic row to the literature matrix table. | pp. 8-14 |
 | M3: Statistical analysis | Only R-squared and beta reported | Added Table 4a (collinearity diagnostics: all VIF values between 1.12-2.37, all below the threshold of 5), Table 4b (residual analysis: Cook's Distance maximum 0.087, no influential outliers). Added Cohen's f-squared = 0.18 (medium effect size). Added a paragraph on page 17 explaining the control variable selection rationale: because all subjects were enrolled students, prior formal work experience had too little variance to serve as a control variable. | pp. 22-24 |
 
@@ -250,7 +250,7 @@ The paper moved from Major Revision (3.24) before revision to the Minor Revision
 | m2: Citation formatting | Mixed full-width/half-width parentheses, 3 missing DOIs | Uniformly using full-width parentheses, all DOIs added, et al. misuse corrected | Throughout |
 | m3: Figures | Axis label font 8pt, Figure 3 missing caption | All figure fonts adjusted to 11pt, Figure 3 caption added: "Figure 3. Comparison of predictive power of different micro-credential types across five employability dimensions" | pp. 25, 27 |
 | m4: Typesetting omission | "as shown in Table X" | "as shown in Table 6" | p. 47 |
-| m5: Research gap | Introduction jumped directly from problem description to research purpose | Added a research gap paragraph in Section 1.3: "Although international literature has accumulated preliminary evidence on micro-credential certification, the vast majority of studies focus on Western higher education contexts. The uniqueness of Taiwan's vocational education system — including industry-academia cooperation mechanisms, certification-oriented curriculum design, and the dual-track training structure — limits the transferability of international research findings. Currently, local Taiwanese research consists mostly of policy advocacy or theoretical discourse, lacking empirical studies that validate the actual effects of micro-credential certification with quantitative data." | p. 5 |
+| m5: Research gap | Introducción jumped directly from problem description to research purpose | Added a research gap paragraph in Section 1.3: "Although international literature has accumulated preliminary evidence on micro-credential certification, the vast majority of studies focus on Western higher education contexts. The uniqueness of Taiwan's vocational education system — including industry-academia cooperation mechanisms, certification-oriented curriculum design, and the dual-track training structure — limits the transferability of international research findings. Currently, local Taiwanese research consists mostly of policy advocacy or theoretical discourse, lacking empirical studies that validate the actual effects of micro-credential certification with quantitative data." | p. 5 |
 | m6: Policy recommendations | Three policy recommendations, each approximately 50 words | Expanded to three policy recommendations, each approximately 130 words, with specific supporting arguments. For example, Recommendation 1 was revised to: "It is recommended that the Ministry of Education amend the 'Regulations for Industry-Academia Cooperation at Postsecondary Institutions' to incorporate micro-credential certification into industry-academia cooperation performance indicators. This study found that the effect size of micro-credential certification on the 'workplace practical skills' dimension (f-squared = .22) is higher than for other dimensions, indicating that certification designed in connection with industry can more effectively enhance student employability. Therefore, encouraging vocational institutions to co-design micro-credential courses with industry partners will help strengthen the employment-oriented positioning of vocational education." | pp. 39-40 |
 | m7: Ethics statement | None | Added a "Research Ethics" paragraph: "This study was approved by the Institutional Review Board of National OO University of Science and Technology (IRB No.: NTUST-REC-2024-037). All participants signed written informed consent forms prior to completing the survey, which specified the research purpose, data usage methods, anonymity safeguards, and the right to withdraw at any time." | p. 16 |
 
@@ -282,7 +282,7 @@ Thank you for raising this important issue. We fully agree that measuring employ
 
 1. Added a "Methodological Limitations" section (Section 3.6, approximately 350 words) that explicitly discusses the potential biases of self-report scales, including social desirability effects and cognitive discrepancies.
 2. Cited Hora et al. (2024), who found that self-assessed employability scales, after controlling for social desirability bias, still maintain a moderate correlation with employer assessments (r = .52), supporting their reasonableness as a preliminary exploratory research tool.
-3. Expanded the Limitations paragraph in the Discussion by 200 words, explicitly recommending that future research collect actual employment data from one year after graduation for triangulation.
+3. Expanded the Limitations paragraph in the Discusión by 200 words, explicitly recommending that future research collect actual employment data from one year after graduation for triangulation.
 
 Due to constraints in our research timeline and IRB approval scope, we were unable to supplement objective employment data in this study, but we have transparently disclosed this limitation.
 
@@ -318,13 +318,13 @@ Thank you for requesting more complete statistical reporting. We have added:
 
 **m5: Research Gap Statement**
 
-Thank you for this suggestion. We have added an approximately 150-word research gap statement in Introduction Section 1.3, explicitly noting that the uniqueness of Taiwan's vocational education system limits the direct applicability of international research, and that local empirical studies remain insufficient.
+Thank you for this suggestion. We have added an approximately 150-word research gap statement in Introducción Section 1.3, explicitly noting that the uniqueness of Taiwan's vocational education system limits the direct applicability of international research, and that local empirical studies remain insufficient.
 
 > See revised manuscript p. 5
 
 **m6: Expanded Policy Recommendations**
 
-We have expanded the policy recommendations paragraph in the Discussion from approximately 150 words to approximately 400 words. Each recommendation now includes: (a) a specific policy revision recommendation, (b) supporting evidence from this study's data, and (c) expected effects and possible limitations.
+We have expanded the policy recommendations paragraph in the Discusión from approximately 150 words to approximately 400 words. Each recommendation now includes: (a) a specific policy revision recommendation, (b) supporting evidence from this study's data, and (c) expected effects and possible limitations.
 
 > See revised manuscript pp. 39-40
 

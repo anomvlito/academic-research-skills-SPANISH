@@ -1,6 +1,6 @@
 # Systematic Review Toolkit — Reference Guide
 
-## Purpose
+## Propósito
 
 Comprehensive reference for conducting systematic reviews and meta-analyses. Covers Cochrane methodology, PRISMA 2020 reporting, risk of bias instruments, heterogeneity interpretation, GRADE certainty framework, and protocol registration. Used by `risk_of_bias_agent`, `meta_analysis_agent`, `bibliography_agent`, and `report_compiler_agent`.
 
@@ -29,7 +29,7 @@ The Cochrane Handbook for Systematic Reviews of Interventions (v6.4, 2023) is th
 2. **Comprehensive searching**: Search multiple databases; do not rely on a single source
 3. **Dual independent processes**: Two reviewers for screening, extraction, and risk of bias (at minimum for a subset)
 4. **Pre-specified methods**: Analysis plan defined before seeing results
-5. **Transparent reporting**: Document everything; another team should be able to replicate the review
+5. **Transparent reporting**: Document everything; another team debe ser able to replicate the review
 
 ---
 
@@ -58,7 +58,7 @@ The Cochrane Handbook for Systematic Reviews of Interventions (v6.4, 2023) is th
 |---|------|---------|
 | 5 | **Eligibility criteria** | Specify inclusion and exclusion criteria (PICOS components, date range, language, publication status) |
 | 6 | **Information sources** | Describe all information sources searched (databases, registers, websites, organizations, reference lists) with dates |
-| 7 | **Search strategy** | Present the complete search strategy for at least one database, including any filters and limits |
+| 7 | **Search strategy** | Present the complete search strategy for al menos one database, including any filters and limits |
 | 8 | **Selection process** | State methods for deciding which studies met eligibility criteria (number of reviewers, consensus process) |
 | 9 | **Data collection process** | Describe methods for extracting data (number of reviewers, whether independently, any processes for obtaining/confirming data from investigators) |
 | 10 | **Data items** | List and define all outcome variables and other variables extracted |
@@ -221,7 +221,7 @@ The Cochrane Handbook for Systematic Reviews of Interventions (v6.4, 2023) is th
 - I² significance depends on: magnitude of effects, p-value from Q-test, and visual inspection of forest plot
 - A high I² with all effects in the same direction is less concerning than moderate I² with effects crossing zero
 - I² is influenced by precision of studies — many precise studies can yield high I² even with small absolute differences
-- Always report the 95% CI for I² (which can be very wide with few studies)
+- Always report the 95% CI for I² (which puede ser very wide with few studies)
 
 ---
 

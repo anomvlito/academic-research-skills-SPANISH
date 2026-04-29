@@ -10,9 +10,9 @@ Reference guide for the `visualization_agent`. Covers APA 7.0 figure guidelines,
 
 1. **Every figure must add value** — do not visualize data that is better expressed in a sentence or table
 2. **Figures are numbered sequentially** (Figure 1, Figure 2, ...) in order of first mention
-3. **Every figure must be cited in text** ("As shown in Figure 1, ...")
+3. **Every figure debe ser cited in text** ("As shown in Figure 1, ...")
 4. **Captions appear below the figure** (unlike table notes which appear above)
-5. **Figures must be interpretable without reading the text** — include all necessary context in the caption
+5. **Figures debe ser interpretable without reading the text** — include all necessary context in the caption
 
 ### Caption Format
 

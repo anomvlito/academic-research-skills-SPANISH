@@ -1,6 +1,6 @@
 # Claim Verification Protocol (Phase E)
 
-## Purpose
+## Propósito
 Verifies that quantitative and factual claims in the paper are accurately supported by their cited sources. Phase A-D verify that references exist and are original; Phase E verifies that claims derived from those references are truthful.
 
 ## Scope
@@ -38,7 +38,7 @@ Verifies that quantitative and factual claims in the paper are accurately suppor
 - Mode 1 (pre-review): 30% random sample of claims (minimum 10 claims)
 - Mode 2 (final-check): 100% of claims
 
-## Output Format
+## Salida Format
 
 ### Claim Verification Report
 | # | Claim | Source | Section | Verdict | Detail |
@@ -50,8 +50,8 @@ Verifies that quantitative and factual claims in the paper are accurately suppor
 - Total claims checked: [N]
 - VERIFIED: [N]
 - MINOR_DISTORTION: [N]
-- MAJOR_DISTORTION: [N] (must be 0 for PASS)
-- UNVERIFIABLE: [N] (must be 0 for PASS)
+- MAJOR_DISTORTION: [N] (debe ser 0 for PASS)
+- UNVERIFIABLE: [N] (debe ser 0 for PASS)
 - UNVERIFIABLE_ACCESS: [N] (noted but does not block PASS)
 
 ## Pass/Fail Criteria

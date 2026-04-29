@@ -21,7 +21,7 @@ Each principle carries a definition, ARS check procedure, and pass/warn/fail cri
 
 ### Principle 1 — Human oversight
 
-**Definition:** AI and automation in evidence synthesis should be used with meaningful human oversight, not as an autonomous replacement.
+**Definition:** AI and automation in evidence synthesis debe ser used with meaningful human oversight, not as an autonomous replacement.
 **ARS check (Stage 2.5 focus):** At Stage 2.5, verify `methodology_blueprint` specifies reviewer count, qualifications, and adjudication mechanism. At Stage 4.5, verify manuscript describes the human oversight applied in practice.
 **Pass:** Reviewer count + adjudication mechanism + qualifications all present, each with evidence path.
 **Warn:** Any one missing, OR only present in vague form ("authors reviewed AI output").
@@ -29,7 +29,7 @@ Each principle carries a definition, ARS check procedure, and pass/warn/fail cri
 
 ### Principle 2 — Transparency
 
-**Definition:** Any AI or automation use that makes or suggests judgements must be fully and transparently reported.
+**Definition:** Any AI or automation use that makes or suggests judgements debe ser fully and transparently reported.
 **ARS check (Stage 4.5 focus):** Verify manuscript lists every AI tool used, at what stage, with prompts/parameters/versions. Cross-reference against `user_metadata.ai_tools_used`.
 **Pass:** All declared tools reported AND all reported tools declared.
 **Warn:** Mismatch in ≤1 tool, or reporting lacks one of {stage, prompt, parameters, version}.
@@ -37,15 +37,15 @@ Each principle carries a definition, ARS check procedure, and pass/warn/fail cri
 
 ### Principle 3 — Reproducibility
 
-**Definition:** AI-assisted evidence synthesis should be reproducible to a stated level.
-**ARS check:** Verify presence of `passport.repro_lock` (v3.3.5 feature) OR equivalent manuscript description (model version, seeds, prompt, data access details). Stochasticity must be declared per `artifact_reproducibility_pattern.md`.
+**Definition:** AI-assisted evidence synthesis debe ser reproducible to a stated level.
+**ARS check:** Verify presence of `passport.repro_lock` (v3.3.5 feature) OR equivalent manuscript description (model version, seeds, prompt, data access details). Stochasticity debe ser declared per `artifact_reproducibility_pattern.md`.
 **Pass:** Repro_lock present AND stochasticity declared.
 **Warn:** One of the two missing.
 **Fail:** Both missing.
 
 ### Principle 4 — Fit-for-purpose
 
-**Definition:** AI tools should be chosen and validated for specific tasks within the evidence synthesis, not applied generically.
+**Definition:** AI tools debe ser chosen and validated for specific tasks within the evidence synthesis, not applied generically.
 **ARS check (Stage 2.5 focus):** Verify manuscript describes why each AI tool was chosen for its specific task. Look for pilot-phase evidence OR prior validation citation.
 **Pass:** Per-tool justification + ≥1 validation reference.
 **Warn:** Justification present without validation reference.
@@ -120,7 +120,7 @@ Used when `raise.mode == "full"` (SR and other_evidence_synthesis). Each role ca
 
 **ARS note:** Out of direct scope.
 
-## Usage in compliance_agent
+## Uso in compliance_agent
 
 - SR mode: `raise.mode = "full"`, both principles AND roles populated
 - primary_research mode: `raise.mode = "principles_only"`, `roles` field absent or empty

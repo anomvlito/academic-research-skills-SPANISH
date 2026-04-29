@@ -17,7 +17,7 @@ A researcher submits a paper titled "Digital Transformation in European Higher E
 - Word count: 7,200
 - Structure: IMRaD
 - Citation format: APA 7.0
-- References: 45 entries (32 journal articles, 6 reports, 4 books, 3 working papers)
+- Referencias: 45 entries (32 journal articles, 6 reports, 4 books, 3 working papers)
 
 ---
 
@@ -28,7 +28,7 @@ A researcher submits a paper titled "Digital Transformation in European Higher E
 
 Metrics:
 - Word count: 7,200 (target: 7,000 +/-10%)    [OK]
-- References: 45 (min: 30)                     [OK]
+- Referencias: 45 (min: 30)                     [OK]
 - Coverage: 6/6 sections drafted                [COMPLETE]
 
 Deliverables:
@@ -48,7 +48,7 @@ Proceeding to Stage 2.5...
 
 ---
 
-## Stage 2.5: Pre-Review Integrity Check (Round 1)
+## Etapa 2.5: Pre-Review Integrity Check (Round 1)
 
 ```
 Entering Stage 2.5 (INTEGRITY) -- Mode 1 (Pre-Review)
@@ -66,7 +66,7 @@ Executing: Phase A (Reference Verification) + Phase B (Citation Context, 31% spo
 
 ---
 
-#### Phase A: Reference Existence Verification (45/45 checked)
+#### Fase A: Reference Existence Verification (45/45 checked)
 
 | # | Reference | Status | Issue |
 |---|-----------|--------|-------|
@@ -81,7 +81,7 @@ Executing: Phase A (Reference Verification) + Phase B (Citation Context, 31% spo
 
 ---
 
-#### Phase B: Citation Context Spot-Check (14/45 sampled = 31%)
+#### Fase B: Citation Context Spot-Check (14/45 sampled = 31%)
 
 | # | Citation | Location | Verdict | Detail |
 |---|----------|----------|---------|--------|
@@ -96,7 +96,7 @@ Executing: Phase A (Reference Verification) + Phase B (Citation Context, 31% spo
 
 ---
 
-#### Phase C: Data Verification (18 quantitative claims checked)
+#### Fase C: Data Verification (18 quantitative claims checked)
 
 | # | Claim in Paper | Cited Source | Verdict | Detail |
 |---|---------------|-------------|---------|--------|
@@ -112,7 +112,7 @@ Executing: Phase A (Reference Verification) + Phase B (Citation Context, 31% spo
 
 ---
 
-#### Phase D: Originality Check (33% paragraph sample)
+#### Fase D: Originality Check (33% paragraph sample)
 
 | Grade | Paragraph Count | Proportion |
 |-------|----------------|-----------|
@@ -126,9 +126,9 @@ Executing: Phase A (Reference Verification) + Phase B (Citation Context, 31% spo
 
 ---
 
-#### Phase E: Claim Verification (30% spot-check, 6/18 claims)
+#### Fase E: Claim Verification (30% spot-check, 6/18 claims)
 
-Claims C1-C6 above were selected for the 30% spot-check. Results are reported in Phase C.
+Claims C1-C6 above were selected for the 30% spot-check. Resultados are reported in Phase C.
 
 **Phase E Summary**: 6 claims checked, 3 VERIFIED, 1 MAJOR_DISTORTION, 2 MINOR_DISTORTION
 
@@ -276,7 +276,7 @@ Options:
 
 ---
 
-## Stage 2.5: Re-Verification (Round 2)
+## Etapa 2.5: Re-Verification (Round 2)
 
 ```
 Stage 2.5 Re-verification -- Round 2 (focused on 9 corrected items)
@@ -350,7 +350,7 @@ Corrections summary:
 The paper is now cleared for peer review.
 
 Next: Stage 3 (REVIEW) — Full 5-reviewer review
-  (EIC + R1 Methodology + R2 Domain + R3 Perspective + Devil's Advocate)
+  (EIC + R1 Metodología + R2 Domain + R3 Perspective + Devil's Advocate)
 
 Continue?
 
@@ -364,7 +364,7 @@ Progress: [v]Research -> [v]Writing -> [v]Integrity -> [..]Review -> [ ]Revision
 
 ## Key Takeaways
 
-### 1. Ghost References Are the Most Dangerous Integrity Failure
+### 1. Ghost Referencias Are the Most Dangerous Integrity Failure
 
 Reference 12 (Martinez, 2023) looked entirely plausible — a believable author name, a real-sounding journal, a formatted DOI. But the DOI resolved to a completely different article, and no record of this publication existed in any database. This is the hallmark of a fabricated reference, and it is the primary reason Stage 2.5 exists. Without integrity verification, this ghost reference would have entered peer review and potentially publication.
 

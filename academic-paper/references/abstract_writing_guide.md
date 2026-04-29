@@ -81,7 +81,7 @@ State the significance, practical implications, or recommendations.
 
 ### Example (English, Education)
 
-> Declining enrollment poses existential challenges for private higher education institutions in Taiwan, yet institutional responses remain poorly understood. This study examines the strategic adaptation patterns of 12 private universities experiencing enrollment declines exceeding 20% between 2018 and 2023. Using a multiple case study design, we analyzed institutional documents, enrollment data, and 36 semi-structured interviews with administrators. Three distinct adaptation strategies emerged: program consolidation (n = 5), niche specialization (n = 4), and merger pursuit (n = 3). Institutions adopting niche specialization demonstrated the highest enrollment recovery rates (mean = 12.3%). However, successful adaptation was contingent upon early action — institutions that initiated strategic changes within two years of enrollment decline showed significantly better outcomes than late movers (p < .01). These findings suggest that private institutions should adopt proactive monitoring systems and consider niche specialization as a primary survival strategy.
+> Declining enrollment poses existential challenges for private higher education institutions in Taiwan, yet institutional responses remain poorly understood. This study examines the strategic adaptation patterns of 12 private universities experiencing enrollment declines exceeding 20% between 2018 and 2023. Using a multiple case study design, we analyzed institutional documents, enrollment data, and 36 semi-structured interviews with administrators. Three distinct adaptation strategies emerged: program consolidation (n = 5), niche specialization (n = 4), and merger pursuit (n = 3). Institutions adopting niche specialization demonstrated the highest enrollment recovery rates (mean = 12.3%). Sin embargo, successful adaptation was contingent upon early action — institutions that initiated strategic changes within two years of enrollment decline showed significantly better outcomes than late movers (p < .01). These findings suggest that private institutions should adopt proactive monitoring systems and consider niche specialization as a primary survival strategy.
 >
 > **Keywords**: higher education, enrollment decline, private universities, institutional strategy, Taiwan
 
@@ -114,7 +114,7 @@ State the significance, practical implications, or recommendations.
 #### Component 4: Research Findings (2-3 sentences)
 **Patterns**:
 - "The results found: (1)...; (2)...; (3)..."
-- "The analysis results show that... Furthermore,..."
+- "The analysis results show that... Además,..."
 
 #### Component 5: Research Significance (1-2 sentences)
 **Patterns**:

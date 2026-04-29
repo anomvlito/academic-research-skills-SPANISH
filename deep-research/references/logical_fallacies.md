@@ -1,23 +1,23 @@
 # Logical Fallacies Catalog — 30+ Fallacies for Research Review
 
-## Purpose
+## Propósito
 Reference catalog of logical fallacies commonly encountered in research. Used by the devils_advocate_agent.
 
 ## Formal Fallacies (Invalid Logical Structure)
 
 ### 1. Affirming the Consequent
 **Structure**: If P then Q; Q is true; therefore P is true.
-**Example**: "If a university has high research funding, it has good outcomes. This university has good outcomes. Therefore, it must have high research funding."
+**Example**: "If a university has high research funding, it has good outcomes. This university has good outcomes. Por lo tanto, it must have high research funding."
 **Problem**: Q can have multiple causes.
 
 ### 2. Denying the Antecedent
 **Structure**: If P then Q; not P; therefore not Q.
-**Example**: "If enrollment increases, revenue increases. Enrollment didn't increase. Therefore, revenue didn't increase."
+**Example**: "If enrollment increases, revenue increases. Enrollment didn't increase. Por lo tanto, revenue didn't increase."
 **Problem**: Revenue can increase from other sources.
 
 ### 3. Undistributed Middle
 **Structure**: All A are B; All C are B; therefore All A are C.
-**Example**: "All successful programs use technology. Our program uses technology. Therefore, our program is successful."
+**Example**: "All successful programs use technology. Our program uses technology. Por lo tanto, our program is successful."
 **Problem**: B (technology use) is shared but doesn't link A and C.
 
 ### 4. False Dilemma / False Dichotomy
@@ -32,26 +32,26 @@ Reference catalog of logical fallacies commonly encountered in research. Used by
 ### 5. Ad Hominem
 **Description**: Attacking the person rather than the argument.
 **Research Example**: "This study's conclusions are unreliable because the author works for a for-profit university."
-**Correct Approach**: Evaluate the methodology and evidence, not the author's affiliation (though COI should be noted).
+**Correct Approach**: Evaluate the methodology and evidence, not the author's affiliation (though COI debe ser noted).
 
 ### 6. Appeal to Authority
 **Description**: Accepting a claim solely because an authority figure endorses it.
-**Research Example**: "Published in Nature, so the findings must be valid."
+**Research Example**: "Published in Nature, so the findings debe ser valid."
 **Correct Approach**: Even prestigious journals publish flawed studies. Evaluate on merit.
 
 ### 7. Appeal to Tradition
 **Description**: Arguing something is correct because it has always been done that way.
-**Research Example**: "This metric has been used for 30 years, so it must be the best measure."
+**Research Example**: "This metric has been used for 30 years, so it debe ser the best measure."
 **Correct Approach**: Evaluate whether the metric is still valid in current context.
 
 ### 8. Appeal to Novelty
 **Description**: Arguing something is better because it's new.
-**Research Example**: "This new framework must be superior to the established one."
+**Research Example**: "This new framework debe ser superior to the established one."
 **Correct Approach**: Novelty doesn't equal improvement. Compare on evidence.
 
 ### 9. Appeal to Popularity (Bandwagon)
 **Description**: Arguing something is true because many people believe it.
-**Research Example**: "Most researchers in the field use this method, so it must be the best."
+**Research Example**: "Most researchers in the field use this method, so it debe ser the best."
 **Correct Approach**: Popularity doesn't validate methodology. Assess independently.
 
 ### 10. Red Herring

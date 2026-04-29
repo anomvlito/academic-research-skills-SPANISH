@@ -66,7 +66,7 @@ Progress: [--]Research -> [--]Writing -> [..]Review -> [ ]Revision -> [ ]Finaliz
 
 ---
 
-### Stage 3: REVIEW (quick mode)
+### Etapa 3: REVIEW (quick mode)
 
 ```
 Entering Stage 3 (REVIEW) -- using academic-paper-reviewer quick mode
@@ -168,7 +168,7 @@ Progress: [--]Research -> [--]Writing -> [v]Review -> [..]Revision -> [ ]Re-revi
 
 ---
 
-### Stage 4: REVISE (revision mode, Round 1)
+### Etapa 4: REVISE (revision mode, Round 1)
 
 ```
 Entering Stage 4 (REVISE) -- using academic-paper revision mode
@@ -191,7 +191,7 @@ C2: [v] Added Model Interpretability analysis (Section 4.3)
     - Case study: 3 individual prediction explanations
     - Added SHAP visualization figures
 
-C3: [v] Expanded Literature Review (Section 2)
+C3: [v] Expanded Revisión de Literatura (Section 2)
     - Added Dropout Factory framework (Balfanz & Legters)
     - Added 6 European attrition studies (2020-2026)
     - Added cross-cultural comparison discussion
@@ -228,7 +228,7 @@ Progress: [--]Research -> [--]Writing -> [v]Review -> [v]Revision -> [..]Re-revi
 
 ---
 
-### Stage 3': RE-REVIEW (full mode, Loop 1)
+### Etapa 3': RE-REVIEW (full mode, Loop 1)
 
 ```
 Entering Stage 3' (RE-REVIEW) -- full mode, Loop 1/2
@@ -265,7 +265,7 @@ Reviewer 1: Accept
 
 Reviewer 2: Minor Revision
   - International literature coverage greatly improved
-  - Recommend Discussion add dialogue with Tinto's Student Integration Model
+  - Recommend Discusión add dialogue with Tinto's Student Integration Model
   - Minor: Section 2.1 citation Chen (2023) should be Chen (2024)
 
 Reviewer 3: Accept
@@ -283,7 +283,7 @@ R2: Add Practical Implications section
 
 Suggested Revisions:
 S1: Table 3 add confidence intervals
-S2: Discussion add Tinto's model dialogue
+S2: Discusión add Tinto's model dialogue
 S3: Fix Chen (2023) -> Chen (2024) citation year
 S4: Add fairness metrics limitations paragraph
 ```
@@ -316,7 +316,7 @@ Progress: [--]Research -> [--]Writing -> [v]Review -> [v]Revision -> [v]Re-revie
 
 ---
 
-### Stage 5: FINALIZE (format-convert mode)
+### Etapa 5: FINALIZE (format-convert mode)
 
 ```
 Entering Stage 5 (FINALIZE) -- format-convert mode
@@ -325,7 +325,7 @@ Simultaneously handling minor revision items:
 R1: [v] Abstract updated
 R2: [v] Added Practical Implications section (200 words)
 S1: [v] Table 3 confidence intervals added
-S2: [v] Discussion Tinto's model paragraph added
+S2: [v] Discusión Tinto's model paragraph added
 S3: [v] Chen citation year corrected
 S4: [v] Fairness metrics limitations paragraph added
 
@@ -369,7 +369,7 @@ formatter_agent executing LaTeX conversion...
 +-----------------------------------------+
 | Materials:                              |
 |   [--] RQ Brief (skipped)               |
-|   [--] Methodology (skipped)            |
+|   [--] Metodología (skipped)            |
 |   [--] Bibliography (skipped)           |
 |   [--] Synthesis (skipped)              |
 |   [v] Paper Draft (user-provided)       |

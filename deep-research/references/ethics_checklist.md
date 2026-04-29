@@ -1,6 +1,6 @@
 # Research Ethics Checklist — AI-Assisted Research
 
-## Purpose
+## Propósito
 Comprehensive ethics checklist for AI-assisted academic research. Used by the ethics_review_agent.
 
 ## 1. AI Disclosure
@@ -35,7 +35,7 @@ responsibility for the accuracy and interpretation of all content.
 ## 2. Attribution Integrity
 
 ### Citation Ethics
-- [ ] Every factual claim has at least one supporting citation
+- [ ] Every factual claim has al menos one supporting citation
 - [ ] No fabricated or hallucinated references
   - Verification: Spot-check minimum 20% of references for existence
   - Cross-check DOIs, publication years, author names
@@ -70,7 +70,7 @@ responsibility for the accuracy and interpretation of all content.
 | Low | Brief note in limitations |
 | Moderate | Responsible Use statement in report |
 | High | Prominent warning + limited distribution recommendation |
-| Critical | Do not publish without institutional ethics review |
+| Critical | No publish without institutional ethics review |
 
 ### Responsible Use Statement Template
 ```
@@ -141,7 +141,7 @@ prioritize [specific ethical principle].
 - [ ] AI-specific: AI tool company influence on research design
 
 ### Disclosure Requirement
-Any identified conflict must be disclosed in the report, with an assessment of whether it could have influenced the findings.
+Any identified conflict debe ser disclosed in the report, with an assessment of whether it could have influenced the findings.
 
 ## 7. Reproducibility Ethics
 

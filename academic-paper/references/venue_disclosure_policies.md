@@ -63,7 +63,7 @@ If the venue is not listed here, the mode halts and asks the user to paste the c
 |---|---|
 | Source URL | https://www.science.org/content/page/science-journals-editorial-policies |
 | Access date | 2026-04-09 |
-| Policy summary | Authors must disclose any use of AI-generated text, figures, or data in the manuscript. The use of AI writing tools must be documented in the Acknowledgements section or in Materials and Methods. AI tools are not authors. |
+| Policy summary | Authors must disclose any use of AI-generated text, figures, or data in the manuscript. The use of AI writing tools debe ser documented in the Acknowledgements section or in Materials and Methods. AI tools are not authors. |
 | Required phrasing elements | Must identify the AI tool by name. Must indicate which parts of the manuscript were aided by the tool. Must affirm that authors verified the accuracy of all AI-generated content. |
 | Preferred disclosure location | **Acknowledgements** (preferred) or **Materials and Methods** |
 | Prohibited uses | AI-generated text submitted without disclosure violates editorial policy. Fabricated figures or data are prohibited. |

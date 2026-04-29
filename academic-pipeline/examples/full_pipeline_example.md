@@ -45,7 +45,7 @@ You can adjust any stage's mode at any time. Ready to begin?
 
 ---
 
-### Stage 1: RESEARCH (socratic mode)
+### Etapa 1: RESEARCH (socratic mode)
 
 ```
 Entering Stage 1 (RESEARCH) -- using deep-research socratic mode
@@ -90,7 +90,7 @@ Research question:
   freshmen enrollment rates? Which strategies are most effective for
   different types of private universities (general/technical-vocational)?
 
-Methodology:
+Metodología:
   Mixed Methods
   - Quantitative: Ministry of Education open data analysis (academic years 109-113)
   - Qualitative: In-depth interviews with enrollment directors at 3-5 private universities
@@ -112,7 +112,7 @@ Then bibliography_agent executes literature search, source_verification_agent ve
 
 **Stage 1 Deliverables:**
 - RQ Brief (with FINER scoring)
-- Methodology Blueprint (mixed methods design)
+- Metodología Blueprint (mixed methods design)
 - Annotated Bibliography (22 references, APA 7.0)
 - Synthesis Report (thematic synthesis + research gaps)
 
@@ -125,7 +125,7 @@ Stage 1 (RESEARCH) Complete!
 
 Deliverables:
 - RQ Brief: Focused on three enrollment strategies' impact on enrollment rates at private universities
-- Methodology Blueprint: Mixed methods (quantitative MOE data + qualitative interviews)
+- Metodología Blueprint: Mixed methods (quantitative MOE data + qualitative interviews)
 - Annotated Bibliography: 22 references (17 Chinese + 5 English)
 - Synthesis Report: Identified 3 research gaps
 
@@ -142,7 +142,7 @@ Progress: [v]Research -> [..]Writing -> [ ]Review -> [ ]Revision -> [ ]Finalizat
 
 ---
 
-### Stage 2: WRITE (plan --> full mode)
+### Etapa 2: WRITE (plan --> full mode)
 
 ```
 Entering Stage 2 (WRITE) -- using academic-paper plan mode
@@ -153,13 +153,13 @@ intake_agent auto-detected deep-research output, skipping redundant Phase 0 ques
 Launching socratic_mentor_agent (plan mode)...
 ```
 
-**Plan Mode Mentor**: I've reviewed your Research Plan Summary. The research question is clear. Let's plan the paper chapter by chapter. Starting with the Introduction.
+**Plan Mode Mentor**: I've reviewed your Research Plan Summary. The research question is clear. Let's plan the paper chapter by chapter. Starting with the Introducción.
 
 What sense of urgency do you want the reader to feel? In other words, why should the reader read this paper right now?
 
 **User**: Because the declining birthrate is already happening — many universities might close within 5 years.
 
-**Plan Mode Mentor**: Good. Your Introduction opening could use a specific number to convey urgency. Do you know how many private universities have closed or suspended enrollment in the past 5 years?
+**Plan Mode Mentor**: Good. Your Introducción opening could use a specific number to convey urgency. Do you know how many private universities have closed or suspended enrollment in the past 5 years?
 
 *(Plan mode dialogue continues for 12 rounds, covering 6 chapters...)*
 
@@ -186,12 +186,12 @@ Stage 2 (WRITE) Complete!
 Deliverables:
 - Paper Draft: 5,200-word IMRaD paper
   - Abstract (Chinese 420 words + English 230 words)
-  - Introduction: Research background and problem statement
-  - Literature Review: Three themes (birthrate trends, enrollment strategy classification, effectiveness evaluation)
-  - Methodology: Mixed methods design
-  - Results: Quantitative findings + qualitative themes
-  - Discussion: Strategy effectiveness comparison + policy recommendations
-  - References: 22 entries (APA 7.0)
+  - Introducción: Research background and problem statement
+  - Revisión de Literatura: Three themes (birthrate trends, enrollment strategy classification, effectiveness evaluation)
+  - Metodología: Mixed methods design
+  - Resultados: Quantitative findings + qualitative themes
+  - Discusión: Strategy effectiveness comparison + policy recommendations
+  - Referencias: 22 entries (APA 7.0)
 
 Next step is Stage 3 (REVIEW).
 Using full mode, simulating a complete review process with 4 reviewers.
@@ -206,7 +206,7 @@ Progress: [v]Research -> [v]Writing -> [..]Review -> [ ]Revision -> [ ]Finalizat
 
 ---
 
-### Stage 3: REVIEW (full mode)
+### Etapa 3: REVIEW (full mode)
 
 ```
 Entering Stage 3 (REVIEW) -- using academic-paper-reviewer full mode
@@ -216,7 +216,7 @@ Passing Paper Draft to reviewer...
 field_analyst_agent analyzing paper domain...
 ```
 
-**Field Analysis Results:**
+**Field Analysis Resultados:**
 ```
 Paper domain: Education Policy / Higher Education Management
 Research paradigm: Pragmatism (mixed methods)
@@ -235,15 +235,15 @@ Reviewer Configuration:
 
 ```
 Required Revisions:
-R1: [Methodology] Quantitative analysis lacks control variables (school size, geographic location)
+R1: [Metodología] Quantitative analysis lacks control variables (school size, geographic location)
     -- Reviewer 1, Priority 1
 R2: [Literature]  Literature review missing the most recent 2024-2026 studies
     -- Reviewer 2, Priority 1
-R3: [Results]     Qualitative interviews with only 3 schools, sample representativeness insufficient
+R3: [Resultados]     Qualitative interviews with only 3 schools, sample representativeness insufficient
     -- Reviewer 1 & 3 consensus, Priority 2
-R4: [Discussion]  Conclusions too general, need to differentiate between general/technical-vocational universities
+R4: [Discusión]  Conclusións too general, need to differentiate between general/technical-vocational universities
     -- Reviewer 2, Priority 2
-R5: [Introduction] Research gap argumentation not sharp enough, needs more specific data support
+R5: [Introducción] Research gap argumentation not sharp enough, needs more specific data support
     -- EIC, Priority 3
 ```
 
@@ -280,7 +280,7 @@ Progress: [v]Research -> [v]Writing -> [v]Review -> [..]Revision -> [ ]Finalizat
 
 ---
 
-### Stage 4: REVISE (revision mode, Round 1)
+### Etapa 4: REVISE (revision mode, Round 1)
 
 ```
 Entering Stage 4 (REVISE) -- using academic-paper revision mode
@@ -296,7 +296,7 @@ R1: [v] Added control variables (school size, geographic location, tuition level
 R2: [v] Supplemented 2024-2026 literature (added 8 new citations)
 R3: [v] Added explanation of qualitative sampling strategy (purposive sampling rationale)
 R4: [v] Separated general/technical-vocational university analysis results, added comparison table
-R5: [v] Rewrote Introduction paragraphs 2-3, added school closure data
+R5: [v] Rewrote Introducción paragraphs 2-3, added school closure data
 ```
 
 **Stage 4 Deliverables:**
@@ -330,7 +330,7 @@ Progress: [v]Research -> [v]Writing -> [v]Review -> [v]Revision -> [..]Re-review
 
 ---
 
-### Stage 3': RE-REVIEW (full mode, Loop 1)
+### Etapa 3': RE-REVIEW (full mode, Loop 1)
 
 ```
 Entering Stage 3' (RE-REVIEW) -- Loop 1/2
@@ -346,12 +346,12 @@ Passing Revised Draft + Response to Reviewers...
 R1 response: [v] Adequately addressed, control variable analysis complete
 R2 response: [v] Literature update sufficient
 R3 response: [v] Sampling strategy explanation acceptable, but recommend adding a limitation statement
-R4 response: [v] Comparative analysis clear, but Discussion final paragraph could be further refined
-R5 response: [v] Introduction improvement significant
+R4 response: [v] Comparative analysis clear, but Discusión final paragraph could be further refined
+R5 response: [v] Introducción improvement significant
 
 New suggestions:
-S1: Recommend refining Discussion final paragraph, focusing on policy recommendations
-S2: Recommend moving sampling limitation statement to Methodology Limitations section
+S1: Recommend refining Discusión final paragraph, focusing on policy recommendations
+S2: Recommend moving sampling limitation statement to Metodología Limitations section
 ```
 
 **Editorial Synthesizer**: Revision quality is good. Remaining issues are all minor. Recommend Accept with Minor Revision.
@@ -383,7 +383,7 @@ Progress: [v]Research -> [v]Writing -> [v]Review -> [v]Revision -> [v]Re-review 
 
 ---
 
-### Stage 5: FINALIZE (format-convert mode)
+### Etapa 5: FINALIZE (format-convert mode)
 
 ```
 Entering Stage 5 (FINALIZE) -- using academic-paper format-convert mode
@@ -414,7 +414,7 @@ formatter_agent executing format conversion...
 
   Stage 1 RESEARCH    [v] Completed
     Mode: socratic
-    Outputs: RQ Brief, Methodology,
+    Outputs: RQ Brief, Metodología,
              Bibliography (22 sources),
              Synthesis
 
@@ -442,7 +442,7 @@ formatter_agent executing format conversion...
 +-----------------------------------------+
 | Materials:                              |
 |   [v] RQ Brief                          |
-|   [v] Methodology Blueprint             |
+|   [v] Metodología Blueprint             |
 |   [v] Bibliography (30 sources)         |
 |   [v] Synthesis Report                  |
 |   [v] Paper Draft                       |

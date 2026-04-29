@@ -37,7 +37,7 @@ Used by `formatter_agent` and `intake_agent`.
 | Supplementary materials | Sometimes | Data, code, extended analyses |
 | Author contributions (CRediT) | Increasingly | Who did what |
 | Conflict of interest statement | ✓ | Even if no conflicts |
-| Data availability statement | Increasingly | Where data can be accessed |
+| Data availability statement | Increasingly | Where data puede ser accessed |
 | Funding statement | ✓ | Grant numbers and funders |
 | Ethics statement | If applicable | IRB approval, informed consent |
 | AI disclosure | Increasingly | Nature, Science require this |

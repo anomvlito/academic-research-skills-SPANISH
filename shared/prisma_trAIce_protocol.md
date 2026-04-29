@@ -93,7 +93,7 @@ Verbatim snapshot of the 17-item PRISMA-trAIce checklist from the GitHub canonic
 **Tier:** Highly Recommended
 **Original:** "Describe key operational settings, algorithms, or configurations for non-LLM AI."
 **ARS check procedure:** For classical ML tools (e.g. ASReview, Abstrackr), verify algorithm + hyperparameters documented.
-**Pass criterion:** Algorithm name + at least 2 hyperparameters.
+**Pass criterion:** Algorithm name + al menos 2 hyperparameters.
 
 ### M8 — Human-AI interaction
 **Tier:** Mandatory

@@ -1,6 +1,6 @@
 # Research Methodology Patterns — Design Templates
 
-## Purpose
+## Propósito
 Ready-to-use methodology templates for common research designs. Used by the research_architect_agent.
 
 ## Pattern 1: Systematic Literature Review
@@ -233,7 +233,7 @@ Quality Criteria:
 - Assessing feasibility, requirements analysis, and technology comparison for new technologies
 - Technology selection decisions before system design
 - Risk and benefit assessment of technology adoption
-- When research questions involve "Which technology should be used?" or "Can this technology solve the problem?"
+- When research questions involve "Which technology debe ser used?" or "Can this technology solve the problem?"
 
 ### Design Template
 ```
@@ -245,7 +245,7 @@ Protocol:
    - Existing system/process analysis
    - Functional requirements vs non-functional requirements (performance, security, scalability)
 2. Technology Scanning
-   - Inventory of candidate technologies (at least 3 options)
+   - Inventory of candidate technologies (al menos 3 options)
    - Technology Readiness Level (TRL) assessment
    - Community activity, documentation completeness, long-term maintenance risk
 3. Feasibility Assessment
@@ -326,10 +326,10 @@ Protocol:
    - Risk warnings
 
 Quality Criteria:
-- Legal source accuracy: Cited regulations and cases must be current and effective versions
+- Legal source accuracy: Cited regulations and cases debe ser current and effective versions
 - Logical consistency: Legal reasoning process must not be self-contradictory
 - Argumentation completeness: All possible interpretive paths have been considered
-- Comparative law rigor: When comparing jurisdictions, differences in legal system backgrounds must be noted
+- Comparative law rigor: When comparing jurisdictions, differences in legal system backgrounds debe ser noted
 ```
 
 ### Legal Analysis Structure Template

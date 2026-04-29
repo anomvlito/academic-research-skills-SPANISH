@@ -1,6 +1,6 @@
 # Literature Monitoring Strategies — Reference Guide
 
-## Purpose
+## Propósito
 
 Comprehensive reference for setting up post-research literature monitoring across major academic databases and platforms. Used by the `monitoring_agent` to configure monitoring strategies tailored to the user's research field and publication velocity.
 
@@ -134,14 +134,14 @@ RSS (Really Simple Syndication) allows you to subscribe to content updates from 
 - **Coverage**: Social sciences, humanities, law, economics, management
 - **Monitoring**: Subscribe to eJournal alerts by research network
 - **Alert service**: Email notifications for new papers in subscribed networks
-- **Note**: Now owned by Elsevier; some content behind paywall
+- **Nota**: Now owned by Elsevier; some content behind paywall
 
 ### bioRxiv / medRxiv
 
 - **Coverage**: Biology (bioRxiv) and health sciences (medRxiv)
 - **Monitoring**: RSS feeds by subject area
 - **Alert service**: Email alerts for specific keywords
-- **Note**: Preprints are NOT peer-reviewed — flag accordingly in digests
+- **Nota**: Preprints are NOT peer-reviewed — flag accordingly in digests
 
 ### Key Preprint Monitoring Rules
 

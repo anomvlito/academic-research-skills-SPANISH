@@ -1,6 +1,6 @@
 # Mode Advisor — Unified Cross-Skill Decision Tree
 
-## Purpose
+## Propósito
 
 Helps users (and the pipeline orchestrator) select the right skill and mode for their current situation. Eliminates the most common routing mistakes by mapping user intent to the optimal entry point.
 
@@ -121,13 +121,13 @@ For users entering the pipeline mid-stream, this table clarifies what materials 
 
 ---
 
-## Anti-Patterns
+## Anti-Patrones
 
 These are common workflow mistakes to avoid:
 
 | Anti-Pattern | Problem | Correct Approach |
 |-------------|---------|-----------------|
-| Skipping research | Paper lacks evidence depth | Always do at least deep-research quick |
+| Skipping research | Paper lacks evidence depth | Always do al menos deep-research quick |
 | Writing then researching | Confirmation bias in source selection | Research first, write second |
 | Reviewing before integrity check | Wasted review effort on fabricated citations | Always Stage 2.5 before Stage 3 |
 | Accepting all reviewer comments blindly | May introduce inconsistencies or weaken valid arguments | Use External Review Protocol's strategic coaching |

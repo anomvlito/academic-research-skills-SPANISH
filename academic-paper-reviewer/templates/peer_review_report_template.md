@@ -13,7 +13,7 @@ This template is used by all reviewer agents (EIC, Reviewers 1-3). Each reviewer
 
 ---
 
-## Template
+## Plantilla
 
 ```markdown
 # Peer Review Report
@@ -29,7 +29,7 @@ This template is used by all reviewer agents (EIC, Reviewers 1-3). Each reviewer
 ## Reviewer Information
 
 ### Reviewer Role *
-[EIC / Peer Reviewer 1 (Methodology) / Peer Reviewer 2 (Domain) / Peer Reviewer 3 (Perspective)]
+[EIC / Peer Reviewer 1 (Metodología) / Peer Reviewer 2 (Domain) / Peer Reviewer 3 (Perspective)]
 
 ### Reviewer Identity *
 [Identity description configured by field_analyst_agent]
@@ -135,38 +135,38 @@ Section-by-section commentary on the paper. Only comment on sections relevant to
 - [Assess title accuracy and appeal]
 - [Assess abstract structure and completeness]
 
-### Introduction
+### Introducción
 - [Is research background sufficient]
 - [Is research question/purpose clear]
 - [Is research motivation persuasive]
 
-### Literature Review / Theoretical Framework
+### Revisión de Literatura / Theoretical Framework
 - [Literature coverage] (Primarily reviewed by Reviewer 2)
 - [Theoretical framework appropriateness] (Primarily reviewed by Reviewer 2)
 - [Research gap argument]
 
-### Methodology / Research Design
+### Metodología / Research Design
 - [Research design appropriateness] (Primarily reviewed by Reviewer 1)
 - [Sampling strategy]
 - [Data collection]
 - [Analysis methods]
 
-### Results / Findings
+### Resultados / Findings
 - [Completeness of results presentation]
 - [Figure/table quality]
 - [Alignment of results with research questions]
 
-### Discussion
+### Discusión
 - [Whether discussion addresses research questions]
 - [Dialogue with the literature]
 - [Theoretical and practical implications]
-- [Discussion of limitations]
+- [Discusión of limitations]
 
-### Conclusion
+### Conclusión
 - [Whether conclusions over-infer]
 - [Value of future research directions]
 
-### References
+### Referencias
 - [Citation format]
 - [Quality and recency of cited references]
 
@@ -226,7 +226,7 @@ Score each dimension 0-100 using the rubrics in `references/quality_rubrics.md`.
 
 ---
 
-## Format Guidelines
+## Formato Guidelines
 
 ### Severity Levels
 
@@ -246,7 +246,7 @@ Score each dimension 0-100 using the rubrics in `references/quality_rubrics.md`.
 "The data in Table 3 shows p = 0.04, but the author does not report effect sizes..."
 
 # Incorrect (too vague)
-"Methodology has problems"
+"Metodología has problems"
 "Literature review is not comprehensive enough"
 ```
 
